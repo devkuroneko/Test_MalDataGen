@@ -20,6 +20,8 @@
 
 SynDataGen (Previous MalDataGen) is an advanced Python framework for generating and evaluating synthetic tabular datasets using modern generative models, including diffusion and adversarial architectures. Designed for researchers and practitioners, it provides reproducible pipelines, fine-grained control over model configuration, and integrated evaluation metrics for realistic data synthesis.
 
+## Page: [![SynDataGen](https://img.shields.io/badge/Research%20SynDataGen%20Library-red?style=for-the-badge&logo=github&logoColor=white)](https://kayua.github.io/SyntheticDataGen.github.io/)
+
 ## Citation
 
 If you use **MalDataGen** in your research, whether for generating synthetic data, reproducing results, or as part of your malware detection pipeline, please cite our paper:
