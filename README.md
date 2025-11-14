@@ -1,26 +1,27 @@
 [![ml-intro](Layout/layout.png)]()
 <div align="center">
-  <img src="https://img.shields.io/badge/status-active-success.svg" />
-  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" />
-  <img src="https://img.shields.io/badge/GPU-Supported-brightgreen.svg" />
+  <img src="https://img.shields.io/badge/status-active-success.svg" alt="status-active-success" />
+  <img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python-3.8"/>
+  <img src="https://img.shields.io/badge/GPU-Supported-brightgreen.svg" alt="GPU-supported"/>
   <a href="https://github.com/SBSeg25/MalDataGen/tree/bf2ecc5858da8c2e057663852cace4235f226600/Docs">
-    <img src="https://img.shields.io/badge/docs-API_Reference-blue.svg" />
+    <img src="https://img.shields.io/badge/docs-API_Reference-blue.svg" alt="API_Reference-blue"/>
   </a>
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg" />
-  <img src="https://img.shields.io/badge/open%20source-yes-green.svg" />
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="licence-MIT"/>
+  <img src="https://img.shields.io/badge/open%20source-yes-green.svg" alt="open-source"/>
    <div>
     <img src="https://img.shields.io/github/stars/SBSeg25/MalDataGen?style=social" alt="GitHub Stars" />
     <img src="https://img.shields.io/github/forks/SBSeg25/MalDataGen?style=social" alt="GitHub Forks" />
   </div>
 </div>
-</div>
 
 
-# 🌊 SynDataGen - v.1.0.0 (Jellyfish 🪼)
+# 🌊 MalDataGen - v.1.0.0 (Jellyfish 🪼)
 
-SynDataGen (Previous MalDataGen) is an advanced Python framework for generating and evaluating synthetic tabular datasets using modern generative models, including diffusion and adversarial architectures. Designed for researchers and practitioners, it provides reproducible pipelines, fine-grained control over model configuration, and integrated evaluation metrics for realistic data synthesis.
-
-[![SynDataGen](https://img.shields.io/badge/Webpage%20SynDataGen%20Library-red?style=for-the-badge&logo=github&logoColor=white)](https://kayua.github.io/SyntheticDataGen.github.io/)
+MalDataGen is an advanced Python framework for generating and evaluating synthetic tabular datasets using modern 
+generative models, including diffusion and adversarial architectures. Designed for researchers and practitioners, 
+it provides reproducible pipelines, fine-grained control over model configuration, and integrated evaluation metrics 
+for realistic data synthesis.
+---
 
 ## Citation
 
@@ -43,16 +44,15 @@ If you use **MalDataGen** in your research, whether for generating synthetic dat
 }
 ```
 
-
 ---
 
-## 📚 Table of Contents (Readme.md)
+## 📚 Table of Contents (Sumário)
 
  
 - [📖 Overview (Informações básicas)](#overview)
-- [Video](#overview)
-- [Security worries](#securty_worries)
-- [Awards Received](#stamps)
+- [💻 Video](#Overview)
+- [🔐 Security worries (Preocupações com segurança)](#securty_worries)
+- [📌 Stamps considered (Selos Considerados)](#stamps)
 - [🚀 Getting Started](#getting-started)
 - [⚙️ Installation (Instalação)](#installation)
 - [🧠 Architectures](#architectures)
@@ -66,9 +66,10 @@ If you use **MalDataGen** in your research, whether for generating synthetic dat
 
 ---
 
-## 📖 Overview <a name="overview"></a>
+## 📖 Overview (Informações básicas) <a name="overview"></a>
 
-MalDataGen is a modular and extensible synthetic data generation library for tabular data for malware dectition. It aims to:
+MalDataGen is a modular and extensible synthetic data generation library for tabular data for malware detection. 
+It aims to:
 
 - Support state-of-the-art generative models (GANs, VAEs, Diffusion, etc.)
 - Improve model generalization by augmenting training data
@@ -76,35 +77,76 @@ MalDataGen is a modular and extensible synthetic data generation library for tab
 - Provide publication-ready metrics and visualizations
 
 It supports GPU acceleration, CSV/XLS ingestion, custom CLI scripts, and integration with academic pipelines.
----
-### Model architecure overivew
-WWe provide a visual overview of the internal architecture of each model's building blocks through five detailed figures, highlighting the main structural changes across the models. These diagrams are documented and explained in the Overview.md [Overview.md ] file.(https://github.com/SBSeg25/MalDataGen/blob/2dd9eaad74da7726c130e50dbc35f95a463cbd00/Docs/Overview.md)
-
-
-### 📋 Architecture Documentation
-
-We provide a comprehensive visual overview (8 diagrams)  at [Docs/Diagrams/](Docs/Diagrams/) of the MalDataGen framework, covering its architecture, design principles, data processing flow, and evaluation strategies. Developed using Mermaid notation, these diagrams support understanding of both the structural and functional aspects of the system. They include high-level system architecture, object-oriented class relationships, evaluation workflows, training pipelines, metric frameworks, and data flow. Together, they offer a detailed and cohesive view of how MalDataGen enables the generation and assessment of synthetic data in cybersecurity contexts.
-
 
 
 ---
 
-## 📖 Video <a name="Video"></a>
-The following link showcases a video of a demonstration of the tool: https://drive.google.com/file/d/1sbPZ1x5Np6zolhFvCBWoMzqNqrthlUe3/view?usp=sharing
+## Model architecture overview
+We provide a visual overview of the internal architecture of each model's building blocks through five detailed 
+figures, highlighting the main structural changes across the models. These diagrams are documented and explained
+in this link:
+(https://github.com/SBSeg25/MalDataGen/blob/2dd9eaad74da7726c130e50dbc35f95a463cbd00/Docs/Overview.md)
+
+
+---
+
+## 📋 Architecture Documentation
+
+We provide a comprehensive visual overview (8 diagrams)  at [Docs/Diagrams/](Docs/Diagrams/) of the MalDataGen framework, 
+covering its architecture, design principles, data processing flow, and evaluation strategies. Developed using 
+Mermaid notation, these diagrams support understanding of both the structural and functional aspects of the system. 
+They include high-level system architecture, object-oriented class relationships, evaluation workflows, 
+training pipelines, metric frameworks, and data flow. Together, they offer a detailed and cohesive view of 
+how MalDataGen enables the generation and assessment of synthetic data in cybersecurity contexts.
+
+
+---
+
+## 💻  Video of MalDataGen usage  <a name="Video"></a>
+The following link showcases a video of a demonstration of the tool: 
+https://drive.google.com/file/d/1sbPZ1x5Np6zolhFvCBWoMzqNqrthlUe3/view?usp=sharing
 
 if that doesn't work we have a backup on: https://youtu.be/t-AZtsLJUlQ
+
 
 ---
 
 ## 🚀 Getting Started <a name="getting-started"></a>
 
-### Prerequisites
+### Tools requirements for using MalDataGen
 
-- Python 3.10+
-- pip
-- (Optional) CUDA 11+ for GPU acceleration
 
-### Optional: Create a virtual environment
+| Tool               | Purpose                      |
+|--------------------|------------------------------|
+| Python 3.8+        | Core language                |
+| NumPy, Pandas      | Data processing              |
+| TensorFlow         | Model building               |
+| Matplotlib, Plotly | Visualization                |
+| PyTorch (planned)  | Future multi-backend support |
+| Docker             | Containerization             |
+| Git                | Version control              |
+| Pyenv              | python version management    |
+
+---
+
+### Hardware requirements for using MalDataGen
+
+| Component | Minimum    | Recommended             |
+|----------|------------|--------------------------|
+| CPU      | Any x86_64 | Multi-core (i5/Ryzen 5+) |
+| RAM      | 4 GB       | 8 GB+                    |
+| Storage  | 10 GB      | 20 GB SSD                |
+| GPU      | Optional   | NVIDIA with CUDA 11+     |
+
+### 🔬 Operational System 
+
+#### **MalDataGen project is designed for using with linux distribution, however mac os and windows work without major problems**
+
+
+
+---
+
+### 🔧  How to create a virtual environment
 
 ```bash
 pip install virtualenv
@@ -114,44 +156,32 @@ source ~/Python3venv/MalDataGen/bin/activate
 
 ---
 
-## ⚙️ Installation <a name="installation"></a>
+### ⚙️ Installation (Instalação) <a name="installation"></a>
 
 ```bash
-git clone https://github.com/SBSeg25/MalDataGen.git
+git clone https://github.com/kayua/MalDataGen.git
 cd MalDataGen
 pip install --upgrade pip
 pip install -r requirements.txt
 # or
 pip install .
 ```
-## Security worries <a name="securty_worries"></a>
+## 🔐 Security worries (Preocupações com segurança) <a name="securty_worries"></a>
 
 #### We declare that the local execution of experiments has no security worries, however the docker executing require sudo permissions being available to the docker engine.
-
-
-## 🏆 Awards Received <a name="stamps"></a>
-
-**Highlighted Artifact**  
-Awarded for outstanding contributions in the artifacts category.  
-[Details at SBSEG 25](https://doc-artefatos.github.io/sbseg2025/results.html#trabalhos-destaque-na-categoria-artefatos)
-
-**Best Tool of SBSEG 2025**  
-Recognized as the most innovative and impactful tool at the symposium.  
-[Official award document](https://sbseg2025.ppgia.pucpr.br/wp-content/uploads/2025/09/PremiacaoSBSEG-2025.pdf)
-
 
  
 ### 🚀 Run Tests
 
-#### Demo
-In order to execute a demo of the tool, utilized the comand listed below. The execution of this reduced demo takes around 3 minutes on a AMD Ryzen 7 5800x, 8 cores, 64 GB RAM machine.
+#### Demo (Teste mínimo)
+In order to execute a demo of the tool, utilized the command listed below. The execution of this reduced demo takes around 3 minutes on a AMD Ryzen 7 5800x, 8 cores, 64 GB RAM machine.
  
 ```bash
 # Run the basic demo
 python3 run_campaign_sbseg.py -c sf
 ```
 
-Alternatively, you can use the a docker container to execute the demo, by using the following comand:
+Alternatively, you can use a docker container to execute the demo, by using the following comand:
 
 ```bash
 # Run the basic demo
@@ -159,8 +189,11 @@ Alternatively, you can use the a docker container to execute the demo, by using 
 ```
 
 
-#### Reproduction
-In order to reproduce the results from the paper execute the comand below, the experiments take around 7 hours on a AMD Ryzen 7 5800x, 8 cores, 64 GB RAM machine.
+---
+
+### Recreation of outputs (Experimentos)
+In order to reproduce the results from the paper execute the command below, the experiments take around 7 hours 
+on an AMD Ryzen 7 5800x, 8 cores, 64 GB RAM machine.
 
 ```bash
 # Run all experiments from the paper
@@ -173,11 +206,15 @@ Or to execute with docker:
 ./run_experiments_docker.sh  
 ```
 
+
 ---
 
-##### Expected outputs:
+### Expected outputs:
 After executing the experiments, you should observe the following structure within the outputs folder, with a separate folder for each model executed:
-<img width="1600" height="507" alt="image" src="https://github.com/user-attachments/assets/fafb0516-c227-4aba-8596-679aeb1d68f9" />
+---
+
+<img width="95%" height="auto" alt="image" src="https://github.com/user-attachments/assets/fafb0516-c227-4aba-8596-679aeb1d68f9" />
+
 A results folder is also present, containing the training curves for each model.
 
 Within each model's folder, there will be five subfolders:
@@ -217,6 +254,8 @@ Additionally, a file named "Binary classification metrics for SVM classifier.pdf
 | `VQ-VAE`              | Discrete latent-space via quantization                                      | Categorical and mixed-type data             |
 | `SMOTE`               | Synthetic Minority Over-sampling Technique (interpolation-based)            | Class imbalance in tabular data             |
 
+
+---
 
 ### 📦 Third-Party Supported (SDV)
 | Model       | Description                                                                 | Use Case                              |
@@ -267,6 +306,7 @@ Two validation approaches are supported:
 - Euclidean Distance, Hellinger Distance
 - Log-Likelihood, Manhattan Distance
 
+
 ---
 
 
@@ -287,63 +327,10 @@ Comprehensive architecture documentation is available in the [Docs/Diagrams/](Do
 
 All diagrams are created using Mermaid format for easy maintenance and version control. They can be viewed directly in GitHub or exported for academic publications.
 
----
-
-## 🧰 Technologies Used <a name="technologies"></a>
-
-| Tool          | Purpose                     |
-|---------------|-----------------------------|
-| Python 3.8+   | Core language               |
-| NumPy, Pandas | Data processing             |
-| TensorFlow    | Model building              |
-| Matplotlib, Plotly | Visualization          |
-| PyTorch (planned) | Future multi-backend support |
-| Docker        | Containerization            |
-| Git           | Version control             |
-
----
-
-## 🔬 System Requirements
-
-### Hardware
-
-| Component | Minimum    | Recommended             |
-|----------|------------|--------------------------|
-| CPU      | Any x86_64 | Multi-core (i5/Ryzen 5+) |
-| RAM      | 4 GB       | 8 GB+                    |
-| Storage  | 10 GB      | 20 GB SSD                |
-| GPU      | Optional   | NVIDIA with CUDA 11+     |
-
-### Software
-
-| Component | Version    | Notes                    |
-|-----------|------------|--------------------------|
-| OS        | Ubuntu 22.04+ | Linux preferred       |
-| Python    | ≥ 3.8.10   | Virtualenv recommended   |
-| Docker    | ≥ 27.2.1   | Optional but supported   |
-| Git       | Latest     | Required                 |
-| CUDA      | ≥ 11.0     | Optional for GPU execution |
 
 ---
 
 ## 🔗 References <a name="references"></a>
-### How to cite this tool
-```bibtex
-@inproceedings{sbseg25_maldatagen,
- author = {Kayuã Paim and Angelo Nogueira and Diego Kreutz and Weverton Cordeiro and Rodrigo Mansilha},
- title = { MalDataGen: A Modular Framework for Synthetic Tabular Data Generation in Malware Detection},
- booktitle = {Companion Proceedings of the 25th Brazilian Symposium on Cybersecurity},
- location = {Foz do Iguaçu/PR},
- year = {2025},
- keywords = {},
- issn = {0000-0000},
- pages = {38--47},
- publisher = {SBC},
- address = {Porto Alegre, RS, Brasil},
- doi = {10.5753/sbseg_estendido.2025.12113},
- url = {https://sol.sbc.org.br/index.php/sbseg_estendido/article/view/36739}
-}
-```
 
 ### Core Papers
 - [Kingma, D. P., & Welling, M. (2013). Auto-Encoding Variational Bayes](https://arxiv.org/abs/1312.6114)  
