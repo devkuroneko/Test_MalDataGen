@@ -1,0 +1,310 @@
+2025-11-14 19:31:24,487	***	Base directory already exists: outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1
+2025-11-14 19:31:24,487	***	Failed to create directories: [Errno 17] File exists: 'outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1/ModelsSaved'
+2025-11-14 19:31:24,487	***	Retrieved DataGenerated path: outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated
+2025-11-14 19:31:24,513	***	All GPUs disabled. Running on CPU.
+2025-11-14 19:31:24,513	***	Command:
+	main.py --data_load_path_file_input Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv --verbosity 20 --output_dir outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1 --classifier RandomForest SupportVectorMachine KNN DecisionTree NaiveBayes GradientBoosting StochasticGradientDescent --model_type adversarial --number_samples_per_class 0:2000,1:2000 --number_k_folds 5 --adversarial_number_epochs 300 --save_data True --adversarial_batch_size 64 --adversarial_dense_layer_sizes_g 256 --adversarial_dense_layer_sizes_d 64 --adversarial_dropout_decay_rate_g 0.2 --adversarial_dropout_decay_rate_d 0.4 --adversarial_initializer_deviation 0.5 --adversarial_initializer_mean 0 --adversarial_latent_dimension 32 --adversarial_latent_mean_distribution 0.5 --adversarial_latent_stander_deviation 0.125 --adversarial_training_algorithm Adam --adversarial_activation_function leakyrelu --adversarial_loss_generator binary_crossentropy --adversarial_loss_discriminator binary_crossentropy --adversarial_smoothing_rate 0.15
+
+2025-11-14 19:31:24,513	***	Settings:
+2025-11-14 19:31:24,513	***		adam_optimizer_amsgrad                                           : False
+2025-11-14 19:31:24,513	***		adam_optimizer_beta_1                                            : 0.9
+2025-11-14 19:31:24,513	***		adam_optimizer_beta_2                                            : 0.999
+2025-11-14 19:31:24,513	***		adam_optimizer_epsilon                                           : 1e-07
+2025-11-14 19:31:24,513	***		adam_optimizer_learning_rate                                     : 0.001
+2025-11-14 19:31:24,513	***		adversarial_activation_function                                  : leakyrelu
+2025-11-14 19:31:24,513	***		adversarial_batch_size                                           : 64
+2025-11-14 19:31:24,513	***		adversarial_dense_layer_sizes_d                                  : [64]
+2025-11-14 19:31:24,513	***		adversarial_dense_layer_sizes_g                                  : [256]
+2025-11-14 19:31:24,513	***		adversarial_dropout_decay_rate_d                                 : 0.4
+2025-11-14 19:31:24,513	***		adversarial_dropout_decay_rate_g                                 : 0.2
+2025-11-14 19:31:24,513	***		adversarial_file_name_discriminator                              : discriminator_model
+2025-11-14 19:31:24,513	***		adversarial_file_name_generator                                  : generator_model
+2025-11-14 19:31:24,513	***		adversarial_initializer_deviation                                : 0.5
+2025-11-14 19:31:24,513	***		adversarial_initializer_mean                                     : 0.0
+2025-11-14 19:31:24,513	***		adversarial_last_layer_activation                                : Sigmoid
+2025-11-14 19:31:24,513	***		adversarial_latent_dimension                                     : 32
+2025-11-14 19:31:24,513	***		adversarial_latent_mean_distribution                             : 0.5
+2025-11-14 19:31:24,514	***		adversarial_latent_stander_deviation                             : 0.125
+2025-11-14 19:31:24,514	***		adversarial_loss_discriminator                                   : binary_crossentropy
+2025-11-14 19:31:24,514	***		adversarial_loss_generator                                       : binary_crossentropy
+2025-11-14 19:31:24,514	***		adversarial_number_epochs                                        : 300
+2025-11-14 19:31:24,514	***		adversarial_path_output_models                                   : models_saved/
+2025-11-14 19:31:24,514	***		adversarial_smoothing_rate                                       : 0.15
+2025-11-14 19:31:24,514	***		adversarial_training_algorithm                                   : Adam
+2025-11-14 19:31:24,514	***		classifier                                                       : ['RandomForest', 'SupportVectorMachine', 'KNN', 'DecisionTree', 'NaiveBayes', 'GradientBoosting', 'StochasticGradientDescent']
+2025-11-14 19:31:24,514	***		data_load_end_column                                             : -1
+2025-11-14 19:31:24,514	***		data_load_exclude_columns                                        : -1
+2025-11-14 19:31:24,514	***		data_load_label_column                                           : -1
+2025-11-14 19:31:24,514	***		data_load_max_columns                                            : -1
+2025-11-14 19:31:24,514	***		data_load_max_samples                                            : -1
+2025-11-14 19:31:24,514	***		data_load_path_file_input                                        : Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:31:24,514	***		data_load_path_file_output                                       : OutputDir
+2025-11-14 19:31:24,514	***		data_load_start_column                                           : 0
+2025-11-14 19:31:24,514	***		decision_tree_criterion                                          : gini
+2025-11-14 19:31:24,514	***		decision_tree_max_depth                                          : None
+2025-11-14 19:31:24,514	***		decision_tree_max_features                                       : None
+2025-11-14 19:31:24,514	***		decision_tree_max_leaf_nodes                                     : None
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_activation_output_encoder        : sigmoid
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_batch_size_create_embedding      : 128
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_batch_size_training              : 64
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_decoder_filters                  : [160, 320]
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_dropout_decay_rate_decoder       : 0.4
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_dropout_decay_rate_encoder       : 0.2
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_encoder_filters                  : [320, 160]
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_epochs                           : 1000
+2025-11-14 19:31:24,514	***		denoising_diffusion_autoencoder_file_name_decoder                : decoder_model
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_file_name_encoder                : encoder_model
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_initializer_deviation            : 0.125
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_initializer_mean                 : 0.0
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_intermediary_activation_alpha    : 0.05
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_intermediary_activation_function : swish
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_last_layer_activation            : sigmoid
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_latent_dimension                 : 64
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_loss                             : mse
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_mean_distribution                : 0.5
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_path_output_models               : models_saved/
+2025-11-14 19:31:24,515	***		denoising_diffusion_autoencoder_stander_deviation                : 0.125
+2025-11-14 19:31:24,515	***		denoising_diffusion_ema                                          : 0.999
+2025-11-14 19:31:24,515	***		denoising_diffusion_gaussian_beta_end                            : 0.02
+2025-11-14 19:31:24,515	***		denoising_diffusion_gaussian_beta_start                          : 0.0001
+2025-11-14 19:31:24,515	***		denoising_diffusion_gaussian_clip_max                            : 1.0
+2025-11-14 19:31:24,515	***		denoising_diffusion_gaussian_clip_min                            : -1.0
+2025-11-14 19:31:24,515	***		denoising_diffusion_gaussian_time_steps                          : 1000
+2025-11-14 19:31:24,515	***		denoising_diffusion_latent_dimension                             : 64
+2025-11-14 19:31:24,515	***		denoising_diffusion_margin                                       : 0.5
+2025-11-14 19:31:24,515	***		denoising_diffusion_time_steps                                   : 1000
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_attention_mode                          : [False, True, True]
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_batch_size                              : 128
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_channels_per_level                      : [1, 2, 4]
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_epochs                                  : 1000
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_group_normalization                     : 1
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_intermediary_activation                 : swish
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_intermediary_activation_alpha           : 0.05
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_last_layer_activation                   : linear
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_num_embedding_channels                  : 1
+2025-11-14 19:31:24,515	***		denoising_diffusion_unet_num_residual_blocks                     : 2
+2025-11-14 19:31:24,515	***		early_stop_baseline                                              : None
+2025-11-14 19:31:24,516	***		early_stop_min_delta                                             : 0.0001
+2025-11-14 19:31:24,516	***		early_stop_mode                                                  : auto
+2025-11-14 19:31:24,516	***		early_stop_monitor                                               : val_loss
+2025-11-14 19:31:24,516	***		early_stop_patience                                              : 50
+2025-11-14 19:31:24,516	***		early_stop_restore_best_weights                                  : None
+2025-11-14 19:31:24,516	***		early_stop_start_from_epoch                                      : 100
+2025-11-14 19:31:24,516	***		evaluation                                                       : ['TrAs', 'TsAr']
+2025-11-14 19:31:24,516	***		gaussian_process_kernel                                          : None
+2025-11-14 19:31:24,516	***		gaussian_process_max_iterations                                  : 20
+2025-11-14 19:31:24,516	***		gaussian_process_optimizer                                       : fmin_l_bfgs_b
+2025-11-14 19:31:24,516	***		gradient_boosting_criterion                                      : friedman_mse
+2025-11-14 19:31:24,516	***		gradient_boosting_learning_rate                                  : 0.1
+2025-11-14 19:31:24,516	***		gradient_boosting_loss                                           : log_loss
+2025-11-14 19:31:24,516	***		gradient_boosting_number_estimators                              : 100
+2025-11-14 19:31:24,516	***		gradient_boosting_subsample                                      : 1.0
+2025-11-14 19:31:24,516	***		k_means_init                                                     : k-means++
+2025-11-14 19:31:24,516	***		k_means_max_iterations                                           : 300
+2025-11-14 19:31:24,516	***		k_means_number_clusters                                          : 2
+2025-11-14 19:31:24,516	***		k_means_random_state                                             : None
+2025-11-14 19:31:24,516	***		k_means_tolerance                                                : 0.0001
+2025-11-14 19:31:24,516	***		knn_algorithm                                                    : auto
+2025-11-14 19:31:24,516	***		knn_leaf_size                                                    : 30
+2025-11-14 19:31:24,516	***		knn_metric                                                       : minkowski
+2025-11-14 19:31:24,516	***		knn_number_neighbors                                             : 5
+2025-11-14 19:31:24,516	***		knn_weights                                                      : uniform
+2025-11-14 19:31:24,516	***		latent_diffusion_autoencoder_activation_output_encoder           : sigmoid
+2025-11-14 19:31:24,516	***		latent_diffusion_autoencoder_batch_size_create_embedding         : 128
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_batch_size_training                 : 64
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_decoder_filters                     : [160, 320]
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_dropout_decay_rate_decoder          : 0.4
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_dropout_decay_rate_encoder          : 0.2
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_encoder_filters                     : [320, 160]
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_epochs                              : 1000
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_file_name_decoder                   : decoder_model
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_file_name_encoder                   : encoder_model
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_initializer_deviation               : 0.125
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_initializer_mean                    : 0.0
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_intermediary_activation_alpha       : 0.05
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_intermediary_activation_function    : swish
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_last_layer_activation               : sigmoid
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_latent_dimension                    : 64
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_loss                                : mse
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_mean_distribution                   : 0.5
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_path_output_models                  : models_saved/
+2025-11-14 19:31:24,517	***		latent_diffusion_autoencoder_stander_deviation                   : 0.125
+2025-11-14 19:31:24,517	***		latent_diffusion_ema                                             : 0.999
+2025-11-14 19:31:24,517	***		latent_diffusion_gaussian_beta_end                               : 0.02
+2025-11-14 19:31:24,517	***		latent_diffusion_gaussian_beta_start                             : 0.0001
+2025-11-14 19:31:24,517	***		latent_diffusion_gaussian_clip_max                               : 1.0
+2025-11-14 19:31:24,517	***		latent_diffusion_gaussian_clip_min                               : -1.0
+2025-11-14 19:31:24,517	***		latent_diffusion_gaussian_time_steps                             : 1000
+2025-11-14 19:31:24,517	***		latent_diffusion_latent_dimension                                : 64
+2025-11-14 19:31:24,517	***		latent_diffusion_margin                                          : 0.5
+2025-11-14 19:31:24,517	***		latent_diffusion_time_steps                                      : 1000
+2025-11-14 19:31:24,517	***		latent_diffusion_unet_attention_mode                             : [False, True, True]
+2025-11-14 19:31:24,517	***		latent_diffusion_unet_batch_size                                 : 128
+2025-11-14 19:31:24,517	***		latent_diffusion_unet_channels_per_level                         : [1, 2, 4]
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_epochs                                     : 1000
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_group_normalization                        : 1
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_intermediary_activation                    : swish
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_intermediary_activation_alpha              : 0.05
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_last_layer_activation                      : linear
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_num_embedding_channels                     : 1
+2025-11-14 19:31:24,518	***		latent_diffusion_unet_num_residual_blocks                        : 2
+2025-11-14 19:31:24,518	***		linear_regression_copy_X                                         : True
+2025-11-14 19:31:24,518	***		linear_regression_fit_intercept                                  : True
+2025-11-14 19:31:24,518	***		linear_regression_normalize                                      : False
+2025-11-14 19:31:24,518	***		linear_regression_number_jobs                                    : None
+2025-11-14 19:31:24,518	***		model_type                                                       : adversarial
+2025-11-14 19:31:24,518	***		naive_bayes_priors                                               : None
+2025-11-14 19:31:24,518	***		naive_bayes_variation_smoothing                                  : 1e-09
+2025-11-14 19:31:24,518	***		number_k_folds                                                   : 5
+2025-11-14 19:31:24,518	***		number_samples_per_class                                         : {'classes': {0: 2000, 1: 2000}, 'number_classes': 2}
+2025-11-14 19:31:24,518	***		output_dir                                                       : outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1
+2025-11-14 19:31:24,518	***		path_confusion_matrix                                            : confusion_matrix
+2025-11-14 19:31:24,518	***		path_curve_loss                                                  : training_curve
+2025-11-14 19:31:24,518	***		perceptron_dropout_decay_rate                                    : 0.2
+2025-11-14 19:31:24,518	***		perceptron_last_layer_activation                                 : sigmoid
+2025-11-14 19:31:24,518	***		perceptron_layer_activation                                      : relu
+2025-11-14 19:31:24,518	***		perceptron_layers_settings                                       : [512, 256, 256]
+2025-11-14 19:31:24,518	***		perceptron_number_epochs                                         : 1
+2025-11-14 19:31:24,518	***		perceptron_training_algorithm                                    : Adam
+2025-11-14 19:31:24,518	***		perceptron_training_loss                                         : binary_crossentropy
+2025-11-14 19:31:24,518	***		perceptron_training_metric                                       : ['accuracy']
+2025-11-14 19:31:24,518	***		quadratic_discriminant_analysis_priors                           : None
+2025-11-14 19:31:24,518	***		quadratic_discriminant_analysis_regularization                   : 0.0
+2025-11-14 19:31:24,519	***		quadratic_discriminant_analysis_threshold                        : 0.0001
+2025-11-14 19:31:24,519	***		random_forest_max_depth                                          : None
+2025-11-14 19:31:24,519	***		random_forest_max_leaf_nodes                                     : None
+2025-11-14 19:31:24,519	***		random_forest_number_estimators                                  : 100
+2025-11-14 19:31:24,519	***		random_noise_level                                               : 0.1
+2025-11-14 19:31:24,519	***		random_noise_type_noise                                          : uniform
+2025-11-14 19:31:24,519	***		save_data                                                        : True
+2025-11-14 19:31:24,519	***		save_models                                                      : False
+2025-11-14 19:31:24,519	***		smote_k_neighbors                                                : 2
+2025-11-14 19:31:24,519	***		smote_random_state                                               : None
+2025-11-14 19:31:24,519	***		smote_sampling_strategy                                          : auto
+2025-11-14 19:31:24,519	***		spectral_affinity                                                : rbf
+2025-11-14 19:31:24,519	***		spectral_assign_labels                                           : kmeans
+2025-11-14 19:31:24,519	***		spectral_eigen_solver                                            : None
+2025-11-14 19:31:24,519	***		spectral_number_clusters                                         : 8
+2025-11-14 19:31:24,519	***		spectral_random_state                                            : None
+2025-11-14 19:31:24,519	***		stochastic_gradient_descent_alpha                                : 0.0001
+2025-11-14 19:31:24,519	***		stochastic_gradient_descent_loss                                 : hinge
+2025-11-14 19:31:24,519	***		stochastic_gradient_descent_max_iterations                       : 1000
+2025-11-14 19:31:24,519	***		stochastic_gradient_descent_penalty                              : l2
+2025-11-14 19:31:24,519	***		stochastic_gradient_descent_tolerance                            : 0.001
+2025-11-14 19:31:24,519	***		support_vector_machine_gamma                                     : scale
+2025-11-14 19:31:24,519	***		support_vector_machine_kernel                                    : rbf
+2025-11-14 19:31:24,519	***		support_vector_machine_kernel_degree                             : 3
+2025-11-14 19:31:24,519	***		support_vector_machine_regularization                            : 1.0
+2025-11-14 19:31:24,519	***		use_early_stop                                                   : False
+2025-11-14 19:31:24,519	***		use_gpu                                                          : False
+2025-11-14 19:31:24,520	***		verbosity                                                        : 20
+2025-11-14 19:31:24,520	***	
+2025-11-14 19:31:24,520	***	Attempting to load CSV from path: Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:31:24,590	***	CSV loaded successfully with shape: (20340, 137)
+2025-11-14 19:31:24,590	***	CSV file is not empty, proceeding with processing.
+2025-11-14 19:31:24,590	***	Replacing infinite values and removing missing data.
+2025-11-14 19:31:24,598	***	Data after cleaning has shape: (20340, 137)
+2025-11-14 19:31:24,598	***	Original CSV header stored.
+2025-11-14 19:31:24,598	***	Label column automatically set to: class
+2025-11-14 19:31:24,598	***	Separating the label column: class
+2025-11-14 19:31:24,603	***	Labels separated, remaining data shape: (20340, 136)
+2025-11-14 19:31:24,607	***	Data loaded and header updated. Final data shape: (20340, 136)
+2025-11-14 19:31:24,614	***	Data normalized between 0 and 1.
+2025-11-14 19:31:24,614	***	StratifiedKFold initialization started. Number of splits: 5, Shuffle: True, Random state: 42.
+2025-11-14 19:31:24,620	***	Data loaded for stratification. Total samples: 20340
+2025-11-14 19:31:24,623	***	Processing fold 1 of 5.
+2025-11-14 19:31:24,623	***	Training   indices (size 16272): [    0     1     2 ... 20336 20338 20339]
+2025-11-14 19:31:24,623	***	Evaluating indices (size 4068): [    3     5     7 ... 20331 20333 20337]
+2025-11-14 19:31:25,265	***	Fold 1 processed successfully in 0.64 seconds.
+2025-11-14 19:31:25,266	***	Processing fold 2 of 5.
+2025-11-14 19:31:25,266	***	Training   indices (size 16272): [    1     3     4 ... 20336 20337 20338]
+2025-11-14 19:31:25,266	***	Evaluating indices (size 4068): [    0     2    16 ... 20315 20321 20339]
+2025-11-14 19:31:25,893	***	Fold 2 processed successfully in 0.63 seconds.
+2025-11-14 19:31:25,894	***	Processing fold 3 of 5.
+2025-11-14 19:31:25,894	***	Training   indices (size 16272): [    0     1     2 ... 20337 20338 20339]
+2025-11-14 19:31:25,894	***	Evaluating indices (size 4068): [    4    11    12 ... 20330 20332 20334]
+2025-11-14 19:31:26,519	***	Fold 3 processed successfully in 0.63 seconds.
+2025-11-14 19:31:26,519	***	Processing fold 4 of 5.
+2025-11-14 19:31:26,519	***	Training   indices (size 16272): [    0     1     2 ... 20336 20337 20339]
+2025-11-14 19:31:26,519	***	Evaluating indices (size 4068): [    9    14    19 ... 20327 20335 20338]
+2025-11-14 19:31:27,163	***	Fold 4 processed successfully in 0.64 seconds.
+2025-11-14 19:31:27,163	***	Processing fold 5 of 5.
+2025-11-14 19:31:27,163	***	Training   indices (size 16272): [    0     2     3 ... 20337 20338 20339]
+2025-11-14 19:31:27,163	***	Evaluating indices (size 4068): [    1     6     8 ... 20323 20329 20336]
+2025-11-14 19:31:27,803	***	Fold 5 processed successfully in 0.64 seconds.
+2025-11-14 19:31:27,803	***	All 5 folds successfully created in 3.19 seconds.
+2025-11-14 19:31:27,803	***	Starting experiment runs across 5 folds.
+2025-11-14 19:31:27,803	***	
+2025-11-14 19:31:27,803	***	Running experiment for fold 1.
+2025-11-14 19:31:27,804	***	Fold 1 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:31:27,804	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-20/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:31:27,805	***	Starting model creation and prediction process.
+2025-11-14 19:31:27,805	***	Number of real samples: 16272
+2025-11-14 19:31:27,805	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:31:27,817	***	CPU info collected.
+2025-11-14 19:31:28,102	***	Training started...
+2025-11-14 19:31:28,103	***	Epoch 1/300 started...
+2025-11-14 19:31:30,185	***	Epoch 1 ended. Time: 2.0817s, Avg batch time: 0.0080s, Expected finish: 2025-11-14 19:41:52
+2025-11-14 19:31:30,186	***	Epoch 2/300 started...
+2025-11-14 19:31:30,730	***	Epoch 2 ended. Time: 0.5439s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:38:01
+2025-11-14 19:31:30,731	***	Epoch 3/300 started...
+2025-11-14 19:31:31,261	***	Epoch 3 ended. Time: 0.5296s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:36:43
+2025-11-14 19:31:31,262	***	Epoch 4/300 started...
+2025-11-14 19:31:31,797	***	Epoch 4 ended. Time: 0.5354s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:36:04
+2025-11-14 19:31:31,798	***	Epoch 5/300 started...
+2025-11-14 19:31:32,414	***	Epoch 5 ended. Time: 0.6160s, Avg batch time: 0.0023s, Expected finish: 2025-11-14 19:35:46
+2025-11-14 19:31:32,415	***	Epoch 6/300 started...
+2025-11-14 19:31:33,066	***	Epoch 6 ended. Time: 0.6517s, Avg batch time: 0.0024s, Expected finish: 2025-11-14 19:35:36
+2025-11-14 19:31:33,067	***	Epoch 7/300 started...
+2025-11-14 19:31:33,643	***	Epoch 7 ended. Time: 0.5762s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:35:25
+2025-11-14 19:31:33,644	***	Epoch 8/300 started...
+2025-11-14 19:31:34,344	***	Epoch 8 ended. Time: 0.7000s, Avg batch time: 0.0026s, Expected finish: 2025-11-14 19:35:21
+2025-11-14 19:31:34,345	***	Epoch 9/300 started...
+2025-11-14 19:31:35,089	***	Epoch 9 ended. Time: 0.7435s, Avg batch time: 0.0028s, Expected finish: 2025-11-14 19:35:20
+2025-11-14 19:31:35,089	***	Epoch 10/300 started...
+2025-11-14 19:31:35,802	***	Epoch 10 ended. Time: 0.7127s, Avg batch time: 0.0026s, Expected finish: 2025-11-14 19:35:18
+2025-11-14 19:31:35,803	***	Epoch 11/300 started...
+2025-11-14 19:31:36,426	***	Epoch 11 ended. Time: 0.6232s, Avg batch time: 0.0023s, Expected finish: 2025-11-14 19:35:14
+2025-11-14 19:31:36,427	***	Epoch 12/300 started...
+2025-11-14 19:31:36,999	***	Epoch 12 ended. Time: 0.5716s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:35:10
+2025-11-14 19:31:36,999	***	Epoch 13/300 started...
+2025-11-14 19:31:37,518	***	Epoch 13 ended. Time: 0.5186s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:35:05
+2025-11-14 19:31:37,519	***	Epoch 14/300 started...
+2025-11-14 19:31:38,036	***	Epoch 14 ended. Time: 0.5172s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:35:00
+2025-11-14 19:31:38,037	***	Epoch 15/300 started...
+2025-11-14 19:31:38,597	***	Epoch 15 ended. Time: 0.5598s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:34:57
+2025-11-14 19:31:38,597	***	Epoch 16/300 started...
+2025-11-14 19:31:39,200	***	Epoch 16 ended. Time: 0.6031s, Avg batch time: 0.0022s, Expected finish: 2025-11-14 19:34:55
+2025-11-14 19:31:39,201	***	Epoch 17/300 started...
+2025-11-14 19:31:39,806	***	Epoch 17 ended. Time: 0.6048s, Avg batch time: 0.0022s, Expected finish: 2025-11-14 19:34:54
+2025-11-14 19:31:39,807	***	Epoch 18/300 started...
+2025-11-14 19:31:40,348	***	Epoch 18 ended. Time: 0.5410s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:51
+2025-11-14 19:31:40,348	***	Epoch 19/300 started...
+2025-11-14 19:31:40,906	***	Epoch 19 ended. Time: 0.5572s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:34:50
+2025-11-14 19:31:40,906	***	Epoch 20/300 started...
+2025-11-14 19:31:41,452	***	Epoch 20 ended. Time: 0.5457s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:48
+2025-11-14 19:31:41,453	***	Epoch 21/300 started...
+2025-11-14 19:31:41,989	***	Epoch 21 ended. Time: 0.5356s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:46
+2025-11-14 19:31:41,989	***	Epoch 22/300 started...
+2025-11-14 19:31:42,572	***	Epoch 22 ended. Time: 0.5829s, Avg batch time: 0.0022s, Expected finish: 2025-11-14 19:34:45
+2025-11-14 19:31:42,573	***	Epoch 23/300 started...
+2025-11-14 19:31:43,111	***	Epoch 23 ended. Time: 0.5381s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:43
+2025-11-14 19:31:43,112	***	Epoch 24/300 started...
+2025-11-14 19:31:43,645	***	Epoch 24 ended. Time: 0.5326s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:42
+2025-11-14 19:31:43,645	***	Epoch 25/300 started...
+2025-11-14 19:31:44,173	***	Epoch 25 ended. Time: 0.5277s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:40
+2025-11-14 19:31:44,174	***	Epoch 26/300 started...
+2025-11-14 19:31:44,706	***	Epoch 26 ended. Time: 0.5326s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:39
+2025-11-14 19:31:44,707	***	Epoch 27/300 started...
+2025-11-14 19:31:45,237	***	Epoch 27 ended. Time: 0.5296s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:38
+2025-11-14 19:31:45,237	***	Epoch 28/300 started...
+2025-11-14 19:31:45,761	***	Epoch 28 ended. Time: 0.5235s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:34:37
+2025-11-14 19:31:45,762	***	Epoch 29/300 started...
+2025-11-14 19:31:46,330	***	Epoch 29 ended. Time: 0.5683s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:34:36
+2025-11-14 19:31:46,331	***	Epoch 30/300 started...
+2025-11-14 19:31:47,180	***	Epoch 30 ended. Time: 0.8494s, Avg batch time: 0.0032s, Expected finish: 2025-11-14 19:34:38
+2025-11-14 19:31:47,181	***	Epoch 31/300 started...
+2025-11-14 19:31:47,754	***	Epoch 31 ended. Time: 0.5734s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:34:38
+2025-11-14 19:31:47,755	***	Epoch 32/300 started...
+2025-11-14 19:31:48,299	***	Epoch 32 ended. Time: 0.5440s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:34:37
+2025-11-14 19:31:48,300	***	Epoch 33/300 started...

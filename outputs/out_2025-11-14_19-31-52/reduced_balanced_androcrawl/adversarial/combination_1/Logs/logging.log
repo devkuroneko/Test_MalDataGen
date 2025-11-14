@@ -1,0 +1,2081 @@
+2025-11-14 19:31:55,502	***	Base directory already exists: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1
+2025-11-14 19:31:55,502	***	Failed to create directories: [Errno 17] File exists: 'outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/ModelsSaved'
+2025-11-14 19:31:55,502	***	Retrieved DataGenerated path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated
+2025-11-14 19:31:55,528	***	All GPUs disabled. Running on CPU.
+2025-11-14 19:31:55,528	***	Command:
+	main.py --data_load_path_file_input Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv --verbosity 20 --output_dir outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1 --classifier RandomForest SupportVectorMachine KNN DecisionTree NaiveBayes GradientBoosting StochasticGradientDescent --model_type adversarial --number_samples_per_class 0:2000,1:2000 --number_k_folds 5 --adversarial_number_epochs 10 --save_data True --adversarial_batch_size 64 --adversarial_dense_layer_sizes_g 256 --adversarial_dense_layer_sizes_d 64 --adversarial_dropout_decay_rate_g 0.2 --adversarial_dropout_decay_rate_d 0.4 --adversarial_initializer_deviation 0.5 --adversarial_initializer_mean 0 --adversarial_latent_dimension 32 --adversarial_latent_mean_distribution 0.5 --adversarial_latent_stander_deviation 0.125 --adversarial_training_algorithm Adam --adversarial_activation_function leakyrelu --adversarial_loss_generator binary_crossentropy --adversarial_loss_discriminator binary_crossentropy --adversarial_smoothing_rate 0.15
+
+2025-11-14 19:31:55,528	***	Settings:
+2025-11-14 19:31:55,528	***		adam_optimizer_amsgrad                                           : False
+2025-11-14 19:31:55,529	***		adam_optimizer_beta_1                                            : 0.9
+2025-11-14 19:31:55,529	***		adam_optimizer_beta_2                                            : 0.999
+2025-11-14 19:31:55,529	***		adam_optimizer_epsilon                                           : 1e-07
+2025-11-14 19:31:55,529	***		adam_optimizer_learning_rate                                     : 0.001
+2025-11-14 19:31:55,529	***		adversarial_activation_function                                  : leakyrelu
+2025-11-14 19:31:55,529	***		adversarial_batch_size                                           : 64
+2025-11-14 19:31:55,529	***		adversarial_dense_layer_sizes_d                                  : [64]
+2025-11-14 19:31:55,529	***		adversarial_dense_layer_sizes_g                                  : [256]
+2025-11-14 19:31:55,529	***		adversarial_dropout_decay_rate_d                                 : 0.4
+2025-11-14 19:31:55,529	***		adversarial_dropout_decay_rate_g                                 : 0.2
+2025-11-14 19:31:55,529	***		adversarial_file_name_discriminator                              : discriminator_model
+2025-11-14 19:31:55,529	***		adversarial_file_name_generator                                  : generator_model
+2025-11-14 19:31:55,529	***		adversarial_initializer_deviation                                : 0.5
+2025-11-14 19:31:55,529	***		adversarial_initializer_mean                                     : 0.0
+2025-11-14 19:31:55,529	***		adversarial_last_layer_activation                                : Sigmoid
+2025-11-14 19:31:55,529	***		adversarial_latent_dimension                                     : 32
+2025-11-14 19:31:55,529	***		adversarial_latent_mean_distribution                             : 0.5
+2025-11-14 19:31:55,529	***		adversarial_latent_stander_deviation                             : 0.125
+2025-11-14 19:31:55,529	***		adversarial_loss_discriminator                                   : binary_crossentropy
+2025-11-14 19:31:55,529	***		adversarial_loss_generator                                       : binary_crossentropy
+2025-11-14 19:31:55,529	***		adversarial_number_epochs                                        : 10
+2025-11-14 19:31:55,529	***		adversarial_path_output_models                                   : models_saved/
+2025-11-14 19:31:55,529	***		adversarial_smoothing_rate                                       : 0.15
+2025-11-14 19:31:55,529	***		adversarial_training_algorithm                                   : Adam
+2025-11-14 19:31:55,529	***		classifier                                                       : ['RandomForest', 'SupportVectorMachine', 'KNN', 'DecisionTree', 'NaiveBayes', 'GradientBoosting', 'StochasticGradientDescent']
+2025-11-14 19:31:55,529	***		data_load_end_column                                             : -1
+2025-11-14 19:31:55,529	***		data_load_exclude_columns                                        : -1
+2025-11-14 19:31:55,529	***		data_load_label_column                                           : -1
+2025-11-14 19:31:55,529	***		data_load_max_columns                                            : -1
+2025-11-14 19:31:55,529	***		data_load_max_samples                                            : -1
+2025-11-14 19:31:55,529	***		data_load_path_file_input                                        : Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:31:55,529	***		data_load_path_file_output                                       : OutputDir
+2025-11-14 19:31:55,530	***		data_load_start_column                                           : 0
+2025-11-14 19:31:55,530	***		decision_tree_criterion                                          : gini
+2025-11-14 19:31:55,530	***		decision_tree_max_depth                                          : None
+2025-11-14 19:31:55,530	***		decision_tree_max_features                                       : None
+2025-11-14 19:31:55,530	***		decision_tree_max_leaf_nodes                                     : None
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_activation_output_encoder        : sigmoid
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_batch_size_create_embedding      : 128
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_batch_size_training              : 64
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_decoder_filters                  : [160, 320]
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_dropout_decay_rate_decoder       : 0.4
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_dropout_decay_rate_encoder       : 0.2
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_encoder_filters                  : [320, 160]
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_epochs                           : 1000
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_file_name_decoder                : decoder_model
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_file_name_encoder                : encoder_model
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_initializer_deviation            : 0.125
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_initializer_mean                 : 0.0
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_intermediary_activation_alpha    : 0.05
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_intermediary_activation_function : swish
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_last_layer_activation            : sigmoid
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_latent_dimension                 : 64
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_loss                             : mse
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_mean_distribution                : 0.5
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_path_output_models               : models_saved/
+2025-11-14 19:31:55,530	***		denoising_diffusion_autoencoder_stander_deviation                : 0.125
+2025-11-14 19:31:55,530	***		denoising_diffusion_ema                                          : 0.999
+2025-11-14 19:31:55,530	***		denoising_diffusion_gaussian_beta_end                            : 0.02
+2025-11-14 19:31:55,530	***		denoising_diffusion_gaussian_beta_start                          : 0.0001
+2025-11-14 19:31:55,530	***		denoising_diffusion_gaussian_clip_max                            : 1.0
+2025-11-14 19:31:55,530	***		denoising_diffusion_gaussian_clip_min                            : -1.0
+2025-11-14 19:31:55,530	***		denoising_diffusion_gaussian_time_steps                          : 1000
+2025-11-14 19:31:55,530	***		denoising_diffusion_latent_dimension                             : 64
+2025-11-14 19:31:55,530	***		denoising_diffusion_margin                                       : 0.5
+2025-11-14 19:31:55,530	***		denoising_diffusion_time_steps                                   : 1000
+2025-11-14 19:31:55,530	***		denoising_diffusion_unet_attention_mode                          : [False, True, True]
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_batch_size                              : 128
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_channels_per_level                      : [1, 2, 4]
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_epochs                                  : 1000
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_group_normalization                     : 1
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_intermediary_activation                 : swish
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_intermediary_activation_alpha           : 0.05
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_last_layer_activation                   : linear
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_num_embedding_channels                  : 1
+2025-11-14 19:31:55,531	***		denoising_diffusion_unet_num_residual_blocks                     : 2
+2025-11-14 19:31:55,531	***		early_stop_baseline                                              : None
+2025-11-14 19:31:55,531	***		early_stop_min_delta                                             : 0.0001
+2025-11-14 19:31:55,531	***		early_stop_mode                                                  : auto
+2025-11-14 19:31:55,531	***		early_stop_monitor                                               : val_loss
+2025-11-14 19:31:55,531	***		early_stop_patience                                              : 50
+2025-11-14 19:31:55,531	***		early_stop_restore_best_weights                                  : None
+2025-11-14 19:31:55,531	***		early_stop_start_from_epoch                                      : 100
+2025-11-14 19:31:55,531	***		evaluation                                                       : ['TrAs', 'TsAr']
+2025-11-14 19:31:55,531	***		gaussian_process_kernel                                          : None
+2025-11-14 19:31:55,531	***		gaussian_process_max_iterations                                  : 20
+2025-11-14 19:31:55,531	***		gaussian_process_optimizer                                       : fmin_l_bfgs_b
+2025-11-14 19:31:55,531	***		gradient_boosting_criterion                                      : friedman_mse
+2025-11-14 19:31:55,531	***		gradient_boosting_learning_rate                                  : 0.1
+2025-11-14 19:31:55,531	***		gradient_boosting_loss                                           : log_loss
+2025-11-14 19:31:55,531	***		gradient_boosting_number_estimators                              : 100
+2025-11-14 19:31:55,531	***		gradient_boosting_subsample                                      : 1.0
+2025-11-14 19:31:55,531	***		k_means_init                                                     : k-means++
+2025-11-14 19:31:55,531	***		k_means_max_iterations                                           : 300
+2025-11-14 19:31:55,531	***		k_means_number_clusters                                          : 2
+2025-11-14 19:31:55,531	***		k_means_random_state                                             : None
+2025-11-14 19:31:55,531	***		k_means_tolerance                                                : 0.0001
+2025-11-14 19:31:55,531	***		knn_algorithm                                                    : auto
+2025-11-14 19:31:55,531	***		knn_leaf_size                                                    : 30
+2025-11-14 19:31:55,531	***		knn_metric                                                       : minkowski
+2025-11-14 19:31:55,531	***		knn_number_neighbors                                             : 5
+2025-11-14 19:31:55,531	***		knn_weights                                                      : uniform
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_activation_output_encoder           : sigmoid
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_batch_size_create_embedding         : 128
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_batch_size_training                 : 64
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_decoder_filters                     : [160, 320]
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_dropout_decay_rate_decoder          : 0.4
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_dropout_decay_rate_encoder          : 0.2
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_encoder_filters                     : [320, 160]
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_epochs                              : 1000
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_file_name_decoder                   : decoder_model
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_file_name_encoder                   : encoder_model
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_initializer_deviation               : 0.125
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_initializer_mean                    : 0.0
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_intermediary_activation_alpha       : 0.05
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_intermediary_activation_function    : swish
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_last_layer_activation               : sigmoid
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_latent_dimension                    : 64
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_loss                                : mse
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_mean_distribution                   : 0.5
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_path_output_models                  : models_saved/
+2025-11-14 19:31:55,532	***		latent_diffusion_autoencoder_stander_deviation                   : 0.125
+2025-11-14 19:31:55,532	***		latent_diffusion_ema                                             : 0.999
+2025-11-14 19:31:55,532	***		latent_diffusion_gaussian_beta_end                               : 0.02
+2025-11-14 19:31:55,532	***		latent_diffusion_gaussian_beta_start                             : 0.0001
+2025-11-14 19:31:55,532	***		latent_diffusion_gaussian_clip_max                               : 1.0
+2025-11-14 19:31:55,532	***		latent_diffusion_gaussian_clip_min                               : -1.0
+2025-11-14 19:31:55,532	***		latent_diffusion_gaussian_time_steps                             : 1000
+2025-11-14 19:31:55,532	***		latent_diffusion_latent_dimension                                : 64
+2025-11-14 19:31:55,532	***		latent_diffusion_margin                                          : 0.5
+2025-11-14 19:31:55,532	***		latent_diffusion_time_steps                                      : 1000
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_attention_mode                             : [False, True, True]
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_batch_size                                 : 128
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_channels_per_level                         : [1, 2, 4]
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_epochs                                     : 1000
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_group_normalization                        : 1
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_intermediary_activation                    : swish
+2025-11-14 19:31:55,532	***		latent_diffusion_unet_intermediary_activation_alpha              : 0.05
+2025-11-14 19:31:55,533	***		latent_diffusion_unet_last_layer_activation                      : linear
+2025-11-14 19:31:55,533	***		latent_diffusion_unet_num_embedding_channels                     : 1
+2025-11-14 19:31:55,533	***		latent_diffusion_unet_num_residual_blocks                        : 2
+2025-11-14 19:31:55,533	***		linear_regression_copy_X                                         : True
+2025-11-14 19:31:55,533	***		linear_regression_fit_intercept                                  : True
+2025-11-14 19:31:55,533	***		linear_regression_normalize                                      : False
+2025-11-14 19:31:55,533	***		linear_regression_number_jobs                                    : None
+2025-11-14 19:31:55,533	***		model_type                                                       : adversarial
+2025-11-14 19:31:55,533	***		naive_bayes_priors                                               : None
+2025-11-14 19:31:55,533	***		naive_bayes_variation_smoothing                                  : 1e-09
+2025-11-14 19:31:55,533	***		number_k_folds                                                   : 5
+2025-11-14 19:31:55,533	***		number_samples_per_class                                         : {'classes': {0: 2000, 1: 2000}, 'number_classes': 2}
+2025-11-14 19:31:55,533	***		output_dir                                                       : outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1
+2025-11-14 19:31:55,533	***		path_confusion_matrix                                            : confusion_matrix
+2025-11-14 19:31:55,533	***		path_curve_loss                                                  : training_curve
+2025-11-14 19:31:55,533	***		perceptron_dropout_decay_rate                                    : 0.2
+2025-11-14 19:31:55,533	***		perceptron_last_layer_activation                                 : sigmoid
+2025-11-14 19:31:55,533	***		perceptron_layer_activation                                      : relu
+2025-11-14 19:31:55,533	***		perceptron_layers_settings                                       : [512, 256, 256]
+2025-11-14 19:31:55,533	***		perceptron_number_epochs                                         : 1
+2025-11-14 19:31:55,533	***		perceptron_training_algorithm                                    : Adam
+2025-11-14 19:31:55,533	***		perceptron_training_loss                                         : binary_crossentropy
+2025-11-14 19:31:55,533	***		perceptron_training_metric                                       : ['accuracy']
+2025-11-14 19:31:55,533	***		quadratic_discriminant_analysis_priors                           : None
+2025-11-14 19:31:55,533	***		quadratic_discriminant_analysis_regularization                   : 0.0
+2025-11-14 19:31:55,533	***		quadratic_discriminant_analysis_threshold                        : 0.0001
+2025-11-14 19:31:55,533	***		random_forest_max_depth                                          : None
+2025-11-14 19:31:55,534	***		random_forest_max_leaf_nodes                                     : None
+2025-11-14 19:31:55,534	***		random_forest_number_estimators                                  : 100
+2025-11-14 19:31:55,534	***		random_noise_level                                               : 0.1
+2025-11-14 19:31:55,534	***		random_noise_type_noise                                          : uniform
+2025-11-14 19:31:55,534	***		save_data                                                        : True
+2025-11-14 19:31:55,534	***		save_models                                                      : False
+2025-11-14 19:31:55,534	***		smote_k_neighbors                                                : 2
+2025-11-14 19:31:55,534	***		smote_random_state                                               : None
+2025-11-14 19:31:55,534	***		smote_sampling_strategy                                          : auto
+2025-11-14 19:31:55,534	***		spectral_affinity                                                : rbf
+2025-11-14 19:31:55,534	***		spectral_assign_labels                                           : kmeans
+2025-11-14 19:31:55,534	***		spectral_eigen_solver                                            : None
+2025-11-14 19:31:55,534	***		spectral_number_clusters                                         : 8
+2025-11-14 19:31:55,534	***		spectral_random_state                                            : None
+2025-11-14 19:31:55,534	***		stochastic_gradient_descent_alpha                                : 0.0001
+2025-11-14 19:31:55,534	***		stochastic_gradient_descent_loss                                 : hinge
+2025-11-14 19:31:55,534	***		stochastic_gradient_descent_max_iterations                       : 1000
+2025-11-14 19:31:55,534	***		stochastic_gradient_descent_penalty                              : l2
+2025-11-14 19:31:55,534	***		stochastic_gradient_descent_tolerance                            : 0.001
+2025-11-14 19:31:55,534	***		support_vector_machine_gamma                                     : scale
+2025-11-14 19:31:55,534	***		support_vector_machine_kernel                                    : rbf
+2025-11-14 19:31:55,534	***		support_vector_machine_kernel_degree                             : 3
+2025-11-14 19:31:55,534	***		support_vector_machine_regularization                            : 1.0
+2025-11-14 19:31:55,534	***		use_early_stop                                                   : False
+2025-11-14 19:31:55,534	***		use_gpu                                                          : False
+2025-11-14 19:31:55,534	***		verbosity                                                        : 20
+2025-11-14 19:31:55,534	***	
+2025-11-14 19:31:55,535	***	Attempting to load CSV from path: Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:31:55,602	***	CSV loaded successfully with shape: (20340, 137)
+2025-11-14 19:31:55,602	***	CSV file is not empty, proceeding with processing.
+2025-11-14 19:31:55,602	***	Replacing infinite values and removing missing data.
+2025-11-14 19:31:55,609	***	Data after cleaning has shape: (20340, 137)
+2025-11-14 19:31:55,609	***	Original CSV header stored.
+2025-11-14 19:31:55,609	***	Label column automatically set to: class
+2025-11-14 19:31:55,609	***	Separating the label column: class
+2025-11-14 19:31:55,615	***	Labels separated, remaining data shape: (20340, 136)
+2025-11-14 19:31:55,617	***	Data loaded and header updated. Final data shape: (20340, 136)
+2025-11-14 19:31:55,626	***	Data normalized between 0 and 1.
+2025-11-14 19:31:55,626	***	StratifiedKFold initialization started. Number of splits: 5, Shuffle: True, Random state: 42.
+2025-11-14 19:31:55,633	***	Data loaded for stratification. Total samples: 20340
+2025-11-14 19:31:55,635	***	Processing fold 1 of 5.
+2025-11-14 19:31:55,635	***	Training   indices (size 16272): [    0     1     2 ... 20336 20338 20339]
+2025-11-14 19:31:55,635	***	Evaluating indices (size 4068): [    3     5     7 ... 20331 20333 20337]
+2025-11-14 19:31:56,275	***	Fold 1 processed successfully in 0.64 seconds.
+2025-11-14 19:31:56,275	***	Processing fold 2 of 5.
+2025-11-14 19:31:56,275	***	Training   indices (size 16272): [    1     3     4 ... 20336 20337 20338]
+2025-11-14 19:31:56,275	***	Evaluating indices (size 4068): [    0     2    16 ... 20315 20321 20339]
+2025-11-14 19:31:56,903	***	Fold 2 processed successfully in 0.63 seconds.
+2025-11-14 19:31:56,904	***	Processing fold 3 of 5.
+2025-11-14 19:31:56,904	***	Training   indices (size 16272): [    0     1     2 ... 20337 20338 20339]
+2025-11-14 19:31:56,904	***	Evaluating indices (size 4068): [    4    11    12 ... 20330 20332 20334]
+2025-11-14 19:31:57,534	***	Fold 3 processed successfully in 0.63 seconds.
+2025-11-14 19:31:57,534	***	Processing fold 4 of 5.
+2025-11-14 19:31:57,534	***	Training   indices (size 16272): [    0     1     2 ... 20336 20337 20339]
+2025-11-14 19:31:57,534	***	Evaluating indices (size 4068): [    9    14    19 ... 20327 20335 20338]
+2025-11-14 19:31:58,164	***	Fold 4 processed successfully in 0.63 seconds.
+2025-11-14 19:31:58,164	***	Processing fold 5 of 5.
+2025-11-14 19:31:58,164	***	Training   indices (size 16272): [    0     2     3 ... 20337 20338 20339]
+2025-11-14 19:31:58,164	***	Evaluating indices (size 4068): [    1     6     8 ... 20323 20329 20336]
+2025-11-14 19:31:58,796	***	Fold 5 processed successfully in 0.63 seconds.
+2025-11-14 19:31:58,796	***	All 5 folds successfully created in 3.17 seconds.
+2025-11-14 19:31:58,796	***	Starting experiment runs across 5 folds.
+2025-11-14 19:31:58,796	***	
+2025-11-14 19:31:58,796	***	Running experiment for fold 1.
+2025-11-14 19:31:58,796	***	Fold 1 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:31:58,796	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:31:58,798	***	Starting model creation and prediction process.
+2025-11-14 19:31:58,798	***	Number of real samples: 16272
+2025-11-14 19:31:58,798	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:31:58,805	***	CPU info collected.
+2025-11-14 19:31:59,073	***	Training started...
+2025-11-14 19:31:59,074	***	Epoch 1/10 started...
+2025-11-14 19:32:01,180	***	Epoch 1 ended. Time: 2.1056s, Avg batch time: 0.0081s, Expected finish: 2025-11-14 19:32:20
+2025-11-14 19:32:01,181	***	Epoch 2/10 started...
+2025-11-14 19:32:01,736	***	Epoch 2 ended. Time: 0.5550s, Avg batch time: 0.0021s, Expected finish: 2025-11-14 19:32:12
+2025-11-14 19:32:01,736	***	Epoch 3/10 started...
+2025-11-14 19:32:02,265	***	Epoch 3 ended. Time: 0.5279s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:09
+2025-11-14 19:32:02,265	***	Epoch 4/10 started...
+2025-11-14 19:32:02,796	***	Epoch 4 ended. Time: 0.5312s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:08
+2025-11-14 19:32:02,797	***	Epoch 5/10 started...
+2025-11-14 19:32:03,323	***	Epoch 5 ended. Time: 0.5262s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:07
+2025-11-14 19:32:03,324	***	Epoch 6/10 started...
+2025-11-14 19:32:03,865	***	Epoch 6 ended. Time: 0.5404s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:07
+2025-11-14 19:32:03,865	***	Epoch 7/10 started...
+2025-11-14 19:32:04,398	***	Epoch 7 ended. Time: 0.5321s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:06
+2025-11-14 19:32:04,398	***	Epoch 8/10 started...
+2025-11-14 19:32:04,940	***	Epoch 8 ended. Time: 0.5414s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:06
+2025-11-14 19:32:04,940	***	Epoch 9/10 started...
+2025-11-14 19:32:05,471	***	Epoch 9 ended. Time: 0.5306s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:06
+2025-11-14 19:32:05,472	***	Epoch 10/10 started...
+2025-11-14 19:32:06,007	***	Epoch 10 ended. Time: 0.5346s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:06
+2025-11-14 19:32:06,007	***	Training ended. Total time: 6.9336s, Avg epoch time: 0.6925s
+2025-11-14 19:32:06,007	***	Training logs saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_0_fold.json
+2025-11-14 19:32:06,009	***	Model training completed.
+2025-11-14 19:32:06,009	***			number_samples_per_class
+2025-11-14 19:32:06,010	***	Generating data using Adversarial algorithm.
+2025-11-14 19:32:06,307	***	Data generation completed successfully for model type: adversarial
+2025-11-14 19:32:06,307	***	Starting to save CSV for fold number 0.
+2025-11-14 19:32:06,307	***	Total number of samples to be saved: 4068
+2025-11-14 19:32:06,307	***	Processing 2040 samples for label class 0.
+2025-11-14 19:32:06,307	***	Processing 2028 samples for label class 1.
+2025-11-14 19:32:06,307	***	Combining labels and data into a DataFrame.
+2025-11-14 19:32:06,413	***	DataFrame created successfully with 4068 rows and 137 columns.
+2025-11-14 19:32:06,414	***	Reverting normalization using stored scaler parameters.
+2025-11-14 19:32:06,424	***	Normalization successfully reverted.
+2025-11-14 19:32:06,576	***	Data successfully saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated/DataOutput_K_fold_0_adversarial.txt.
+2025-11-14 19:32:06,576	***	CSV save operation for fold 0 completed.
+2025-11-14 19:32:06,576	***	Entered the save_data_generated method.
+2025-11-14 19:32:06,576	***	Attempting to save generated data.
+2025-11-14 19:32:06,577	***	Generated data saved successfully.
+2025-11-14 19:32:06,577	***			Model creation and prediction completed for fold 1.
+2025-11-14 19:32:06,577	***	
+2025-11-14 19:32:06,577	***	
+2025-11-14 19:32:06,577	***	 starting evaluation for fold 1.
+2025-11-14 19:32:06,577	***	
+2025-11-14 19:32:06,577	***	
+2025-11-14 19:32:06,577	***	
+2025-11-14 19:32:06,577	***	#################################################################################
+2025-11-14 19:32:06,577	***		TR-TS: train on real, test on synthetic
+2025-11-14 19:32:06,577	***			TR-TS: Total number of samples to be saved: 4068
+2025-11-14 19:32:06,577	***			TR-TS: Processing 2040 samples for label class 0.
+2025-11-14 19:32:06,578	***			TR-TS: Processing 2028 samples for label class 1.
+2025-11-14 19:32:06,578	***	
+2025-11-14 19:32:06,578	***	Starting Training Classifiers
+2025-11-14 19:32:06,578	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:06,579	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:06,822	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:06,822	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:06,822	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:06,980	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:06,980	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:06,981	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:06,982	***	Finished training KNN model.
+2025-11-14 19:32:06,982	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:06,982	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:06,999	***	Finished training DECISION TREE model.
+2025-11-14 19:32:06,999	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:06,999	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:07,001	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:07,001	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:07,002	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:07,555	***	Gradient Boosting model training completed.
+2025-11-14 19:32:07,555	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:07,555	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:07,593	***	Finished training the SGD model.
+2025-11-14 19:32:07,609	***	
+2025-11-14 19:32:07,609	***			TR-TS RandomForest
+2025-11-14 19:32:07,609	***				 Binary metrics
+2025-11-14 19:32:07,610	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:07,612	***					   Precision: 0.0
+2025-11-14 19:32:07,623	***					   Recall: 0.0
+2025-11-14 19:32:07,651	***					   Specificity: 1.0
+2025-11-14 19:32:07,661	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:07,667	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:07,673	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:07,679	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:07,682	***					   TruePositive: 0
+2025-11-14 19:32:07,685	***					   FalsePositive: 0
+2025-11-14 19:32:07,688	***					   TrueNegative: 2040
+2025-11-14 19:32:07,691	***					   FalseNegative: 2028
+2025-11-14 19:32:07,972	***	
+2025-11-14 19:32:07,972	***			TR-TS SupportVectorMachine
+2025-11-14 19:32:07,972	***				 Binary metrics
+2025-11-14 19:32:07,973	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:07,975	***					   Precision: 0.0
+2025-11-14 19:32:07,985	***					   Recall: 0.0
+2025-11-14 19:32:08,011	***					   Specificity: 1.0
+2025-11-14 19:32:08,021	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,027	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,033	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,039	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,042	***					   TruePositive: 0
+2025-11-14 19:32:08,046	***					   FalsePositive: 0
+2025-11-14 19:32:08,049	***					   TrueNegative: 2040
+2025-11-14 19:32:08,051	***					   FalseNegative: 2028
+2025-11-14 19:32:08,243	***	
+2025-11-14 19:32:08,244	***			TR-TS KNN
+2025-11-14 19:32:08,244	***				 Binary metrics
+2025-11-14 19:32:08,245	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:08,247	***					   Precision: 0.0
+2025-11-14 19:32:08,258	***					   Recall: 0.0
+2025-11-14 19:32:08,285	***					   Specificity: 1.0
+2025-11-14 19:32:08,296	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,302	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,308	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,314	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,317	***					   TruePositive: 0
+2025-11-14 19:32:08,320	***					   FalsePositive: 0
+2025-11-14 19:32:08,323	***					   TrueNegative: 2040
+2025-11-14 19:32:08,326	***					   FalseNegative: 2028
+2025-11-14 19:32:08,327	***	
+2025-11-14 19:32:08,327	***			TR-TS DecisionTree
+2025-11-14 19:32:08,327	***				 Binary metrics
+2025-11-14 19:32:08,328	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:08,330	***					   Precision: 0.0
+2025-11-14 19:32:08,341	***					   Recall: 0.0
+2025-11-14 19:32:08,366	***					   Specificity: 1.0
+2025-11-14 19:32:08,377	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,383	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,389	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,396	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,399	***					   TruePositive: 0
+2025-11-14 19:32:08,402	***					   FalsePositive: 0
+2025-11-14 19:32:08,405	***					   TrueNegative: 2040
+2025-11-14 19:32:08,408	***					   FalseNegative: 2028
+2025-11-14 19:32:08,418	***	
+2025-11-14 19:32:08,418	***			TR-TS NaiveBayes
+2025-11-14 19:32:08,418	***				 Binary metrics
+2025-11-14 19:32:08,419	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:08,421	***					   Precision: 0.0
+2025-11-14 19:32:08,432	***					   Recall: 0.0
+2025-11-14 19:32:08,459	***					   Specificity: 1.0
+2025-11-14 19:32:08,470	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,476	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,483	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,489	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,492	***					   TruePositive: 0
+2025-11-14 19:32:08,495	***					   FalsePositive: 0
+2025-11-14 19:32:08,499	***					   TrueNegative: 2040
+2025-11-14 19:32:08,502	***					   FalseNegative: 2028
+2025-11-14 19:32:08,506	***	
+2025-11-14 19:32:08,506	***			TR-TS GradientBoosting
+2025-11-14 19:32:08,506	***				 Binary metrics
+2025-11-14 19:32:08,507	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:08,509	***					   Precision: 0.0
+2025-11-14 19:32:08,520	***					   Recall: 0.0
+2025-11-14 19:32:08,548	***					   Specificity: 1.0
+2025-11-14 19:32:08,559	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,565	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,571	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,577	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,580	***					   TruePositive: 0
+2025-11-14 19:32:08,583	***					   FalsePositive: 0
+2025-11-14 19:32:08,586	***					   TrueNegative: 2040
+2025-11-14 19:32:08,589	***					   FalseNegative: 2028
+2025-11-14 19:32:08,591	***	
+2025-11-14 19:32:08,591	***			TR-TS StochasticGradientDescent
+2025-11-14 19:32:08,592	***				 Binary metrics
+2025-11-14 19:32:08,592	***					   Accuracy: 0.5014749262536873
+2025-11-14 19:32:08,595	***					   Precision: 0.0
+2025-11-14 19:32:08,617	***					   Recall: 0.0
+2025-11-14 19:32:08,672	***					   Specificity: 1.0
+2025-11-14 19:32:08,685	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:08,692	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:08,698	***					   MeanSquareError: 0.49852507374631266
+2025-11-14 19:32:08,704	***					   MeanAbsoluteError: 0.49852507374631266
+2025-11-14 19:32:08,708	***					   TruePositive: 0
+2025-11-14 19:32:08,711	***					   FalsePositive: 0
+2025-11-14 19:32:08,714	***					   TrueNegative: 2040
+2025-11-14 19:32:08,717	***					   FalseNegative: 2028
+2025-11-14 19:32:08,718	***	
+2025-11-14 19:32:08,718	***	
+2025-11-14 19:32:08,718	***	
+2025-11-14 19:32:08,718	***	#################################################################################
+2025-11-14 19:32:08,718	***		TS-TR: train on synthetic, test on real
+2025-11-14 19:32:08,718	***			TS-TR: Total number of samples to be saved: 4068
+2025-11-14 19:32:08,718	***			TS-TR: Processing 2040 samples for label class 0.
+2025-11-14 19:32:08,718	***			TS-TR: Processing 2028 samples for label class 1.
+2025-11-14 19:32:08,719	***	
+2025-11-14 19:32:08,719	***	Starting Training Classifiers
+2025-11-14 19:32:08,719	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:08,721	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:08,884	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:08,884	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:08,886	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:08,970	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:08,970	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:08,972	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:08,973	***	Finished training KNN model.
+2025-11-14 19:32:08,973	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:08,975	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:08,979	***	Finished training DECISION TREE model.
+2025-11-14 19:32:08,979	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:08,980	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:08,983	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:08,983	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:08,984	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:09,223	***	Gradient Boosting model training completed.
+2025-11-14 19:32:09,223	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:09,225	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:09,252	***	Finished training the SGD model.
+2025-11-14 19:32:09,265	***	
+2025-11-14 19:32:09,265	***			TS-TR RandomForest
+2025-11-14 19:32:09,265	***				 Binary metrics
+2025-11-14 19:32:09,266	***					   Accuracy: 0.69960668633235
+2025-11-14 19:32:09,268	***					   Precision: 0.6269691241335854
+2025-11-14 19:32:09,283	***					   Recall: 0.9812623274161736
+2025-11-14 19:32:09,307	***					   F1Score: 0.7650903498654364
+2025-11-14 19:32:09,323	***					   Specificity: 0.4196078431372549
+2025-11-14 19:32:09,339	***					   FalsePositiveRate: 0.5803921568627451
+2025-11-14 19:32:09,354	***					   TrueNegativeRate: 0.4196078431372549
+2025-11-14 19:32:09,360	***					   MeanSquareError: 0.30039331366764993
+2025-11-14 19:32:09,361	***					   MeanAbsoluteError: 0.30039331366764993
+2025-11-14 19:32:09,369	***					   TruePositive: 1990
+2025-11-14 19:32:09,377	***					   FalsePositive: 1184
+2025-11-14 19:32:09,385	***					   TrueNegative: 856
+2025-11-14 19:32:09,392	***					   FalseNegative: 38
+2025-11-14 19:32:09,512	***	
+2025-11-14 19:32:09,512	***			TS-TR SupportVectorMachine
+2025-11-14 19:32:09,512	***				 Binary metrics
+2025-11-14 19:32:09,513	***					   Accuracy: 0.5742379547689282
+2025-11-14 19:32:09,516	***					   Precision: 0.53948772678762
+2025-11-14 19:32:09,531	***					   Recall: 0.9970414201183432
+2025-11-14 19:32:09,558	***					   F1Score: 0.7001385041551246
+2025-11-14 19:32:09,574	***					   Specificity: 0.153921568627451
+2025-11-14 19:32:09,589	***					   FalsePositiveRate: 0.846078431372549
+2025-11-14 19:32:09,604	***					   TrueNegativeRate: 0.153921568627451
+2025-11-14 19:32:09,610	***					   MeanSquareError: 0.4257620452310718
+2025-11-14 19:32:09,611	***					   MeanAbsoluteError: 0.4257620452310718
+2025-11-14 19:32:09,618	***					   TruePositive: 2022
+2025-11-14 19:32:09,626	***					   FalsePositive: 1726
+2025-11-14 19:32:09,634	***					   TrueNegative: 314
+2025-11-14 19:32:09,641	***					   FalseNegative: 6
+2025-11-14 19:32:09,666	***	
+2025-11-14 19:32:09,667	***			TS-TR KNN
+2025-11-14 19:32:09,667	***				 Binary metrics
+2025-11-14 19:32:09,667	***					   Accuracy: 0.7354965585054081
+2025-11-14 19:32:09,670	***					   Precision: 0.6850699844479005
+2025-11-14 19:32:09,685	***					   Recall: 0.868836291913215
+2025-11-14 19:32:09,709	***					   F1Score: 0.7660869565217392
+2025-11-14 19:32:09,724	***					   Specificity: 0.6029411764705882
+2025-11-14 19:32:09,740	***					   FalsePositiveRate: 0.39705882352941174
+2025-11-14 19:32:09,756	***					   TrueNegativeRate: 0.6029411764705882
+2025-11-14 19:32:09,762	***					   MeanSquareError: 0.26450344149459193
+2025-11-14 19:32:09,763	***					   MeanAbsoluteError: 0.26450344149459193
+2025-11-14 19:32:09,771	***					   TruePositive: 1762
+2025-11-14 19:32:09,779	***					   FalsePositive: 810
+2025-11-14 19:32:09,787	***					   TrueNegative: 1230
+2025-11-14 19:32:09,795	***					   FalseNegative: 266
+2025-11-14 19:32:09,796	***	
+2025-11-14 19:32:09,796	***			TS-TR DecisionTree
+2025-11-14 19:32:09,796	***				 Binary metrics
+2025-11-14 19:32:09,797	***					   Accuracy: 0.6728121927236972
+2025-11-14 19:32:09,799	***					   Precision: 0.6085331672376206
+2025-11-14 19:32:09,815	***					   Recall: 0.9635108481262328
+2025-11-14 19:32:09,840	***					   F1Score: 0.7459438824203092
+2025-11-14 19:32:09,855	***					   Specificity: 0.38382352941176473
+2025-11-14 19:32:09,870	***					   FalsePositiveRate: 0.6161764705882353
+2025-11-14 19:32:09,885	***					   TrueNegativeRate: 0.38382352941176473
+2025-11-14 19:32:09,891	***					   MeanSquareError: 0.32718780727630287
+2025-11-14 19:32:09,892	***					   MeanAbsoluteError: 0.32718780727630287
+2025-11-14 19:32:09,900	***					   TruePositive: 1954
+2025-11-14 19:32:09,907	***					   FalsePositive: 1257
+2025-11-14 19:32:09,915	***					   TrueNegative: 783
+2025-11-14 19:32:09,922	***					   FalseNegative: 74
+2025-11-14 19:32:09,925	***	
+2025-11-14 19:32:09,925	***			TS-TR NaiveBayes
+2025-11-14 19:32:09,925	***				 Binary metrics
+2025-11-14 19:32:09,925	***					   Accuracy: 0.5678466076696165
+2025-11-14 19:32:09,928	***					   Precision: 0.53586609989373
+2025-11-14 19:32:09,944	***					   Recall: 0.9945759368836292
+2025-11-14 19:32:09,969	***					   F1Score: 0.696477900552486
+2025-11-14 19:32:09,985	***					   Specificity: 0.14362745098039215
+2025-11-14 19:32:10,001	***					   FalsePositiveRate: 0.8563725490196078
+2025-11-14 19:32:10,016	***					   TrueNegativeRate: 0.14362745098039215
+2025-11-14 19:32:10,023	***					   MeanSquareError: 0.43215339233038347
+2025-11-14 19:32:10,024	***					   MeanAbsoluteError: 0.43215339233038347
+2025-11-14 19:32:10,032	***					   TruePositive: 2017
+2025-11-14 19:32:10,040	***					   FalsePositive: 1747
+2025-11-14 19:32:10,048	***					   TrueNegative: 293
+2025-11-14 19:32:10,056	***					   FalseNegative: 11
+2025-11-14 19:32:10,063	***	
+2025-11-14 19:32:10,064	***			TS-TR GradientBoosting
+2025-11-14 19:32:10,064	***				 Binary metrics
+2025-11-14 19:32:10,064	***					   Accuracy: 0.6696165191740413
+2025-11-14 19:32:10,066	***					   Precision: 0.6041412911084044
+2025-11-14 19:32:10,082	***					   Recall: 0.9783037475345168
+2025-11-14 19:32:10,106	***					   F1Score: 0.746987951807229
+2025-11-14 19:32:10,121	***					   Specificity: 0.3627450980392157
+2025-11-14 19:32:10,137	***					   FalsePositiveRate: 0.6372549019607843
+2025-11-14 19:32:10,153	***					   TrueNegativeRate: 0.3627450980392157
+2025-11-14 19:32:10,159	***					   MeanSquareError: 0.3303834808259587
+2025-11-14 19:32:10,160	***					   MeanAbsoluteError: 0.3303834808259587
+2025-11-14 19:32:10,168	***					   TruePositive: 1984
+2025-11-14 19:32:10,176	***					   FalsePositive: 1300
+2025-11-14 19:32:10,184	***					   TrueNegative: 740
+2025-11-14 19:32:10,191	***					   FalseNegative: 44
+2025-11-14 19:32:10,192	***	
+2025-11-14 19:32:10,192	***			TS-TR StochasticGradientDescent
+2025-11-14 19:32:10,192	***				 Binary metrics
+2025-11-14 19:32:10,193	***					   Accuracy: 0.7074729596853491
+2025-11-14 19:32:10,196	***					   Precision: 0.6503948312993539
+2025-11-14 19:32:10,228	***					   Recall: 0.893491124260355
+2025-11-14 19:32:10,277	***					   F1Score: 0.7528043207312006
+2025-11-14 19:32:10,293	***					   Specificity: 0.5225490196078432
+2025-11-14 19:32:10,309	***					   FalsePositiveRate: 0.4774509803921569
+2025-11-14 19:32:10,324	***					   TrueNegativeRate: 0.5225490196078432
+2025-11-14 19:32:10,330	***					   MeanSquareError: 0.29252704031465093
+2025-11-14 19:32:10,331	***					   MeanAbsoluteError: 0.29252704031465093
+2025-11-14 19:32:10,339	***					   TruePositive: 1812
+2025-11-14 19:32:10,347	***					   FalsePositive: 974
+2025-11-14 19:32:10,356	***					   TrueNegative: 1066
+2025-11-14 19:32:10,364	***					   FalseNegative: 216
+2025-11-14 19:32:10,365	***	x_real_eva size:2212992 shape: 16272, 136
+2025-11-14 19:32:10,366	***	x_synt size:553248 shape: 4068, 136
+2025-11-14 19:32:10,366	***				 Distance metrics
+2025-11-14 19:32:11,179	***					   EuclideanDistance: 3.751755981269632
+2025-11-14 19:32:11,183	***					   HellingerDistance: 172.08573444652524
+2025-11-14 19:32:11,190	***					   ManhattanDistance: [1.000e+00 0.000e+00 0.000e+00 2.000e+00 3.000e+00 5.400e+01 0.000e+00
+ 4.600e+01 1.000e+00 0.000e+00 2.500e+01 0.000e+00 1.700e+01 3.600e+01
+ 7.200e+01 3.000e+00 2.367e+03 1.000e+01 1.721e+03 2.870e+02 2.000e+00
+ 1.665e+03 2.420e+02 2.364e+03 1.329e+03 2.530e+02 1.341e+03 1.150e+02
+ 1.390e+02 2.301e+03 1.715e+03 1.400e+02 1.260e+02 3.000e+01 2.670e+02
+ 5.650e+02 2.468e+03 4.070e+02 4.420e+02 4.480e+02 1.289e+03 4.390e+02
+ 2.140e+02 4.790e+02 4.810e+02 5.240e+02 1.130e+03 3.400e+01 3.700e+01
+ 4.600e+01 5.000e+00 0.000e+00 0.000e+00 8.000e+00 0.000e+00 0.000e+00
+ 1.030e+02 1.000e+00 3.164e+03 1.720e+03 3.020e+02 3.400e+01 1.485e+03
+ 2.000e+02 0.000e+00 1.000e+00 3.770e+02 3.632e+03 4.100e+01 7.000e+00
+ 2.100e+02 9.800e+01 3.110e+02 2.324e+03 1.000e+00 5.600e+01 9.000e+00
+ 6.000e+00 7.300e+01 1.150e+02 2.300e+01 1.150e+02 4.800e+01 1.234e+03
+ 2.208e+03 2.201e+03 3.120e+02 3.160e+02 1.794e+03 1.456e+03 6.110e+02
+ 1.555e+03 3.000e+01 2.000e+00 2.000e+00 2.000e+00 1.000e+00 2.000e+00
+ 1.000e+00 1.300e+01 7.000e+00 9.200e+01 8.000e+00 0.000e+00 5.500e+02
+ 9.000e+01 4.000e+00 2.000e+00 2.000e+00 2.700e+01 0.000e+00 1.000e+00
+ 2.670e+02 2.530e+02 9.610e+02 9.080e+02 3.400e+01 1.000e+00 7.900e+01
+ 4.000e+00 7.860e+02 1.900e+01 4.000e+01 0.000e+00 1.800e+01 2.000e+01
+ 7.000e+00 1.700e+01 1.400e+01 6.000e+00 1.808e+03 1.210e+03 2.000e+00
+ 8.100e+01 4.000e+00 1.900e+01]
+2025-11-14 19:32:11,208	***					   HammingDistance: 3.2021518166090015
+2025-11-14 19:32:11,240	***					   JaccardDistance: 0.6467975539365876
+2025-11-14 19:32:11,241	***	Fold 1 experiment completed in 12.44 seconds.
+2025-11-14 19:32:11,241	***	------
+
+
+2025-11-14 19:32:11,241	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:11,245	***	
+2025-11-14 19:32:11,245	***	Running experiment for fold 2.
+2025-11-14 19:32:11,245	***	Fold 2 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:32:11,245	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:32:11,246	***	Starting model creation and prediction process.
+2025-11-14 19:32:11,246	***	Number of real samples: 16272
+2025-11-14 19:32:11,246	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:32:11,252	***	CPU info collected.
+2025-11-14 19:32:11,501	***	Training started...
+2025-11-14 19:32:11,502	***	Epoch 1/10 started...
+2025-11-14 19:32:13,546	***	Epoch 1 ended. Time: 2.0443s, Avg batch time: 0.0079s, Expected finish: 2025-11-14 19:32:31
+2025-11-14 19:32:13,547	***	Epoch 2/10 started...
+2025-11-14 19:32:14,078	***	Epoch 2 ended. Time: 0.5312s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:24
+2025-11-14 19:32:14,079	***	Epoch 3/10 started...
+2025-11-14 19:32:14,616	***	Epoch 3 ended. Time: 0.5365s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:21
+2025-11-14 19:32:14,616	***	Epoch 4/10 started...
+2025-11-14 19:32:15,149	***	Epoch 4 ended. Time: 0.5328s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:20
+2025-11-14 19:32:15,150	***	Epoch 5/10 started...
+2025-11-14 19:32:15,685	***	Epoch 5 ended. Time: 0.5352s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:19
+2025-11-14 19:32:15,686	***	Epoch 6/10 started...
+2025-11-14 19:32:16,225	***	Epoch 6 ended. Time: 0.5392s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:19
+2025-11-14 19:32:16,226	***	Epoch 7/10 started...
+2025-11-14 19:32:16,751	***	Epoch 7 ended. Time: 0.5251s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:18
+2025-11-14 19:32:16,752	***	Epoch 8/10 started...
+2025-11-14 19:32:17,285	***	Epoch 8 ended. Time: 0.5328s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:18
+2025-11-14 19:32:17,285	***	Epoch 9/10 started...
+2025-11-14 19:32:17,825	***	Epoch 9 ended. Time: 0.5398s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:18
+2025-11-14 19:32:17,826	***	Epoch 10/10 started...
+2025-11-14 19:32:18,353	***	Epoch 10 ended. Time: 0.5277s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:18
+2025-11-14 19:32:18,354	***	Training ended. Total time: 6.8524s, Avg epoch time: 0.6845s
+2025-11-14 19:32:18,360	***	Training logs saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_1_fold.json
+2025-11-14 19:32:18,362	***	Model training completed.
+2025-11-14 19:32:18,362	***			number_samples_per_class
+2025-11-14 19:32:18,362	***	Generating data using Adversarial algorithm.
+2025-11-14 19:32:18,639	***	Data generation completed successfully for model type: adversarial
+2025-11-14 19:32:18,639	***	Starting to save CSV for fold number 1.
+2025-11-14 19:32:18,640	***	Total number of samples to be saved: 4068
+2025-11-14 19:32:18,640	***	Processing 2022 samples for label class 0.
+2025-11-14 19:32:18,640	***	Processing 2046 samples for label class 1.
+2025-11-14 19:32:18,640	***	Combining labels and data into a DataFrame.
+2025-11-14 19:32:18,743	***	DataFrame created successfully with 4068 rows and 137 columns.
+2025-11-14 19:32:18,743	***	Reverting normalization using stored scaler parameters.
+2025-11-14 19:32:18,747	***	Normalization successfully reverted.
+2025-11-14 19:32:18,899	***	Data successfully saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated/DataOutput_K_fold_1_adversarial.txt.
+2025-11-14 19:32:18,899	***	CSV save operation for fold 1 completed.
+2025-11-14 19:32:18,900	***	Entered the save_data_generated method.
+2025-11-14 19:32:18,900	***	Attempting to save generated data.
+2025-11-14 19:32:18,900	***	Generated data saved successfully.
+2025-11-14 19:32:18,900	***			Model creation and prediction completed for fold 2.
+2025-11-14 19:32:18,900	***	
+2025-11-14 19:32:18,901	***	
+2025-11-14 19:32:18,901	***	 starting evaluation for fold 2.
+2025-11-14 19:32:18,901	***	
+2025-11-14 19:32:18,901	***	
+2025-11-14 19:32:18,901	***	
+2025-11-14 19:32:18,901	***	#################################################################################
+2025-11-14 19:32:18,901	***		TR-TS: train on real, test on synthetic
+2025-11-14 19:32:18,901	***			TR-TS: Total number of samples to be saved: 4068
+2025-11-14 19:32:18,901	***			TR-TS: Processing 2022 samples for label class 0.
+2025-11-14 19:32:18,901	***			TR-TS: Processing 2046 samples for label class 1.
+2025-11-14 19:32:18,901	***	
+2025-11-14 19:32:18,901	***	Starting Training Classifiers
+2025-11-14 19:32:18,901	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:18,902	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:19,136	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:19,136	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:19,136	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:19,303	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:19,304	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:19,304	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:19,305	***	Finished training KNN model.
+2025-11-14 19:32:19,305	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:19,305	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:19,323	***	Finished training DECISION TREE model.
+2025-11-14 19:32:19,323	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:19,323	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:19,326	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:19,326	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:19,326	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:19,877	***	Gradient Boosting model training completed.
+2025-11-14 19:32:19,877	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:19,878	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:19,913	***	Finished training the SGD model.
+2025-11-14 19:32:19,926	***	
+2025-11-14 19:32:19,926	***			TR-TS RandomForest
+2025-11-14 19:32:19,926	***				 Binary metrics
+2025-11-14 19:32:19,927	***					   Accuracy: 1.0
+2025-11-14 19:32:19,929	***					   Precision: 1.0
+2025-11-14 19:32:19,939	***					   Recall: 1.0
+2025-11-14 19:32:19,955	***					   F1Score: 1.0
+2025-11-14 19:32:19,965	***					   Specificity: 1.0
+2025-11-14 19:32:19,976	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:19,982	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:19,988	***					   MeanSquareError: 0.0
+2025-11-14 19:32:19,994	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:19,996	***					   TruePositive: 2046
+2025-11-14 19:32:19,999	***					   FalsePositive: 0
+2025-11-14 19:32:20,003	***					   TrueNegative: 2022
+2025-11-14 19:32:20,006	***					   FalseNegative: 0
+2025-11-14 19:32:20,250	***	
+2025-11-14 19:32:20,250	***			TR-TS SupportVectorMachine
+2025-11-14 19:32:20,250	***				 Binary metrics
+2025-11-14 19:32:20,251	***					   Accuracy: 1.0
+2025-11-14 19:32:20,253	***					   Precision: 1.0
+2025-11-14 19:32:20,263	***					   Recall: 1.0
+2025-11-14 19:32:20,279	***					   F1Score: 1.0
+2025-11-14 19:32:20,290	***					   Specificity: 1.0
+2025-11-14 19:32:20,301	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:20,307	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:20,313	***					   MeanSquareError: 0.0
+2025-11-14 19:32:20,319	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:20,322	***					   TruePositive: 2046
+2025-11-14 19:32:20,325	***					   FalsePositive: 0
+2025-11-14 19:32:20,328	***					   TrueNegative: 2022
+2025-11-14 19:32:20,331	***					   FalseNegative: 0
+2025-11-14 19:32:20,480	***	
+2025-11-14 19:32:20,480	***			TR-TS KNN
+2025-11-14 19:32:20,480	***				 Binary metrics
+2025-11-14 19:32:20,481	***					   Accuracy: 0.9923795476892822
+2025-11-14 19:32:20,483	***					   Precision: 0.9850746268656716
+2025-11-14 19:32:20,494	***					   Recall: 1.0
+2025-11-14 19:32:20,510	***					   F1Score: 0.9924812030075187
+2025-11-14 19:32:20,521	***					   Specificity: 0.9846686449060337
+2025-11-14 19:32:20,532	***					   FalsePositiveRate: 0.01533135509396637
+2025-11-14 19:32:20,538	***					   TrueNegativeRate: 0.9846686449060337
+2025-11-14 19:32:20,544	***					   MeanSquareError: 0.007620452310717798
+2025-11-14 19:32:20,551	***					   MeanAbsoluteError: 0.007620452310717798
+2025-11-14 19:32:20,554	***					   TruePositive: 2046
+2025-11-14 19:32:20,557	***					   FalsePositive: 31
+2025-11-14 19:32:20,560	***					   TrueNegative: 1991
+2025-11-14 19:32:20,563	***					   FalseNegative: 0
+2025-11-14 19:32:20,565	***	
+2025-11-14 19:32:20,565	***			TR-TS DecisionTree
+2025-11-14 19:32:20,565	***				 Binary metrics
+2025-11-14 19:32:20,566	***					   Accuracy: 0.9997541789577188
+2025-11-14 19:32:20,568	***					   Precision: 0.9995114802149487
+2025-11-14 19:32:20,579	***					   Recall: 1.0
+2025-11-14 19:32:20,595	***					   F1Score: 0.9997556804300024
+2025-11-14 19:32:20,606	***					   Specificity: 0.9995054401582592
+2025-11-14 19:32:20,616	***					   FalsePositiveRate: 0.0004945598417408506
+2025-11-14 19:32:20,622	***					   TrueNegativeRate: 0.9995054401582592
+2025-11-14 19:32:20,628	***					   MeanSquareError: 0.0002458210422812193
+2025-11-14 19:32:20,634	***					   MeanAbsoluteError: 0.0002458210422812193
+2025-11-14 19:32:20,637	***					   TruePositive: 2046
+2025-11-14 19:32:20,640	***					   FalsePositive: 1
+2025-11-14 19:32:20,643	***					   TrueNegative: 2021
+2025-11-14 19:32:20,646	***					   FalseNegative: 0
+2025-11-14 19:32:20,649	***	
+2025-11-14 19:32:20,649	***			TR-TS NaiveBayes
+2025-11-14 19:32:20,649	***				 Binary metrics
+2025-11-14 19:32:20,650	***					   Accuracy: 0.9992625368731564
+2025-11-14 19:32:20,652	***					   Precision: 0.9985358711566618
+2025-11-14 19:32:20,662	***					   Recall: 1.0
+2025-11-14 19:32:20,678	***					   F1Score: 0.9992673992673992
+2025-11-14 19:32:20,689	***					   Specificity: 0.9985163204747775
+2025-11-14 19:32:20,700	***					   FalsePositiveRate: 0.001483679525222552
+2025-11-14 19:32:20,706	***					   TrueNegativeRate: 0.9985163204747775
+2025-11-14 19:32:20,712	***					   MeanSquareError: 0.0007374631268436578
+2025-11-14 19:32:20,719	***					   MeanAbsoluteError: 0.0007374631268436578
+2025-11-14 19:32:20,722	***					   TruePositive: 2046
+2025-11-14 19:32:20,725	***					   FalsePositive: 3
+2025-11-14 19:32:20,728	***					   TrueNegative: 2019
+2025-11-14 19:32:20,731	***					   FalseNegative: 0
+2025-11-14 19:32:20,735	***	
+2025-11-14 19:32:20,735	***			TR-TS GradientBoosting
+2025-11-14 19:32:20,735	***				 Binary metrics
+2025-11-14 19:32:20,736	***					   Accuracy: 1.0
+2025-11-14 19:32:20,738	***					   Precision: 1.0
+2025-11-14 19:32:20,749	***					   Recall: 1.0
+2025-11-14 19:32:20,766	***					   F1Score: 1.0
+2025-11-14 19:32:20,777	***					   Specificity: 1.0
+2025-11-14 19:32:20,788	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:20,794	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:20,800	***					   MeanSquareError: 0.0
+2025-11-14 19:32:20,806	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:20,809	***					   TruePositive: 2046
+2025-11-14 19:32:20,812	***					   FalsePositive: 0
+2025-11-14 19:32:20,815	***					   TrueNegative: 2022
+2025-11-14 19:32:20,818	***					   FalseNegative: 0
+2025-11-14 19:32:20,819	***	
+2025-11-14 19:32:20,819	***			TR-TS StochasticGradientDescent
+2025-11-14 19:32:20,820	***				 Binary metrics
+2025-11-14 19:32:20,820	***					   Accuracy: 1.0
+2025-11-14 19:32:20,823	***					   Precision: 1.0
+2025-11-14 19:32:20,845	***					   Recall: 1.0
+2025-11-14 19:32:20,878	***					   F1Score: 1.0
+2025-11-14 19:32:20,900	***					   Specificity: 1.0
+2025-11-14 19:32:20,913	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:20,920	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:20,926	***					   MeanSquareError: 0.0
+2025-11-14 19:32:20,933	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:20,936	***					   TruePositive: 2046
+2025-11-14 19:32:20,939	***					   FalsePositive: 0
+2025-11-14 19:32:20,942	***					   TrueNegative: 2022
+2025-11-14 19:32:20,945	***					   FalseNegative: 0
+2025-11-14 19:32:20,946	***	
+2025-11-14 19:32:20,946	***	
+2025-11-14 19:32:20,946	***	
+2025-11-14 19:32:20,946	***	#################################################################################
+2025-11-14 19:32:20,946	***		TS-TR: train on synthetic, test on real
+2025-11-14 19:32:20,946	***			TS-TR: Total number of samples to be saved: 4068
+2025-11-14 19:32:20,946	***			TS-TR: Processing 2022 samples for label class 0.
+2025-11-14 19:32:20,946	***			TS-TR: Processing 2046 samples for label class 1.
+2025-11-14 19:32:20,947	***	
+2025-11-14 19:32:20,948	***	Starting Training Classifiers
+2025-11-14 19:32:20,948	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:20,949	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:21,080	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:21,080	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:21,081	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:21,090	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:21,090	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:21,091	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:21,092	***	Finished training KNN model.
+2025-11-14 19:32:21,092	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:21,093	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:21,095	***	Finished training DECISION TREE model.
+2025-11-14 19:32:21,095	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:21,096	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:21,099	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:21,099	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:21,100	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:21,295	***	Gradient Boosting model training completed.
+2025-11-14 19:32:21,295	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:21,297	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:21,302	***	Finished training the SGD model.
+2025-11-14 19:32:21,311	***	
+2025-11-14 19:32:21,311	***			TS-TR RandomForest
+2025-11-14 19:32:21,311	***				 Binary metrics
+2025-11-14 19:32:21,312	***					   Accuracy: 0.8335791543756146
+2025-11-14 19:32:21,314	***					   Precision: 0.9992706053975201
+2025-11-14 19:32:21,329	***					   Recall: 0.6695992179863147
+2025-11-14 19:32:21,351	***					   F1Score: 0.8018729880011706
+2025-11-14 19:32:21,366	***					   Specificity: 0.9995054401582592
+2025-11-14 19:32:21,380	***					   FalsePositiveRate: 0.0004945598417408506
+2025-11-14 19:32:21,395	***					   TrueNegativeRate: 0.9995054401582592
+2025-11-14 19:32:21,401	***					   MeanSquareError: 0.16642084562438544
+2025-11-14 19:32:21,402	***					   MeanAbsoluteError: 0.16642084562438544
+2025-11-14 19:32:21,409	***					   TruePositive: 1370
+2025-11-14 19:32:21,417	***					   FalsePositive: 1
+2025-11-14 19:32:21,425	***					   TrueNegative: 2021
+2025-11-14 19:32:21,432	***					   FalseNegative: 676
+2025-11-14 19:32:21,442	***	
+2025-11-14 19:32:21,443	***			TS-TR SupportVectorMachine
+2025-11-14 19:32:21,443	***				 Binary metrics
+2025-11-14 19:32:21,444	***					   Accuracy: 0.8394788593903638
+2025-11-14 19:32:21,446	***					   Precision: 0.997855611150822
+2025-11-14 19:32:21,461	***					   Recall: 0.6823069403714564
+2025-11-14 19:32:21,483	***					   F1Score: 0.8104499274310595
+2025-11-14 19:32:21,498	***					   Specificity: 0.9985163204747775
+2025-11-14 19:32:21,513	***					   FalsePositiveRate: 0.001483679525222552
+2025-11-14 19:32:21,529	***					   TrueNegativeRate: 0.9985163204747775
+2025-11-14 19:32:21,536	***					   MeanSquareError: 0.16052114060963618
+2025-11-14 19:32:21,537	***					   MeanAbsoluteError: 0.16052114060963618
+2025-11-14 19:32:21,545	***					   TruePositive: 1396
+2025-11-14 19:32:21,553	***					   FalsePositive: 3
+2025-11-14 19:32:21,561	***					   TrueNegative: 2019
+2025-11-14 19:32:21,569	***					   FalseNegative: 650
+2025-11-14 19:32:21,621	***	
+2025-11-14 19:32:21,621	***			TS-TR KNN
+2025-11-14 19:32:21,621	***				 Binary metrics
+2025-11-14 19:32:21,622	***					   Accuracy: 0.8743854473942969
+2025-11-14 19:32:21,624	***					   Precision: 0.9449275362318841
+2025-11-14 19:32:21,640	***					   Recall: 0.7966764418377321
+2025-11-14 19:32:21,664	***					   F1Score: 0.8644921771413417
+2025-11-14 19:32:21,680	***					   Specificity: 0.9530168150346192
+2025-11-14 19:32:21,697	***					   FalsePositiveRate: 0.046983184965380814
+2025-11-14 19:32:21,714	***					   TrueNegativeRate: 0.9530168150346192
+2025-11-14 19:32:21,721	***					   MeanSquareError: 0.12561455260570306
+2025-11-14 19:32:21,723	***					   MeanAbsoluteError: 0.12561455260570306
+2025-11-14 19:32:21,731	***					   TruePositive: 1630
+2025-11-14 19:32:21,740	***					   FalsePositive: 95
+2025-11-14 19:32:21,749	***					   TrueNegative: 1927
+2025-11-14 19:32:21,757	***					   FalseNegative: 416
+2025-11-14 19:32:21,758	***	
+2025-11-14 19:32:21,758	***			TS-TR DecisionTree
+2025-11-14 19:32:21,758	***				 Binary metrics
+2025-11-14 19:32:21,759	***					   Accuracy: 0.7354965585054081
+2025-11-14 19:32:21,762	***					   Precision: 0.9089376053962901
+2025-11-14 19:32:21,779	***					   Recall: 0.5268817204301075
+2025-11-14 19:32:21,804	***					   F1Score: 0.667079207920792
+2025-11-14 19:32:21,821	***					   Specificity: 0.9465875370919882
+2025-11-14 19:32:21,838	***					   FalsePositiveRate: 0.05341246290801187
+2025-11-14 19:32:21,855	***					   TrueNegativeRate: 0.9465875370919882
+2025-11-14 19:32:21,862	***					   MeanSquareError: 0.26450344149459193
+2025-11-14 19:32:21,863	***					   MeanAbsoluteError: 0.26450344149459193
+2025-11-14 19:32:21,871	***					   TruePositive: 1078
+2025-11-14 19:32:21,880	***					   FalsePositive: 108
+2025-11-14 19:32:21,888	***					   TrueNegative: 1914
+2025-11-14 19:32:21,896	***					   FalseNegative: 968
+2025-11-14 19:32:21,900	***	
+2025-11-14 19:32:21,900	***			TS-TR NaiveBayes
+2025-11-14 19:32:21,900	***				 Binary metrics
+2025-11-14 19:32:21,901	***					   Accuracy: 0.8139134709931171
+2025-11-14 19:32:21,904	***					   Precision: 0.9992254066615027
+2025-11-14 19:32:21,920	***					   Recall: 0.6304985337243402
+2025-11-14 19:32:21,943	***					   F1Score: 0.773149535510938
+2025-11-14 19:32:21,960	***					   Specificity: 0.9995054401582592
+2025-11-14 19:32:21,976	***					   FalsePositiveRate: 0.0004945598417408506
+2025-11-14 19:32:21,991	***					   TrueNegativeRate: 0.9995054401582592
+2025-11-14 19:32:21,998	***					   MeanSquareError: 0.186086529006883
+2025-11-14 19:32:21,999	***					   MeanAbsoluteError: 0.186086529006883
+2025-11-14 19:32:22,007	***					   TruePositive: 1290
+2025-11-14 19:32:22,015	***					   FalsePositive: 1
+2025-11-14 19:32:22,023	***					   TrueNegative: 2021
+2025-11-14 19:32:22,031	***					   FalseNegative: 756
+2025-11-14 19:32:22,034	***	
+2025-11-14 19:32:22,034	***			TS-TR GradientBoosting
+2025-11-14 19:32:22,034	***				 Binary metrics
+2025-11-14 19:32:22,035	***					   Accuracy: 0.7354965585054081
+2025-11-14 19:32:22,038	***					   Precision: 0.9089376053962901
+2025-11-14 19:32:22,054	***					   Recall: 0.5268817204301075
+2025-11-14 19:32:22,077	***					   F1Score: 0.667079207920792
+2025-11-14 19:32:22,093	***					   Specificity: 0.9465875370919882
+2025-11-14 19:32:22,109	***					   FalsePositiveRate: 0.05341246290801187
+2025-11-14 19:32:22,124	***					   TrueNegativeRate: 0.9465875370919882
+2025-11-14 19:32:22,130	***					   MeanSquareError: 0.26450344149459193
+2025-11-14 19:32:22,131	***					   MeanAbsoluteError: 0.26450344149459193
+2025-11-14 19:32:22,139	***					   TruePositive: 1078
+2025-11-14 19:32:22,147	***					   FalsePositive: 108
+2025-11-14 19:32:22,155	***					   TrueNegative: 1914
+2025-11-14 19:32:22,163	***					   FalseNegative: 968
+2025-11-14 19:32:22,164	***	
+2025-11-14 19:32:22,164	***			TS-TR StochasticGradientDescent
+2025-11-14 19:32:22,164	***				 Binary metrics
+2025-11-14 19:32:22,165	***					   Accuracy: 0.8461160275319567
+2025-11-14 19:32:22,168	***					   Precision: 0.9903314917127072
+2025-11-14 19:32:22,199	***					   Recall: 0.7008797653958945
+2025-11-14 19:32:22,246	***					   F1Score: 0.8208357183743561
+2025-11-14 19:32:22,262	***					   Specificity: 0.9930761622156281
+2025-11-14 19:32:22,278	***					   FalsePositiveRate: 0.006923837784371909
+2025-11-14 19:32:22,294	***					   TrueNegativeRate: 0.9930761622156281
+2025-11-14 19:32:22,300	***					   MeanSquareError: 0.15388397246804325
+2025-11-14 19:32:22,301	***					   MeanAbsoluteError: 0.15388397246804325
+2025-11-14 19:32:22,309	***					   TruePositive: 1434
+2025-11-14 19:32:22,317	***					   FalsePositive: 14
+2025-11-14 19:32:22,324	***					   TrueNegative: 2008
+2025-11-14 19:32:22,332	***					   FalseNegative: 612
+2025-11-14 19:32:22,334	***	x_real_eva size:2212992 shape: 16272, 136
+2025-11-14 19:32:22,336	***	x_synt size:553248 shape: 4068, 136
+2025-11-14 19:32:22,336	***				 Distance metrics
+2025-11-14 19:32:23,139	***					   EuclideanDistance: 4.276688646688875
+2025-11-14 19:32:23,142	***					   HellingerDistance: 194.46079296351746
+2025-11-14 19:32:23,150	***					   ManhattanDistance: [4.000e+00 1.000e+00 2.000e+00 2.000e+00 2.000e+00 5.800e+01 0.000e+00
+ 4.500e+01 1.000e+00 0.000e+00 2.700e+01 0.000e+00 1.500e+01 4.200e+01
+ 6.600e+01 0.000e+00 2.376e+03 1.100e+01 2.040e+03 3.130e+02 6.000e+00
+ 1.946e+03 2.680e+02 2.068e+03 2.408e+03 2.430e+02 2.042e+03 1.270e+02
+ 3.390e+02 1.870e+03 1.722e+03 1.250e+02 1.350e+02 4.200e+01 2.620e+02
+ 8.050e+02 2.219e+03 4.170e+02 4.510e+02 4.500e+02 2.037e+03 4.480e+02
+ 2.180e+02 5.280e+02 5.380e+02 5.230e+02 1.129e+03 3.800e+01 3.300e+01
+ 4.800e+01 8.000e+00 0.000e+00 0.000e+00 4.000e+00 0.000e+00 0.000e+00
+ 1.070e+02 2.000e+00 2.541e+03 1.906e+03 3.160e+02 3.800e+01 3.105e+03
+ 1.990e+02 0.000e+00 0.000e+00 3.830e+02 2.040e+02 3.800e+01 8.000e+00
+ 2.110e+02 2.930e+02 2.310e+03 2.345e+03 1.000e+00 5.800e+01 7.000e+00
+ 3.000e+00 8.300e+01 1.060e+02 2.000e+01 1.480e+02 4.400e+01 2.025e+03
+ 1.945e+03 1.928e+03 3.500e+02 1.919e+03 2.027e+03 6.770e+02 6.500e+02
+ 1.523e+03 2.500e+01 2.000e+00 4.000e+00 3.000e+00 4.000e+00 1.000e+00
+ 3.000e+00 1.500e+01 6.000e+00 8.200e+01 1.400e+01 0.000e+00 3.088e+03
+ 2.190e+03 1.000e+00 2.000e+00 4.000e+00 2.100e+01 0.000e+00 0.000e+00
+ 2.650e+02 3.127e+03 1.882e+03 1.060e+03 3.800e+01 2.000e+00 1.930e+02
+ 0.000e+00 3.228e+03 2.500e+01 3.500e+01 1.000e+00 2.000e+01 1.200e+01
+ 9.000e+00 1.700e+01 2.000e+01 7.000e+00 2.047e+03 2.043e+03 5.000e+00
+ 8.800e+01 5.000e+00 1.400e+01]
+2025-11-14 19:32:23,167	***					   HammingDistance: 4.088992214532842
+2025-11-14 19:32:23,199	***					   JaccardDistance: 0.6557921601655171
+2025-11-14 19:32:23,199	***	Fold 2 experiment completed in 11.95 seconds.
+2025-11-14 19:32:23,199	***	------
+
+
+2025-11-14 19:32:23,199	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:23,203	***	
+2025-11-14 19:32:23,203	***	Running experiment for fold 3.
+2025-11-14 19:32:23,204	***	Fold 3 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:32:23,204	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:32:23,205	***	Starting model creation and prediction process.
+2025-11-14 19:32:23,205	***	Number of real samples: 16272
+2025-11-14 19:32:23,205	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:32:23,211	***	CPU info collected.
+2025-11-14 19:32:23,446	***	Training started...
+2025-11-14 19:32:23,446	***	Epoch 1/10 started...
+2025-11-14 19:32:25,303	***	Epoch 1 ended. Time: 1.8570s, Avg batch time: 0.0072s, Expected finish: 2025-11-14 19:32:42
+2025-11-14 19:32:25,304	***	Epoch 2/10 started...
+2025-11-14 19:32:25,832	***	Epoch 2 ended. Time: 0.5278s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:35
+2025-11-14 19:32:25,833	***	Epoch 3/10 started...
+2025-11-14 19:32:26,357	***	Epoch 3 ended. Time: 0.5243s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:33
+2025-11-14 19:32:26,358	***	Epoch 4/10 started...
+2025-11-14 19:32:26,872	***	Epoch 4 ended. Time: 0.5146s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:32
+2025-11-14 19:32:26,873	***	Epoch 5/10 started...
+2025-11-14 19:32:27,394	***	Epoch 5 ended. Time: 0.5206s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:31
+2025-11-14 19:32:27,394	***	Epoch 6/10 started...
+2025-11-14 19:32:27,910	***	Epoch 6 ended. Time: 0.5161s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:30
+2025-11-14 19:32:27,911	***	Epoch 7/10 started...
+2025-11-14 19:32:28,429	***	Epoch 7 ended. Time: 0.5180s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:30
+2025-11-14 19:32:28,430	***	Epoch 8/10 started...
+2025-11-14 19:32:28,945	***	Epoch 8 ended. Time: 0.5152s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:30
+2025-11-14 19:32:28,946	***	Epoch 9/10 started...
+2025-11-14 19:32:29,466	***	Epoch 9 ended. Time: 0.5197s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:30
+2025-11-14 19:32:29,466	***	Epoch 10/10 started...
+2025-11-14 19:32:29,993	***	Epoch 10 ended. Time: 0.5265s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:29
+2025-11-14 19:32:29,993	***	Training ended. Total time: 6.5475s, Avg epoch time: 0.6540s
+2025-11-14 19:32:29,994	***	Training logs saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_2_fold.json
+2025-11-14 19:32:29,995	***	Model training completed.
+2025-11-14 19:32:29,996	***			number_samples_per_class
+2025-11-14 19:32:29,996	***	Generating data using Adversarial algorithm.
+2025-11-14 19:32:30,281	***	Data generation completed successfully for model type: adversarial
+2025-11-14 19:32:30,281	***	Starting to save CSV for fold number 2.
+2025-11-14 19:32:30,281	***	Total number of samples to be saved: 4068
+2025-11-14 19:32:30,281	***	Processing 2062 samples for label class 0.
+2025-11-14 19:32:30,281	***	Processing 2006 samples for label class 1.
+2025-11-14 19:32:30,282	***	Combining labels and data into a DataFrame.
+2025-11-14 19:32:30,383	***	DataFrame created successfully with 4068 rows and 137 columns.
+2025-11-14 19:32:30,383	***	Reverting normalization using stored scaler parameters.
+2025-11-14 19:32:30,386	***	Normalization successfully reverted.
+2025-11-14 19:32:30,540	***	Data successfully saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated/DataOutput_K_fold_2_adversarial.txt.
+2025-11-14 19:32:30,540	***	CSV save operation for fold 2 completed.
+2025-11-14 19:32:30,540	***	Entered the save_data_generated method.
+2025-11-14 19:32:30,540	***	Attempting to save generated data.
+2025-11-14 19:32:30,540	***	Generated data saved successfully.
+2025-11-14 19:32:30,541	***			Model creation and prediction completed for fold 3.
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	 starting evaluation for fold 3.
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	#################################################################################
+2025-11-14 19:32:30,541	***		TR-TS: train on real, test on synthetic
+2025-11-14 19:32:30,541	***			TR-TS: Total number of samples to be saved: 4068
+2025-11-14 19:32:30,541	***			TR-TS: Processing 2062 samples for label class 0.
+2025-11-14 19:32:30,541	***			TR-TS: Processing 2006 samples for label class 1.
+2025-11-14 19:32:30,541	***	
+2025-11-14 19:32:30,541	***	Starting Training Classifiers
+2025-11-14 19:32:30,541	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:30,542	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:30,779	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:30,780	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:30,780	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:30,941	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:30,941	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:30,942	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:30,943	***	Finished training KNN model.
+2025-11-14 19:32:30,943	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:30,943	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:30,960	***	Finished training DECISION TREE model.
+2025-11-14 19:32:30,960	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:30,961	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:30,963	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:30,963	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:30,963	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:31,502	***	Gradient Boosting model training completed.
+2025-11-14 19:32:31,502	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:31,503	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:31,535	***	Finished training the SGD model.
+2025-11-14 19:32:31,554	***	
+2025-11-14 19:32:31,554	***			TR-TS RandomForest
+2025-11-14 19:32:31,554	***				 Binary metrics
+2025-11-14 19:32:31,555	***					   Accuracy: 0.9980334316617503
+2025-11-14 19:32:31,556	***					   Precision: 1.0
+2025-11-14 19:32:31,567	***					   Recall: 0.996011964107677
+2025-11-14 19:32:31,583	***					   F1Score: 0.9980019980019981
+2025-11-14 19:32:31,594	***					   Specificity: 1.0
+2025-11-14 19:32:31,605	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:31,611	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:31,617	***					   MeanSquareError: 0.0019665683382497543
+2025-11-14 19:32:31,623	***					   MeanAbsoluteError: 0.0019665683382497543
+2025-11-14 19:32:31,626	***					   TruePositive: 1998
+2025-11-14 19:32:31,629	***					   FalsePositive: 0
+2025-11-14 19:32:31,632	***					   TrueNegative: 2062
+2025-11-14 19:32:31,635	***					   FalseNegative: 8
+2025-11-14 19:32:31,899	***	
+2025-11-14 19:32:31,899	***			TR-TS SupportVectorMachine
+2025-11-14 19:32:31,899	***				 Binary metrics
+2025-11-14 19:32:31,900	***					   Accuracy: 1.0
+2025-11-14 19:32:31,902	***					   Precision: 1.0
+2025-11-14 19:32:31,913	***					   Recall: 1.0
+2025-11-14 19:32:31,929	***					   F1Score: 1.0
+2025-11-14 19:32:31,940	***					   Specificity: 1.0
+2025-11-14 19:32:31,950	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:31,956	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:31,963	***					   MeanSquareError: 0.0
+2025-11-14 19:32:31,969	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:31,972	***					   TruePositive: 2006
+2025-11-14 19:32:31,975	***					   FalsePositive: 0
+2025-11-14 19:32:31,978	***					   TrueNegative: 2062
+2025-11-14 19:32:31,981	***					   FalseNegative: 0
+2025-11-14 19:32:32,135	***	
+2025-11-14 19:32:32,135	***			TR-TS KNN
+2025-11-14 19:32:32,135	***				 Binary metrics
+2025-11-14 19:32:32,136	***					   Accuracy: 0.9793510324483776
+2025-11-14 19:32:32,138	***					   Precision: 1.0
+2025-11-14 19:32:32,149	***					   Recall: 0.9581256231306082
+2025-11-14 19:32:32,166	***					   F1Score: 0.9786150712830957
+2025-11-14 19:32:32,177	***					   Specificity: 1.0
+2025-11-14 19:32:32,188	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:32,195	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:32,201	***					   MeanSquareError: 0.02064896755162242
+2025-11-14 19:32:32,208	***					   MeanAbsoluteError: 0.02064896755162242
+2025-11-14 19:32:32,211	***					   TruePositive: 1922
+2025-11-14 19:32:32,214	***					   FalsePositive: 0
+2025-11-14 19:32:32,217	***					   TrueNegative: 2062
+2025-11-14 19:32:32,220	***					   FalseNegative: 84
+2025-11-14 19:32:32,222	***	
+2025-11-14 19:32:32,222	***			TR-TS DecisionTree
+2025-11-14 19:32:32,222	***				 Binary metrics
+2025-11-14 19:32:32,223	***					   Accuracy: 0.9677974434611603
+2025-11-14 19:32:32,225	***					   Precision: 1.0
+2025-11-14 19:32:32,235	***					   Recall: 0.9346959122632104
+2025-11-14 19:32:32,251	***					   F1Score: 0.9662458129348106
+2025-11-14 19:32:32,262	***					   Specificity: 1.0
+2025-11-14 19:32:32,273	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:32,279	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:32,285	***					   MeanSquareError: 0.03220255653883972
+2025-11-14 19:32:32,291	***					   MeanAbsoluteError: 0.03220255653883972
+2025-11-14 19:32:32,294	***					   TruePositive: 1875
+2025-11-14 19:32:32,297	***					   FalsePositive: 0
+2025-11-14 19:32:32,300	***					   TrueNegative: 2062
+2025-11-14 19:32:32,303	***					   FalseNegative: 131
+2025-11-14 19:32:32,307	***	
+2025-11-14 19:32:32,307	***			TR-TS NaiveBayes
+2025-11-14 19:32:32,307	***				 Binary metrics
+2025-11-14 19:32:32,308	***					   Accuracy: 1.0
+2025-11-14 19:32:32,310	***					   Precision: 1.0
+2025-11-14 19:32:32,320	***					   Recall: 1.0
+2025-11-14 19:32:32,336	***					   F1Score: 1.0
+2025-11-14 19:32:32,348	***					   Specificity: 1.0
+2025-11-14 19:32:32,359	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:32,365	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:32,372	***					   MeanSquareError: 0.0
+2025-11-14 19:32:32,378	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:32,381	***					   TruePositive: 2006
+2025-11-14 19:32:32,384	***					   FalsePositive: 0
+2025-11-14 19:32:32,387	***					   TrueNegative: 2062
+2025-11-14 19:32:32,390	***					   FalseNegative: 0
+2025-11-14 19:32:32,395	***	
+2025-11-14 19:32:32,395	***			TR-TS GradientBoosting
+2025-11-14 19:32:32,396	***				 Binary metrics
+2025-11-14 19:32:32,396	***					   Accuracy: 1.0
+2025-11-14 19:32:32,399	***					   Precision: 1.0
+2025-11-14 19:32:32,410	***					   Recall: 1.0
+2025-11-14 19:32:32,426	***					   F1Score: 1.0
+2025-11-14 19:32:32,437	***					   Specificity: 1.0
+2025-11-14 19:32:32,448	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:32,455	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:32,461	***					   MeanSquareError: 0.0
+2025-11-14 19:32:32,467	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:32,470	***					   TruePositive: 2006
+2025-11-14 19:32:32,474	***					   FalsePositive: 0
+2025-11-14 19:32:32,477	***					   TrueNegative: 2062
+2025-11-14 19:32:32,480	***					   FalseNegative: 0
+2025-11-14 19:32:32,482	***	
+2025-11-14 19:32:32,482	***			TR-TS StochasticGradientDescent
+2025-11-14 19:32:32,482	***				 Binary metrics
+2025-11-14 19:32:32,483	***					   Accuracy: 1.0
+2025-11-14 19:32:32,486	***					   Precision: 1.0
+2025-11-14 19:32:32,507	***					   Recall: 1.0
+2025-11-14 19:32:32,541	***					   F1Score: 1.0
+2025-11-14 19:32:32,563	***					   Specificity: 1.0
+2025-11-14 19:32:32,576	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:32,582	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:32,588	***					   MeanSquareError: 0.0
+2025-11-14 19:32:32,595	***					   MeanAbsoluteError: 0.0
+2025-11-14 19:32:32,598	***					   TruePositive: 2006
+2025-11-14 19:32:32,601	***					   FalsePositive: 0
+2025-11-14 19:32:32,604	***					   TrueNegative: 2062
+2025-11-14 19:32:32,607	***					   FalseNegative: 0
+2025-11-14 19:32:32,608	***	
+2025-11-14 19:32:32,608	***	
+2025-11-14 19:32:32,608	***	
+2025-11-14 19:32:32,608	***	#################################################################################
+2025-11-14 19:32:32,608	***		TS-TR: train on synthetic, test on real
+2025-11-14 19:32:32,608	***			TS-TR: Total number of samples to be saved: 4068
+2025-11-14 19:32:32,608	***			TS-TR: Processing 2062 samples for label class 0.
+2025-11-14 19:32:32,608	***			TS-TR: Processing 2006 samples for label class 1.
+2025-11-14 19:32:32,609	***	
+2025-11-14 19:32:32,610	***	Starting Training Classifiers
+2025-11-14 19:32:32,610	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:32,611	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:32,748	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:32,748	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:32,750	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:32,760	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:32,760	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:32,762	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:32,763	***	Finished training KNN model.
+2025-11-14 19:32:32,763	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:32,764	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:32,765	***	Finished training DECISION TREE model.
+2025-11-14 19:32:32,765	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:32,767	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:32,769	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:32,769	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:32,771	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:32,939	***	Gradient Boosting model training completed.
+2025-11-14 19:32:32,939	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:32,941	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:32,946	***	Finished training the SGD model.
+2025-11-14 19:32:32,958	***	
+2025-11-14 19:32:32,958	***			TS-TR RandomForest
+2025-11-14 19:32:32,958	***				 Binary metrics
+2025-11-14 19:32:32,958	***					   Accuracy: 0.8918387413962635
+2025-11-14 19:32:32,961	***					   Precision: 0.8717948717948718
+2025-11-14 19:32:32,976	***					   Recall: 0.9152542372881356
+2025-11-14 19:32:33,000	***					   F1Score: 0.8929961089494164
+2025-11-14 19:32:33,016	***					   Specificity: 0.8690591658583899
+2025-11-14 19:32:33,032	***					   FalsePositiveRate: 0.1309408341416101
+2025-11-14 19:32:33,048	***					   TrueNegativeRate: 0.8690591658583899
+2025-11-14 19:32:33,054	***					   MeanSquareError: 0.10816125860373647
+2025-11-14 19:32:33,055	***					   MeanAbsoluteError: 0.10816125860373647
+2025-11-14 19:32:33,063	***					   TruePositive: 1836
+2025-11-14 19:32:33,071	***					   FalsePositive: 270
+2025-11-14 19:32:33,079	***					   TrueNegative: 1792
+2025-11-14 19:32:33,087	***					   FalseNegative: 170
+2025-11-14 19:32:33,099	***	
+2025-11-14 19:32:33,099	***			TS-TR SupportVectorMachine
+2025-11-14 19:32:33,099	***				 Binary metrics
+2025-11-14 19:32:33,100	***					   Accuracy: 0.9068338249754179
+2025-11-14 19:32:33,102	***					   Precision: 0.9144167091186959
+2025-11-14 19:32:33,117	***					   Recall: 0.8948155533399801
+2025-11-14 19:32:33,140	***					   F1Score: 0.9045099521289999
+2025-11-14 19:32:33,155	***					   Specificity: 0.918525703200776
+2025-11-14 19:32:33,170	***					   FalsePositiveRate: 0.08147429679922405
+2025-11-14 19:32:33,186	***					   TrueNegativeRate: 0.918525703200776
+2025-11-14 19:32:33,193	***					   MeanSquareError: 0.0931661750245821
+2025-11-14 19:32:33,194	***					   MeanAbsoluteError: 0.0931661750245821
+2025-11-14 19:32:33,202	***					   TruePositive: 1795
+2025-11-14 19:32:33,210	***					   FalsePositive: 168
+2025-11-14 19:32:33,218	***					   TrueNegative: 1894
+2025-11-14 19:32:33,226	***					   FalseNegative: 211
+2025-11-14 19:32:33,259	***	
+2025-11-14 19:32:33,259	***			TS-TR KNN
+2025-11-14 19:32:33,259	***				 Binary metrics
+2025-11-14 19:32:33,260	***					   Accuracy: 0.8815142576204523
+2025-11-14 19:32:33,263	***					   Precision: 0.8611374407582938
+2025-11-14 19:32:33,279	***					   Recall: 0.9057826520438684
+2025-11-14 19:32:33,303	***					   F1Score: 0.8828960155490768
+2025-11-14 19:32:33,319	***					   Specificity: 0.8579049466537343
+2025-11-14 19:32:33,335	***					   FalsePositiveRate: 0.14209505334626577
+2025-11-14 19:32:33,352	***					   TrueNegativeRate: 0.8579049466537343
+2025-11-14 19:32:33,358	***					   MeanSquareError: 0.11848574237954769
+2025-11-14 19:32:33,360	***					   MeanAbsoluteError: 0.11848574237954769
+2025-11-14 19:32:33,368	***					   TruePositive: 1817
+2025-11-14 19:32:33,377	***					   FalsePositive: 293
+2025-11-14 19:32:33,385	***					   TrueNegative: 1769
+2025-11-14 19:32:33,394	***					   FalseNegative: 189
+2025-11-14 19:32:33,395	***	
+2025-11-14 19:32:33,395	***			TS-TR DecisionTree
+2025-11-14 19:32:33,395	***				 Binary metrics
+2025-11-14 19:32:33,396	***					   Accuracy: 0.9269911504424779
+2025-11-14 19:32:33,399	***					   Precision: 0.992507204610951
+2025-11-14 19:32:33,416	***					   Recall: 0.8584247258225324
+2025-11-14 19:32:33,449	***					   F1Score: 0.9206094627105053
+2025-11-14 19:32:33,467	***					   Specificity: 0.9936954413191077
+2025-11-14 19:32:33,484	***					   FalsePositiveRate: 0.006304558680892337
+2025-11-14 19:32:33,500	***					   TrueNegativeRate: 0.9936954413191077
+2025-11-14 19:32:33,507	***					   MeanSquareError: 0.07300884955752213
+2025-11-14 19:32:33,508	***					   MeanAbsoluteError: 0.07300884955752213
+2025-11-14 19:32:33,517	***					   TruePositive: 1722
+2025-11-14 19:32:33,525	***					   FalsePositive: 13
+2025-11-14 19:32:33,533	***					   TrueNegative: 2049
+2025-11-14 19:32:33,541	***					   FalseNegative: 284
+2025-11-14 19:32:33,545	***	
+2025-11-14 19:32:33,546	***			TS-TR NaiveBayes
+2025-11-14 19:32:33,546	***				 Binary metrics
+2025-11-14 19:32:33,547	***					   Accuracy: 0.8992133726647001
+2025-11-14 19:32:33,549	***					   Precision: 0.8796384395813511
+2025-11-14 19:32:33,565	***					   Recall: 0.9217347956131605
+2025-11-14 19:32:33,589	***					   F1Score: 0.9001947419668938
+2025-11-14 19:32:33,605	***					   Specificity: 0.8773035887487876
+2025-11-14 19:32:33,621	***					   FalsePositiveRate: 0.12269641125121242
+2025-11-14 19:32:33,637	***					   TrueNegativeRate: 0.8773035887487876
+2025-11-14 19:32:33,644	***					   MeanSquareError: 0.1007866273352999
+2025-11-14 19:32:33,645	***					   MeanAbsoluteError: 0.1007866273352999
+2025-11-14 19:32:33,653	***					   TruePositive: 1849
+2025-11-14 19:32:33,661	***					   FalsePositive: 253
+2025-11-14 19:32:33,669	***					   TrueNegative: 1809
+2025-11-14 19:32:33,677	***					   FalseNegative: 157
+2025-11-14 19:32:33,680	***	
+2025-11-14 19:32:33,680	***			TS-TR GradientBoosting
+2025-11-14 19:32:33,680	***				 Binary metrics
+2025-11-14 19:32:33,681	***					   Accuracy: 0.9269911504424779
+2025-11-14 19:32:33,683	***					   Precision: 0.992507204610951
+2025-11-14 19:32:33,699	***					   Recall: 0.8584247258225324
+2025-11-14 19:32:33,723	***					   F1Score: 0.9206094627105053
+2025-11-14 19:32:33,738	***					   Specificity: 0.9936954413191077
+2025-11-14 19:32:33,753	***					   FalsePositiveRate: 0.006304558680892337
+2025-11-14 19:32:33,769	***					   TrueNegativeRate: 0.9936954413191077
+2025-11-14 19:32:33,775	***					   MeanSquareError: 0.07300884955752213
+2025-11-14 19:32:33,776	***					   MeanAbsoluteError: 0.07300884955752213
+2025-11-14 19:32:33,784	***					   TruePositive: 1722
+2025-11-14 19:32:33,791	***					   FalsePositive: 13
+2025-11-14 19:32:33,799	***					   TrueNegative: 2049
+2025-11-14 19:32:33,807	***					   FalseNegative: 284
+2025-11-14 19:32:33,808	***	
+2025-11-14 19:32:33,808	***			TS-TR StochasticGradientDescent
+2025-11-14 19:32:33,808	***				 Binary metrics
+2025-11-14 19:32:33,809	***					   Accuracy: 0.9269911504424779
+2025-11-14 19:32:33,812	***					   Precision: 0.992507204610951
+2025-11-14 19:32:33,844	***					   Recall: 0.8584247258225324
+2025-11-14 19:32:33,891	***					   F1Score: 0.9206094627105053
+2025-11-14 19:32:33,908	***					   Specificity: 0.9936954413191077
+2025-11-14 19:32:33,924	***					   FalsePositiveRate: 0.006304558680892337
+2025-11-14 19:32:33,940	***					   TrueNegativeRate: 0.9936954413191077
+2025-11-14 19:32:33,946	***					   MeanSquareError: 0.07300884955752213
+2025-11-14 19:32:33,947	***					   MeanAbsoluteError: 0.07300884955752213
+2025-11-14 19:32:33,955	***					   TruePositive: 1722
+2025-11-14 19:32:33,963	***					   FalsePositive: 13
+2025-11-14 19:32:33,971	***					   TrueNegative: 2049
+2025-11-14 19:32:33,978	***					   FalseNegative: 284
+2025-11-14 19:32:33,980	***	x_real_eva size:2212992 shape: 16272, 136
+2025-11-14 19:32:33,981	***	x_synt size:553248 shape: 4068, 136
+2025-11-14 19:32:33,982	***				 Distance metrics
+2025-11-14 19:32:34,807	***					   EuclideanDistance: 3.504964594042835
+2025-11-14 19:32:34,809	***					   HellingerDistance: 161.61992451427517
+2025-11-14 19:32:34,817	***					   ManhattanDistance: [4.000e+00 0.000e+00 2.000e+00 4.000e+00 4.000e+00 5.800e+01 1.000e+00
+ 5.800e+01 1.000e+00 0.000e+00 3.000e+01 1.000e+00 2.000e+01 4.300e+01
+ 7.400e+01 4.000e+00 7.980e+02 1.300e+01 2.449e+03 3.080e+02 7.000e+00
+ 1.932e+03 2.540e+02 2.045e+03 1.333e+03 2.590e+02 1.347e+03 1.080e+02
+ 1.560e+02 1.858e+03 2.379e+03 1.130e+02 1.040e+02 3.300e+01 2.610e+02
+ 5.370e+02 1.667e+03 4.280e+02 5.050e+02 4.440e+02 1.312e+03 4.420e+02
+ 2.160e+02 5.210e+02 4.920e+02 4.970e+02 1.116e+03 3.800e+01 3.200e+01
+ 4.700e+01 7.000e+00 1.000e+00 0.000e+00 8.000e+00 0.000e+00 0.000e+00
+ 1.170e+02 2.000e+00 9.340e+02 1.081e+03 1.567e+03 4.200e+01 8.540e+02
+ 1.011e+03 0.000e+00 2.000e+00 3.720e+02 1.880e+02 3.600e+01 4.000e+00
+ 2.230e+02 6.900e+01 3.320e+02 1.773e+03 2.000e+00 5.600e+01 1.700e+01
+ 5.000e+00 7.400e+01 9.900e+01 1.400e+01 1.000e+02 4.100e+01 1.325e+03
+ 2.168e+03 2.075e+03 3.030e+02 3.030e+02 2.040e+03 6.770e+02 6.360e+02
+ 1.459e+03 2.300e+01 1.000e+00 1.000e+00 2.000e+00 1.000e+00 3.000e+00
+ 3.000e+00 8.000e+00 8.000e+00 7.100e+01 9.000e+00 0.000e+00 5.660e+02
+ 8.700e+01 3.000e+00 2.000e+00 1.000e+00 1.900e+01 0.000e+00 0.000e+00
+ 5.790e+02 2.530e+02 1.024e+03 9.350e+02 3.300e+01 1.000e+00 8.200e+01
+ 2.000e+00 8.310e+02 3.000e+01 4.000e+01 5.000e+00 2.600e+01 1.600e+01
+ 6.000e+00 1.900e+01 8.000e+00 4.000e+00 1.535e+03 1.530e+03 4.000e+00
+ 8.100e+01 7.000e+00 1.100e+01]
+2025-11-14 19:32:34,835	***					   HammingDistance: 2.8245025951557032
+2025-11-14 19:32:34,867	***					   JaccardDistance: 0.6285522464766348
+2025-11-14 19:32:34,868	***	Fold 3 experiment completed in 11.66 seconds.
+2025-11-14 19:32:34,868	***	------
+
+
+2025-11-14 19:32:34,868	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:34,872	***	
+2025-11-14 19:32:34,872	***	Running experiment for fold 4.
+2025-11-14 19:32:34,872	***	Fold 4 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:32:34,872	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:32:34,873	***	Starting model creation and prediction process.
+2025-11-14 19:32:34,873	***	Number of real samples: 16272
+2025-11-14 19:32:34,873	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:32:34,880	***	CPU info collected.
+2025-11-14 19:32:35,125	***	Training started...
+2025-11-14 19:32:35,126	***	Epoch 1/10 started...
+2025-11-14 19:32:36,995	***	Epoch 1 ended. Time: 1.8686s, Avg batch time: 0.0072s, Expected finish: 2025-11-14 19:32:53
+2025-11-14 19:32:36,995	***	Epoch 2/10 started...
+2025-11-14 19:32:37,516	***	Epoch 2 ended. Time: 0.5200s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:47
+2025-11-14 19:32:37,516	***	Epoch 3/10 started...
+2025-11-14 19:32:38,037	***	Epoch 3 ended. Time: 0.5207s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:44
+2025-11-14 19:32:38,038	***	Epoch 4/10 started...
+2025-11-14 19:32:38,555	***	Epoch 4 ended. Time: 0.5173s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:43
+2025-11-14 19:32:38,556	***	Epoch 5/10 started...
+2025-11-14 19:32:39,072	***	Epoch 5 ended. Time: 0.5163s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:43
+2025-11-14 19:32:39,073	***	Epoch 6/10 started...
+2025-11-14 19:32:39,600	***	Epoch 6 ended. Time: 0.5273s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:42
+2025-11-14 19:32:39,601	***	Epoch 7/10 started...
+2025-11-14 19:32:40,127	***	Epoch 7 ended. Time: 0.5267s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:42
+2025-11-14 19:32:40,128	***	Epoch 8/10 started...
+2025-11-14 19:32:40,651	***	Epoch 8 ended. Time: 0.5224s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:42
+2025-11-14 19:32:40,651	***	Epoch 9/10 started...
+2025-11-14 19:32:41,174	***	Epoch 9 ended. Time: 0.5225s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:41
+2025-11-14 19:32:41,174	***	Epoch 10/10 started...
+2025-11-14 19:32:41,697	***	Epoch 10 ended. Time: 0.5228s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:41
+2025-11-14 19:32:41,698	***	Training ended. Total time: 6.5723s, Avg epoch time: 0.6565s
+2025-11-14 19:32:41,698	***	Training logs saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_3_fold.json
+2025-11-14 19:32:41,700	***	Model training completed.
+2025-11-14 19:32:41,700	***			number_samples_per_class
+2025-11-14 19:32:41,700	***	Generating data using Adversarial algorithm.
+2025-11-14 19:32:41,977	***	Data generation completed successfully for model type: adversarial
+2025-11-14 19:32:41,977	***	Starting to save CSV for fold number 3.
+2025-11-14 19:32:41,977	***	Total number of samples to be saved: 4068
+2025-11-14 19:32:41,977	***	Processing 2026 samples for label class 0.
+2025-11-14 19:32:41,977	***	Processing 2042 samples for label class 1.
+2025-11-14 19:32:41,977	***	Combining labels and data into a DataFrame.
+2025-11-14 19:32:42,080	***	DataFrame created successfully with 4068 rows and 137 columns.
+2025-11-14 19:32:42,080	***	Reverting normalization using stored scaler parameters.
+2025-11-14 19:32:42,083	***	Normalization successfully reverted.
+2025-11-14 19:32:42,231	***	Data successfully saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated/DataOutput_K_fold_3_adversarial.txt.
+2025-11-14 19:32:42,231	***	CSV save operation for fold 3 completed.
+2025-11-14 19:32:42,232	***	Entered the save_data_generated method.
+2025-11-14 19:32:42,232	***	Attempting to save generated data.
+2025-11-14 19:32:42,232	***	Generated data saved successfully.
+2025-11-14 19:32:42,232	***			Model creation and prediction completed for fold 4.
+2025-11-14 19:32:42,232	***	
+2025-11-14 19:32:42,232	***	
+2025-11-14 19:32:42,232	***	 starting evaluation for fold 4.
+2025-11-14 19:32:42,232	***	
+2025-11-14 19:32:42,232	***	
+2025-11-14 19:32:42,232	***	
+2025-11-14 19:32:42,232	***	#################################################################################
+2025-11-14 19:32:42,233	***		TR-TS: train on real, test on synthetic
+2025-11-14 19:32:42,233	***			TR-TS: Total number of samples to be saved: 4068
+2025-11-14 19:32:42,233	***			TR-TS: Processing 2026 samples for label class 0.
+2025-11-14 19:32:42,233	***			TR-TS: Processing 2042 samples for label class 1.
+2025-11-14 19:32:42,233	***	
+2025-11-14 19:32:42,233	***	Starting Training Classifiers
+2025-11-14 19:32:42,233	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:42,233	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:42,459	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:42,459	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:42,459	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:42,610	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:42,610	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:42,610	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:42,611	***	Finished training KNN model.
+2025-11-14 19:32:42,611	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:42,611	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:42,627	***	Finished training DECISION TREE model.
+2025-11-14 19:32:42,627	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:42,627	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:42,629	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:42,630	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:42,630	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:43,201	***	Gradient Boosting model training completed.
+2025-11-14 19:32:43,202	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:43,202	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:43,235	***	Finished training the SGD model.
+2025-11-14 19:32:43,255	***	
+2025-11-14 19:32:43,255	***			TR-TS RandomForest
+2025-11-14 19:32:43,255	***				 Binary metrics
+2025-11-14 19:32:43,255	***					   Accuracy: 0.9850049164208456
+2025-11-14 19:32:43,257	***					   Precision: 1.0
+2025-11-14 19:32:43,268	***					   Recall: 0.9701273261508325
+2025-11-14 19:32:43,283	***					   F1Score: 0.984837186179468
+2025-11-14 19:32:43,294	***					   Specificity: 1.0
+2025-11-14 19:32:43,304	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:43,310	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:43,316	***					   MeanSquareError: 0.014995083579154375
+2025-11-14 19:32:43,322	***					   MeanAbsoluteError: 0.014995083579154375
+2025-11-14 19:32:43,325	***					   TruePositive: 1981
+2025-11-14 19:32:43,328	***					   FalsePositive: 0
+2025-11-14 19:32:43,331	***					   TrueNegative: 2026
+2025-11-14 19:32:43,334	***					   FalseNegative: 61
+2025-11-14 19:32:43,576	***	
+2025-11-14 19:32:43,576	***			TR-TS SupportVectorMachine
+2025-11-14 19:32:43,576	***				 Binary metrics
+2025-11-14 19:32:43,577	***					   Accuracy: 0.9850049164208456
+2025-11-14 19:32:43,579	***					   Precision: 1.0
+2025-11-14 19:32:43,590	***					   Recall: 0.9701273261508325
+2025-11-14 19:32:43,606	***					   F1Score: 0.984837186179468
+2025-11-14 19:32:43,616	***					   Specificity: 1.0
+2025-11-14 19:32:43,627	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:43,633	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:43,639	***					   MeanSquareError: 0.014995083579154375
+2025-11-14 19:32:43,645	***					   MeanAbsoluteError: 0.014995083579154375
+2025-11-14 19:32:43,648	***					   TruePositive: 1981
+2025-11-14 19:32:43,650	***					   FalsePositive: 0
+2025-11-14 19:32:43,653	***					   TrueNegative: 2026
+2025-11-14 19:32:43,656	***					   FalseNegative: 61
+2025-11-14 19:32:43,816	***	
+2025-11-14 19:32:43,816	***			TR-TS KNN
+2025-11-14 19:32:43,816	***				 Binary metrics
+2025-11-14 19:32:43,817	***					   Accuracy: 0.9800884955752213
+2025-11-14 19:32:43,819	***					   Precision: 0.9979685119349924
+2025-11-14 19:32:43,830	***					   Recall: 0.9622918707149853
+2025-11-14 19:32:43,847	***					   F1Score: 0.9798055347793567
+2025-11-14 19:32:43,858	***					   Specificity: 0.998025666337611
+2025-11-14 19:32:43,869	***					   FalsePositiveRate: 0.0019743336623889436
+2025-11-14 19:32:43,875	***					   TrueNegativeRate: 0.998025666337611
+2025-11-14 19:32:43,881	***					   MeanSquareError: 0.01991150442477876
+2025-11-14 19:32:43,887	***					   MeanAbsoluteError: 0.01991150442477876
+2025-11-14 19:32:43,891	***					   TruePositive: 1965
+2025-11-14 19:32:43,894	***					   FalsePositive: 4
+2025-11-14 19:32:43,897	***					   TrueNegative: 2022
+2025-11-14 19:32:43,900	***					   FalseNegative: 77
+2025-11-14 19:32:43,902	***	
+2025-11-14 19:32:43,902	***			TR-TS DecisionTree
+2025-11-14 19:32:43,902	***				 Binary metrics
+2025-11-14 19:32:43,903	***					   Accuracy: 0.984267453294002
+2025-11-14 19:32:43,905	***					   Precision: 0.9984879032258065
+2025-11-14 19:32:43,915	***					   Recall: 0.9701273261508325
+2025-11-14 19:32:43,931	***					   F1Score: 0.9841033283656234
+2025-11-14 19:32:43,941	***					   Specificity: 0.9985192497532083
+2025-11-14 19:32:43,952	***					   FalsePositiveRate: 0.0014807502467917078
+2025-11-14 19:32:43,958	***					   TrueNegativeRate: 0.9985192497532083
+2025-11-14 19:32:43,964	***					   MeanSquareError: 0.015732546705998034
+2025-11-14 19:32:43,970	***					   MeanAbsoluteError: 0.015732546705998034
+2025-11-14 19:32:43,973	***					   TruePositive: 1981
+2025-11-14 19:32:43,975	***					   FalsePositive: 3
+2025-11-14 19:32:43,978	***					   TrueNegative: 2023
+2025-11-14 19:32:43,981	***					   FalseNegative: 61
+2025-11-14 19:32:43,985	***	
+2025-11-14 19:32:43,985	***			TR-TS NaiveBayes
+2025-11-14 19:32:43,985	***				 Binary metrics
+2025-11-14 19:32:43,986	***					   Accuracy: 0.9859882005899705
+2025-11-14 19:32:43,988	***					   Precision: 1.0
+2025-11-14 19:32:43,999	***					   Recall: 0.9720861900097943
+2025-11-14 19:32:44,014	***					   F1Score: 0.9858455425875342
+2025-11-14 19:32:44,025	***					   Specificity: 1.0
+2025-11-14 19:32:44,036	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:44,042	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:44,049	***					   MeanSquareError: 0.014011799410029498
+2025-11-14 19:32:44,056	***					   MeanAbsoluteError: 0.014011799410029498
+2025-11-14 19:32:44,059	***					   TruePositive: 1985
+2025-11-14 19:32:44,062	***					   FalsePositive: 0
+2025-11-14 19:32:44,065	***					   TrueNegative: 2026
+2025-11-14 19:32:44,068	***					   FalseNegative: 57
+2025-11-14 19:32:44,074	***	
+2025-11-14 19:32:44,074	***			TR-TS GradientBoosting
+2025-11-14 19:32:44,074	***				 Binary metrics
+2025-11-14 19:32:44,075	***					   Accuracy: 0.9850049164208456
+2025-11-14 19:32:44,077	***					   Precision: 1.0
+2025-11-14 19:32:44,088	***					   Recall: 0.9701273261508325
+2025-11-14 19:32:44,105	***					   F1Score: 0.984837186179468
+2025-11-14 19:32:44,116	***					   Specificity: 1.0
+2025-11-14 19:32:44,127	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:44,133	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:44,139	***					   MeanSquareError: 0.014995083579154375
+2025-11-14 19:32:44,145	***					   MeanAbsoluteError: 0.014995083579154375
+2025-11-14 19:32:44,149	***					   TruePositive: 1981
+2025-11-14 19:32:44,151	***					   FalsePositive: 0
+2025-11-14 19:32:44,155	***					   TrueNegative: 2026
+2025-11-14 19:32:44,157	***					   FalseNegative: 61
+2025-11-14 19:32:44,159	***	
+2025-11-14 19:32:44,160	***			TR-TS StochasticGradientDescent
+2025-11-14 19:32:44,160	***				 Binary metrics
+2025-11-14 19:32:44,161	***					   Accuracy: 0.9850049164208456
+2025-11-14 19:32:44,164	***					   Precision: 1.0
+2025-11-14 19:32:44,185	***					   Recall: 0.9701273261508325
+2025-11-14 19:32:44,219	***					   F1Score: 0.984837186179468
+2025-11-14 19:32:44,241	***					   Specificity: 1.0
+2025-11-14 19:32:44,254	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:44,260	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:44,267	***					   MeanSquareError: 0.014995083579154375
+2025-11-14 19:32:44,273	***					   MeanAbsoluteError: 0.014995083579154375
+2025-11-14 19:32:44,276	***					   TruePositive: 1981
+2025-11-14 19:32:44,279	***					   FalsePositive: 0
+2025-11-14 19:32:44,282	***					   TrueNegative: 2026
+2025-11-14 19:32:44,285	***					   FalseNegative: 61
+2025-11-14 19:32:44,287	***	
+2025-11-14 19:32:44,287	***	
+2025-11-14 19:32:44,287	***	
+2025-11-14 19:32:44,287	***	#################################################################################
+2025-11-14 19:32:44,287	***		TS-TR: train on synthetic, test on real
+2025-11-14 19:32:44,287	***			TS-TR: Total number of samples to be saved: 4068
+2025-11-14 19:32:44,287	***			TS-TR: Processing 2026 samples for label class 0.
+2025-11-14 19:32:44,287	***			TS-TR: Processing 2042 samples for label class 1.
+2025-11-14 19:32:44,289	***	
+2025-11-14 19:32:44,289	***	Starting Training Classifiers
+2025-11-14 19:32:44,289	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:44,291	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:44,434	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:44,435	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:44,437	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:44,452	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:44,452	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:44,455	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:44,456	***	Finished training KNN model.
+2025-11-14 19:32:44,456	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:44,458	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:44,461	***	Finished training DECISION TREE model.
+2025-11-14 19:32:44,461	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:44,463	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:44,466	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:44,466	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:44,469	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:44,724	***	Gradient Boosting model training completed.
+2025-11-14 19:32:44,725	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:44,728	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:44,737	***	Finished training the SGD model.
+2025-11-14 19:32:44,755	***	
+2025-11-14 19:32:44,755	***			TS-TR RandomForest
+2025-11-14 19:32:44,755	***				 Binary metrics
+2025-11-14 19:32:44,756	***					   Accuracy: 0.8780727630285152
+2025-11-14 19:32:44,758	***					   Precision: 0.9256607929515418
+2025-11-14 19:32:44,774	***					   Recall: 0.8232125367286973
+2025-11-14 19:32:44,797	***					   F1Score: 0.8714359771902539
+2025-11-14 19:32:44,813	***					   Specificity: 0.9333662388943732
+2025-11-14 19:32:44,829	***					   FalsePositiveRate: 0.06663376110562685
+2025-11-14 19:32:44,845	***					   TrueNegativeRate: 0.9333662388943732
+2025-11-14 19:32:44,851	***					   MeanSquareError: 0.12192723697148476
+2025-11-14 19:32:44,852	***					   MeanAbsoluteError: 0.12192723697148476
+2025-11-14 19:32:44,860	***					   TruePositive: 1681
+2025-11-14 19:32:44,868	***					   FalsePositive: 135
+2025-11-14 19:32:44,876	***					   TrueNegative: 1891
+2025-11-14 19:32:44,884	***					   FalseNegative: 361
+2025-11-14 19:32:44,901	***	
+2025-11-14 19:32:44,901	***			TS-TR SupportVectorMachine
+2025-11-14 19:32:44,901	***				 Binary metrics
+2025-11-14 19:32:44,902	***					   Accuracy: 0.7856440511307768
+2025-11-14 19:32:44,904	***					   Precision: 0.9372197309417041
+2025-11-14 19:32:44,920	***					   Recall: 0.614103819784525
+2025-11-14 19:32:44,943	***					   F1Score: 0.7420118343195266
+2025-11-14 19:32:44,959	***					   Specificity: 0.9585389930898321
+2025-11-14 19:32:44,975	***					   FalsePositiveRate: 0.04146100691016782
+2025-11-14 19:32:44,990	***					   TrueNegativeRate: 0.9585389930898321
+2025-11-14 19:32:44,996	***					   MeanSquareError: 0.2143559488692232
+2025-11-14 19:32:44,998	***					   MeanAbsoluteError: 0.2143559488692232
+2025-11-14 19:32:45,006	***					   TruePositive: 1254
+2025-11-14 19:32:45,013	***					   FalsePositive: 84
+2025-11-14 19:32:45,021	***					   TrueNegative: 1942
+2025-11-14 19:32:45,029	***					   FalseNegative: 788
+2025-11-14 19:32:45,065	***	
+2025-11-14 19:32:45,065	***			TS-TR KNN
+2025-11-14 19:32:45,065	***				 Binary metrics
+2025-11-14 19:32:45,066	***					   Accuracy: 0.86086529006883
+2025-11-14 19:32:45,068	***					   Precision: 0.8765306122448979
+2025-11-14 19:32:45,083	***					   Recall: 0.8413320274240941
+2025-11-14 19:32:45,108	***					   F1Score: 0.8585707146426786
+2025-11-14 19:32:45,123	***					   Specificity: 0.8805528134254689
+2025-11-14 19:32:45,139	***					   FalsePositiveRate: 0.1194471865745311
+2025-11-14 19:32:45,158	***					   TrueNegativeRate: 0.8805528134254689
+2025-11-14 19:32:45,165	***					   MeanSquareError: 0.1391347099311701
+2025-11-14 19:32:45,166	***					   MeanAbsoluteError: 0.1391347099311701
+2025-11-14 19:32:45,178	***					   TruePositive: 1718
+2025-11-14 19:32:45,187	***					   FalsePositive: 242
+2025-11-14 19:32:45,196	***					   TrueNegative: 1784
+2025-11-14 19:32:45,205	***					   FalseNegative: 324
+2025-11-14 19:32:45,206	***	
+2025-11-14 19:32:45,206	***			TS-TR DecisionTree
+2025-11-14 19:32:45,206	***				 Binary metrics
+2025-11-14 19:32:45,207	***					   Accuracy: 0.7765486725663717
+2025-11-14 19:32:45,209	***					   Precision: 0.8209631728045326
+2025-11-14 19:32:45,227	***					   Recall: 0.7095984329089128
+2025-11-14 19:32:45,250	***					   F1Score: 0.7612293144208038
+2025-11-14 19:32:45,266	***					   Specificity: 0.8440276406712734
+2025-11-14 19:32:45,282	***					   FalsePositiveRate: 0.15597235932872655
+2025-11-14 19:32:45,298	***					   TrueNegativeRate: 0.8440276406712734
+2025-11-14 19:32:45,304	***					   MeanSquareError: 0.2234513274336283
+2025-11-14 19:32:45,305	***					   MeanAbsoluteError: 0.2234513274336283
+2025-11-14 19:32:45,312	***					   TruePositive: 1449
+2025-11-14 19:32:45,320	***					   FalsePositive: 316
+2025-11-14 19:32:45,328	***					   TrueNegative: 1710
+2025-11-14 19:32:45,336	***					   FalseNegative: 593
+2025-11-14 19:32:45,339	***	
+2025-11-14 19:32:45,339	***			TS-TR NaiveBayes
+2025-11-14 19:32:45,339	***				 Binary metrics
+2025-11-14 19:32:45,339	***					   Accuracy: 0.8746312684365781
+2025-11-14 19:32:45,341	***					   Precision: 0.9118279569892473
+2025-11-14 19:32:45,357	***					   Recall: 0.8305582761998042
+2025-11-14 19:32:45,380	***					   F1Score: 0.8692977960020504
+2025-11-14 19:32:45,397	***					   Specificity: 0.9190523198420533
+2025-11-14 19:32:45,413	***					   FalsePositiveRate: 0.08094768015794669
+2025-11-14 19:32:45,429	***					   TrueNegativeRate: 0.9190523198420533
+2025-11-14 19:32:45,436	***					   MeanSquareError: 0.12536873156342182
+2025-11-14 19:32:45,437	***					   MeanAbsoluteError: 0.12536873156342182
+2025-11-14 19:32:45,445	***					   TruePositive: 1696
+2025-11-14 19:32:45,453	***					   FalsePositive: 164
+2025-11-14 19:32:45,461	***					   TrueNegative: 1862
+2025-11-14 19:32:45,470	***					   FalseNegative: 346
+2025-11-14 19:32:45,477	***	
+2025-11-14 19:32:45,477	***			TS-TR GradientBoosting
+2025-11-14 19:32:45,477	***				 Binary metrics
+2025-11-14 19:32:45,478	***					   Accuracy: 0.8416912487708947
+2025-11-14 19:32:45,480	***					   Precision: 0.8512562814070351
+2025-11-14 19:32:45,496	***					   Recall: 0.8295788442703232
+2025-11-14 19:32:45,520	***					   F1Score: 0.8402777777777777
+2025-11-14 19:32:45,536	***					   Specificity: 0.8538993089832182
+2025-11-14 19:32:45,552	***					   FalsePositiveRate: 0.14610069101678183
+2025-11-14 19:32:45,567	***					   TrueNegativeRate: 0.8538993089832182
+2025-11-14 19:32:45,574	***					   MeanSquareError: 0.1583087512291052
+2025-11-14 19:32:45,575	***					   MeanAbsoluteError: 0.1583087512291052
+2025-11-14 19:32:45,583	***					   TruePositive: 1694
+2025-11-14 19:32:45,590	***					   FalsePositive: 296
+2025-11-14 19:32:45,598	***					   TrueNegative: 1730
+2025-11-14 19:32:45,606	***					   FalseNegative: 348
+2025-11-14 19:32:45,607	***	
+2025-11-14 19:32:45,607	***			TS-TR StochasticGradientDescent
+2025-11-14 19:32:45,607	***				 Binary metrics
+2025-11-14 19:32:45,608	***					   Accuracy: 0.8790560471976401
+2025-11-14 19:32:45,611	***					   Precision: 0.9484953703703703
+2025-11-14 19:32:45,643	***					   Recall: 0.8026444662095984
+2025-11-14 19:32:45,691	***					   F1Score: 0.8694960212201592
+2025-11-14 19:32:45,707	***					   Specificity: 0.956071076011846
+2025-11-14 19:32:45,723	***					   FalsePositiveRate: 0.043928923988154
+2025-11-14 19:32:45,738	***					   TrueNegativeRate: 0.956071076011846
+2025-11-14 19:32:45,744	***					   MeanSquareError: 0.12094395280235988
+2025-11-14 19:32:45,745	***					   MeanAbsoluteError: 0.12094395280235988
+2025-11-14 19:32:45,754	***					   TruePositive: 1639
+2025-11-14 19:32:45,761	***					   FalsePositive: 89
+2025-11-14 19:32:45,769	***					   TrueNegative: 1937
+2025-11-14 19:32:45,777	***					   FalseNegative: 403
+2025-11-14 19:32:45,778	***	x_real_eva size:2212992 shape: 16272, 136
+2025-11-14 19:32:45,779	***	x_synt size:553248 shape: 4068, 136
+2025-11-14 19:32:45,779	***				 Distance metrics
+2025-11-14 19:32:46,594	***					   EuclideanDistance: 3.5362030080488998
+2025-11-14 19:32:46,596	***					   HellingerDistance: 162.28678319567493
+2025-11-14 19:32:46,603	***					   ManhattanDistance: [4.000e+00 1.000e+00 0.000e+00 2.000e+00 4.000e+00 5.900e+01 1.000e+00
+ 5.900e+01 0.000e+00 1.000e+00 2.100e+01 0.000e+00 2.600e+01 4.600e+01
+ 8.400e+01 1.000e+00 7.990e+02 1.300e+01 1.903e+03 2.750e+02 5.000e+00
+ 1.911e+03 3.020e+02 1.742e+03 2.185e+03 2.480e+02 1.489e+03 1.090e+02
+ 1.790e+02 1.773e+03 1.720e+03 1.200e+02 1.150e+02 2.700e+01 3.180e+02
+ 8.470e+02 1.621e+03 4.260e+02 4.410e+02 4.380e+02 1.311e+03 4.370e+02
+ 2.280e+02 5.330e+02 5.220e+02 5.230e+02 1.135e+03 4.200e+01 3.200e+01
+ 4.700e+01 9.000e+00 0.000e+00 0.000e+00 6.000e+00 0.000e+00 0.000e+00
+ 9.600e+01 2.000e+00 1.467e+03 1.796e+03 2.970e+02 4.000e+01 1.079e+03
+ 2.020e+02 0.000e+00 1.000e+00 4.020e+02 2.000e+02 3.700e+01 6.000e+00
+ 2.180e+02 7.200e+01 3.010e+02 2.154e+03 2.000e+00 4.500e+01 8.000e+00
+ 2.000e+00 6.600e+01 1.000e+02 1.700e+01 1.060e+02 3.800e+01 1.245e+03
+ 1.988e+03 1.998e+03 3.310e+02 4.150e+02 2.024e+03 1.859e+03 6.210e+02
+ 2.208e+03 1.400e+01 2.000e+00 0.000e+00 3.000e+00 3.000e+00 4.000e+00
+ 3.000e+00 1.600e+01 9.000e+00 7.900e+01 8.000e+00 0.000e+00 5.490e+02
+ 8.900e+01 3.000e+00 5.000e+00 4.000e+00 2.200e+01 1.000e+00 0.000e+00
+ 2.300e+02 2.430e+02 9.990e+02 9.010e+02 3.300e+01 1.000e+00 8.600e+01
+ 2.000e+00 8.260e+02 3.500e+01 3.500e+01 0.000e+00 1.900e+01 1.100e+01
+ 5.000e+00 2.700e+01 1.000e+01 1.300e+01 1.503e+03 1.202e+03 7.000e+00
+ 7.500e+01 4.000e+00 1.000e+01]
+2025-11-14 19:32:46,621	***					   HammingDistance: 2.847858996539798
+2025-11-14 19:32:46,653	***					   JaccardDistance: 0.6253512418370359
+2025-11-14 19:32:46,654	***	Fold 4 experiment completed in 11.78 seconds.
+2025-11-14 19:32:46,654	***	------
+
+
+2025-11-14 19:32:46,654	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:46,659	***	
+2025-11-14 19:32:46,659	***	Running experiment for fold 5.
+2025-11-14 19:32:46,659	***	Fold 5 training data shape: X=(16272, 136), Y=(16272, 1)
+2025-11-14 19:32:46,659	***	Retrieved Monitor path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor
+2025-11-14 19:32:46,660	***	Starting model creation and prediction process.
+2025-11-14 19:32:46,660	***	Number of real samples: 16272
+2025-11-14 19:32:46,660	***	Training model with 16272 samples and model type: adversarial
+2025-11-14 19:32:46,666	***	CPU info collected.
+2025-11-14 19:32:46,906	***	Training started...
+2025-11-14 19:32:46,907	***	Epoch 1/10 started...
+2025-11-14 19:32:48,751	***	Epoch 1 ended. Time: 1.8445s, Avg batch time: 0.0071s, Expected finish: 2025-11-14 19:33:05
+2025-11-14 19:32:48,752	***	Epoch 2/10 started...
+2025-11-14 19:32:49,264	***	Epoch 2 ended. Time: 0.5123s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:58
+2025-11-14 19:32:49,265	***	Epoch 3/10 started...
+2025-11-14 19:32:49,780	***	Epoch 3 ended. Time: 0.5147s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:56
+2025-11-14 19:32:49,780	***	Epoch 4/10 started...
+2025-11-14 19:32:50,294	***	Epoch 4 ended. Time: 0.5142s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:55
+2025-11-14 19:32:50,295	***	Epoch 5/10 started...
+2025-11-14 19:32:50,817	***	Epoch 5 ended. Time: 0.5219s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:54
+2025-11-14 19:32:50,818	***	Epoch 6/10 started...
+2025-11-14 19:32:51,332	***	Epoch 6 ended. Time: 0.5144s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:54
+2025-11-14 19:32:51,333	***	Epoch 7/10 started...
+2025-11-14 19:32:51,871	***	Epoch 7 ended. Time: 0.5383s, Avg batch time: 0.0020s, Expected finish: 2025-11-14 19:32:53
+2025-11-14 19:32:51,872	***	Epoch 8/10 started...
+2025-11-14 19:32:52,391	***	Epoch 8 ended. Time: 0.5186s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:53
+2025-11-14 19:32:52,391	***	Epoch 9/10 started...
+2025-11-14 19:32:52,908	***	Epoch 9 ended. Time: 0.5172s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:53
+2025-11-14 19:32:52,909	***	Epoch 10/10 started...
+2025-11-14 19:32:53,426	***	Epoch 10 ended. Time: 0.5169s, Avg batch time: 0.0019s, Expected finish: 2025-11-14 19:32:53
+2025-11-14 19:32:53,426	***	Training ended. Total time: 6.5205s, Avg epoch time: 0.6513s
+2025-11-14 19:32:53,427	***	Training logs saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_4_fold.json
+2025-11-14 19:32:53,429	***	Model training completed.
+2025-11-14 19:32:53,429	***			number_samples_per_class
+2025-11-14 19:32:53,429	***	Generating data using Adversarial algorithm.
+2025-11-14 19:32:53,702	***	Data generation completed successfully for model type: adversarial
+2025-11-14 19:32:53,702	***	Starting to save CSV for fold number 4.
+2025-11-14 19:32:53,702	***	Total number of samples to be saved: 4068
+2025-11-14 19:32:53,702	***	Processing 2020 samples for label class 0.
+2025-11-14 19:32:53,703	***	Processing 2048 samples for label class 1.
+2025-11-14 19:32:53,703	***	Combining labels and data into a DataFrame.
+2025-11-14 19:32:53,804	***	DataFrame created successfully with 4068 rows and 137 columns.
+2025-11-14 19:32:53,804	***	Reverting normalization using stored scaler parameters.
+2025-11-14 19:32:53,808	***	Normalization successfully reverted.
+2025-11-14 19:32:53,961	***	Data successfully saved to outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/DataGenerated/DataOutput_K_fold_4_adversarial.txt.
+2025-11-14 19:32:53,961	***	CSV save operation for fold 4 completed.
+2025-11-14 19:32:53,961	***	Entered the save_data_generated method.
+2025-11-14 19:32:53,961	***	Attempting to save generated data.
+2025-11-14 19:32:53,961	***	Generated data saved successfully.
+2025-11-14 19:32:53,962	***			Model creation and prediction completed for fold 5.
+2025-11-14 19:32:53,962	***	
+2025-11-14 19:32:53,962	***	
+2025-11-14 19:32:53,962	***	 starting evaluation for fold 5.
+2025-11-14 19:32:53,962	***	
+2025-11-14 19:32:53,962	***	
+2025-11-14 19:32:53,962	***	
+2025-11-14 19:32:53,962	***	#################################################################################
+2025-11-14 19:32:53,962	***		TR-TS: train on real, test on synthetic
+2025-11-14 19:32:53,962	***			TR-TS: Total number of samples to be saved: 4068
+2025-11-14 19:32:53,962	***			TR-TS: Processing 2020 samples for label class 0.
+2025-11-14 19:32:53,963	***			TR-TS: Processing 2048 samples for label class 1.
+2025-11-14 19:32:53,963	***	
+2025-11-14 19:32:53,963	***	Starting Training Classifiers
+2025-11-14 19:32:53,963	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:53,963	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:54,197	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:54,197	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:54,198	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:54,349	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:54,349	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:54,349	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:54,350	***	Finished training KNN model.
+2025-11-14 19:32:54,350	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:54,350	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:54,365	***	Finished training DECISION TREE model.
+2025-11-14 19:32:54,365	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:54,365	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:54,368	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:54,368	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:54,368	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:54,909	***	Gradient Boosting model training completed.
+2025-11-14 19:32:54,909	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:54,910	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:54,934	***	Finished training the SGD model.
+2025-11-14 19:32:54,951	***	
+2025-11-14 19:32:54,951	***			TR-TS RandomForest
+2025-11-14 19:32:54,951	***				 Binary metrics
+2025-11-14 19:32:54,951	***					   Accuracy: 0.6290560471976401
+2025-11-14 19:32:54,953	***					   Precision: 1.0
+2025-11-14 19:32:54,964	***					   Recall: 0.26318359375
+2025-11-14 19:32:54,980	***					   F1Score: 0.4166988790104368
+2025-11-14 19:32:54,990	***					   Specificity: 1.0
+2025-11-14 19:32:55,001	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:55,007	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:55,013	***					   MeanSquareError: 0.37094395280235987
+2025-11-14 19:32:55,019	***					   MeanAbsoluteError: 0.37094395280235987
+2025-11-14 19:32:55,022	***					   TruePositive: 539
+2025-11-14 19:32:55,025	***					   FalsePositive: 0
+2025-11-14 19:32:55,028	***					   TrueNegative: 2020
+2025-11-14 19:32:55,031	***					   FalseNegative: 1509
+2025-11-14 19:32:55,278	***	
+2025-11-14 19:32:55,278	***			TR-TS SupportVectorMachine
+2025-11-14 19:32:55,279	***				 Binary metrics
+2025-11-14 19:32:55,279	***					   Accuracy: 0.8679941002949852
+2025-11-14 19:32:55,282	***					   Precision: 0.8392456219128873
+2025-11-14 19:32:55,293	***					   Recall: 0.91259765625
+2025-11-14 19:32:55,309	***					   F1Score: 0.8743859649122807
+2025-11-14 19:32:55,320	***					   Specificity: 0.8227722772277227
+2025-11-14 19:32:55,330	***					   FalsePositiveRate: 0.17722772277227722
+2025-11-14 19:32:55,336	***					   TrueNegativeRate: 0.8227722772277227
+2025-11-14 19:32:55,342	***					   MeanSquareError: 0.13200589970501475
+2025-11-14 19:32:55,349	***					   MeanAbsoluteError: 0.13200589970501475
+2025-11-14 19:32:55,352	***					   TruePositive: 1869
+2025-11-14 19:32:55,355	***					   FalsePositive: 358
+2025-11-14 19:32:55,357	***					   TrueNegative: 1662
+2025-11-14 19:32:55,360	***					   FalseNegative: 179
+2025-11-14 19:32:55,509	***	
+2025-11-14 19:32:55,509	***			TR-TS KNN
+2025-11-14 19:32:55,509	***				 Binary metrics
+2025-11-14 19:32:55,510	***					   Accuracy: 0.8456243854473943
+2025-11-14 19:32:55,513	***					   Precision: 1.0
+2025-11-14 19:32:55,524	***					   Recall: 0.693359375
+2025-11-14 19:32:55,540	***					   F1Score: 0.8189158016147635
+2025-11-14 19:32:55,552	***					   Specificity: 1.0
+2025-11-14 19:32:55,563	***					   FalsePositiveRate: 0.0
+2025-11-14 19:32:55,570	***					   TrueNegativeRate: 1.0
+2025-11-14 19:32:55,577	***					   MeanSquareError: 0.1543756145526057
+2025-11-14 19:32:55,584	***					   MeanAbsoluteError: 0.1543756145526057
+2025-11-14 19:32:55,587	***					   TruePositive: 1420
+2025-11-14 19:32:55,590	***					   FalsePositive: 0
+2025-11-14 19:32:55,593	***					   TrueNegative: 2020
+2025-11-14 19:32:55,596	***					   FalseNegative: 628
+2025-11-14 19:32:55,598	***	
+2025-11-14 19:32:55,598	***			TR-TS DecisionTree
+2025-11-14 19:32:55,599	***				 Binary metrics
+2025-11-14 19:32:55,599	***					   Accuracy: 0.8751229105211407
+2025-11-14 19:32:55,602	***					   Precision: 0.8551660516605166
+2025-11-14 19:32:55,613	***					   Recall: 0.9052734375
+2025-11-14 19:32:55,629	***					   F1Score: 0.8795066413662239
+2025-11-14 19:32:55,640	***					   Specificity: 0.8445544554455445
+2025-11-14 19:32:55,651	***					   FalsePositiveRate: 0.15544554455445544
+2025-11-14 19:32:55,657	***					   TrueNegativeRate: 0.8445544554455445
+2025-11-14 19:32:55,663	***					   MeanSquareError: 0.1248770894788594
+2025-11-14 19:32:55,669	***					   MeanAbsoluteError: 0.1248770894788594
+2025-11-14 19:32:55,672	***					   TruePositive: 1854
+2025-11-14 19:32:55,675	***					   FalsePositive: 314
+2025-11-14 19:32:55,678	***					   TrueNegative: 1706
+2025-11-14 19:32:55,681	***					   FalseNegative: 194
+2025-11-14 19:32:55,685	***	
+2025-11-14 19:32:55,685	***			TR-TS NaiveBayes
+2025-11-14 19:32:55,685	***				 Binary metrics
+2025-11-14 19:32:55,686	***					   Accuracy: 0.523598820058997
+2025-11-14 19:32:55,688	***					   Precision: 0.5137982940291018
+2025-11-14 19:32:55,699	***					   Recall: 1.0
+2025-11-14 19:32:55,715	***					   F1Score: 0.6788200198873052
+2025-11-14 19:32:55,727	***					   Specificity: 0.040594059405940595
+2025-11-14 19:32:55,738	***					   FalsePositiveRate: 0.9594059405940594
+2025-11-14 19:32:55,745	***					   TrueNegativeRate: 0.040594059405940595
+2025-11-14 19:32:55,751	***					   MeanSquareError: 0.47640117994100295
+2025-11-14 19:32:55,758	***					   MeanAbsoluteError: 0.47640117994100295
+2025-11-14 19:32:55,761	***					   TruePositive: 2048
+2025-11-14 19:32:55,764	***					   FalsePositive: 1938
+2025-11-14 19:32:55,767	***					   TrueNegative: 82
+2025-11-14 19:32:55,771	***					   FalseNegative: 0
+2025-11-14 19:32:55,776	***	
+2025-11-14 19:32:55,776	***			TR-TS GradientBoosting
+2025-11-14 19:32:55,776	***				 Binary metrics
+2025-11-14 19:32:55,777	***					   Accuracy: 0.6536381514257621
+2025-11-14 19:32:55,780	***					   Precision: 0.75177304964539
+2025-11-14 19:32:55,791	***					   Recall: 0.4658203125
+2025-11-14 19:32:55,808	***					   F1Score: 0.5752185709978896
+2025-11-14 19:32:55,819	***					   Specificity: 0.844059405940594
+2025-11-14 19:32:55,831	***					   FalsePositiveRate: 0.15594059405940594
+2025-11-14 19:32:55,837	***					   TrueNegativeRate: 0.844059405940594
+2025-11-14 19:32:55,843	***					   MeanSquareError: 0.34636184857423796
+2025-11-14 19:32:55,849	***					   MeanAbsoluteError: 0.34636184857423796
+2025-11-14 19:32:55,852	***					   TruePositive: 954
+2025-11-14 19:32:55,855	***					   FalsePositive: 315
+2025-11-14 19:32:55,858	***					   TrueNegative: 1705
+2025-11-14 19:32:55,861	***					   FalseNegative: 1094
+2025-11-14 19:32:55,864	***	
+2025-11-14 19:32:55,864	***			TR-TS StochasticGradientDescent
+2025-11-14 19:32:55,864	***				 Binary metrics
+2025-11-14 19:32:55,865	***					   Accuracy: 0.76007866273353
+2025-11-14 19:32:55,868	***					   Precision: 0.7177091795288384
+2025-11-14 19:32:55,889	***					   Recall: 0.86279296875
+2025-11-14 19:32:55,923	***					   F1Score: 0.7835920177383593
+2025-11-14 19:32:55,945	***					   Specificity: 0.655940594059406
+2025-11-14 19:32:55,958	***					   FalsePositiveRate: 0.34405940594059403
+2025-11-14 19:32:55,964	***					   TrueNegativeRate: 0.655940594059406
+2025-11-14 19:32:55,971	***					   MeanSquareError: 0.23992133726647
+2025-11-14 19:32:55,978	***					   MeanAbsoluteError: 0.23992133726647
+2025-11-14 19:32:55,981	***					   TruePositive: 1767
+2025-11-14 19:32:55,984	***					   FalsePositive: 695
+2025-11-14 19:32:55,988	***					   TrueNegative: 1325
+2025-11-14 19:32:55,991	***					   FalseNegative: 281
+2025-11-14 19:32:55,992	***	
+2025-11-14 19:32:55,992	***	
+2025-11-14 19:32:55,992	***	
+2025-11-14 19:32:55,992	***	#################################################################################
+2025-11-14 19:32:55,992	***		TS-TR: train on synthetic, test on real
+2025-11-14 19:32:55,992	***			TS-TR: Total number of samples to be saved: 4068
+2025-11-14 19:32:55,992	***			TS-TR: Processing 2020 samples for label class 0.
+2025-11-14 19:32:55,992	***			TS-TR: Processing 2048 samples for label class 1.
+2025-11-14 19:32:55,994	***	
+2025-11-14 19:32:55,994	***	Starting Training Classifiers
+2025-11-14 19:32:55,994	***	Starting training classifier: RANDOM FOREST
+2025-11-14 19:32:55,996	***	Fitting the Random Forest model to the training data.
+2025-11-14 19:32:56,149	***	Finished training RANDOM FOREST model.
+2025-11-14 19:32:56,149	***	Starting training classifier: SUPPORT VECTOR MACHINE
+2025-11-14 19:32:56,152	***	Fitting the Support Vector Machine model to the training data.
+2025-11-14 19:32:56,174	***	Finished training SUPPORT VECTOR MACHINE model.
+2025-11-14 19:32:56,174	***	Starting training classifier: K-NEAREST NEIGHBORS
+2025-11-14 19:32:56,177	***	Fitting the KNN model to the training data.
+2025-11-14 19:32:56,178	***	Finished training KNN model.
+2025-11-14 19:32:56,178	***	Starting training classifier: DECISION TREE
+2025-11-14 19:32:56,180	***	Fitting the Decision Tree model to the training data.
+2025-11-14 19:32:56,183	***	Finished training DECISION TREE model.
+2025-11-14 19:32:56,183	***	Starting training classifier: NAIVE BAYES
+2025-11-14 19:32:56,185	***	Fitting the Naive Bayes classifier to the training data.
+2025-11-14 19:32:56,188	***	Finished training Naive Bayes classifier.
+2025-11-14 19:32:56,188	***	Starting training classifier: GRADIENT BOOSTING
+2025-11-14 19:32:56,191	***	Fitting the Gradient Boosting model to the training data.
+2025-11-14 19:32:56,443	***	Gradient Boosting model training completed.
+2025-11-14 19:32:56,443	***	Starting training classifier: STOCHASTIC GRADIENT DESCENT
+2025-11-14 19:32:56,445	***	Fitting the SGD model to the training data.
+2025-11-14 19:32:56,454	***	Finished training the SGD model.
+2025-11-14 19:32:56,467	***	
+2025-11-14 19:32:56,467	***			TS-TR RandomForest
+2025-11-14 19:32:56,467	***				 Binary metrics
+2025-11-14 19:32:56,467	***					   Accuracy: 0.8183382497541789
+2025-11-14 19:32:56,470	***					   Precision: 0.7529957479706223
+2025-11-14 19:32:56,485	***					   Recall: 0.951171875
+2025-11-14 19:32:56,509	***					   F1Score: 0.8405609492988134
+2025-11-14 19:32:56,525	***					   Specificity: 0.6836633663366337
+2025-11-14 19:32:56,541	***					   FalsePositiveRate: 0.31633663366336634
+2025-11-14 19:32:56,556	***					   TrueNegativeRate: 0.6836633663366337
+2025-11-14 19:32:56,562	***					   MeanSquareError: 0.18166175024582104
+2025-11-14 19:32:56,563	***					   MeanAbsoluteError: 0.18166175024582104
+2025-11-14 19:32:56,571	***					   TruePositive: 1948
+2025-11-14 19:32:56,579	***					   FalsePositive: 639
+2025-11-14 19:32:56,586	***					   TrueNegative: 1381
+2025-11-14 19:32:56,594	***					   FalseNegative: 100
+2025-11-14 19:32:56,615	***	
+2025-11-14 19:32:56,615	***			TS-TR SupportVectorMachine
+2025-11-14 19:32:56,615	***				 Binary metrics
+2025-11-14 19:32:56,616	***					   Accuracy: 0.738692232055064
+2025-11-14 19:32:56,618	***					   Precision: 0.664111962679107
+2025-11-14 19:32:56,634	***					   Recall: 0.97314453125
+2025-11-14 19:32:56,659	***					   F1Score: 0.7894632600514954
+2025-11-14 19:32:56,675	***					   Specificity: 0.500990099009901
+2025-11-14 19:32:56,691	***					   FalsePositiveRate: 0.499009900990099
+2025-11-14 19:32:56,707	***					   TrueNegativeRate: 0.500990099009901
+2025-11-14 19:32:56,714	***					   MeanSquareError: 0.2613077679449361
+2025-11-14 19:32:56,715	***					   MeanAbsoluteError: 0.2613077679449361
+2025-11-14 19:32:56,723	***					   TruePositive: 1993
+2025-11-14 19:32:56,731	***					   FalsePositive: 1008
+2025-11-14 19:32:56,739	***					   TrueNegative: 1012
+2025-11-14 19:32:56,747	***					   FalseNegative: 55
+2025-11-14 19:32:56,776	***	
+2025-11-14 19:32:56,776	***			TS-TR KNN
+2025-11-14 19:32:56,776	***				 Binary metrics
+2025-11-14 19:32:56,777	***					   Accuracy: 0.8040806293018682
+2025-11-14 19:32:56,779	***					   Precision: 0.7660569970225436
+2025-11-14 19:32:56,795	***					   Recall: 0.87939453125
+2025-11-14 19:32:56,819	***					   F1Score: 0.8188224596499205
+2025-11-14 19:32:56,835	***					   Specificity: 0.7277227722772277
+2025-11-14 19:32:56,851	***					   FalsePositiveRate: 0.2722772277227723
+2025-11-14 19:32:56,867	***					   TrueNegativeRate: 0.7277227722772277
+2025-11-14 19:32:56,874	***					   MeanSquareError: 0.19591937069813176
+2025-11-14 19:32:56,875	***					   MeanAbsoluteError: 0.19591937069813176
+2025-11-14 19:32:56,884	***					   TruePositive: 1801
+2025-11-14 19:32:56,892	***					   FalsePositive: 550
+2025-11-14 19:32:56,900	***					   TrueNegative: 1470
+2025-11-14 19:32:56,908	***					   FalseNegative: 247
+2025-11-14 19:32:56,909	***	
+2025-11-14 19:32:56,909	***			TS-TR DecisionTree
+2025-11-14 19:32:56,909	***				 Binary metrics
+2025-11-14 19:32:56,910	***					   Accuracy: 0.7305801376597837
+2025-11-14 19:32:56,913	***					   Precision: 0.6583499667332002
+2025-11-14 19:32:56,929	***					   Recall: 0.96630859375
+2025-11-14 19:32:56,956	***					   F1Score: 0.7831420656905421
+2025-11-14 19:32:56,972	***					   Specificity: 0.4915841584158416
+2025-11-14 19:32:56,988	***					   FalsePositiveRate: 0.5084158415841584
+2025-11-14 19:32:57,004	***					   TrueNegativeRate: 0.4915841584158416
+2025-11-14 19:32:57,011	***					   MeanSquareError: 0.2694198623402163
+2025-11-14 19:32:57,012	***					   MeanAbsoluteError: 0.2694198623402163
+2025-11-14 19:32:57,020	***					   TruePositive: 1979
+2025-11-14 19:32:57,028	***					   FalsePositive: 1027
+2025-11-14 19:32:57,036	***					   TrueNegative: 993
+2025-11-14 19:32:57,044	***					   FalseNegative: 69
+2025-11-14 19:32:57,047	***	
+2025-11-14 19:32:57,047	***			TS-TR NaiveBayes
+2025-11-14 19:32:57,047	***				 Binary metrics
+2025-11-14 19:32:57,048	***					   Accuracy: 0.801622418879056
+2025-11-14 19:32:57,051	***					   Precision: 0.7293900184842883
+2025-11-14 19:32:57,066	***					   Recall: 0.96337890625
+2025-11-14 19:32:57,091	***					   F1Score: 0.8302124973700821
+2025-11-14 19:32:57,108	***					   Specificity: 0.6376237623762376
+2025-11-14 19:32:57,124	***					   FalsePositiveRate: 0.36237623762376237
+2025-11-14 19:32:57,141	***					   TrueNegativeRate: 0.6376237623762376
+2025-11-14 19:32:57,147	***					   MeanSquareError: 0.19837758112094395
+2025-11-14 19:32:57,148	***					   MeanAbsoluteError: 0.19837758112094395
+2025-11-14 19:32:57,157	***					   TruePositive: 1973
+2025-11-14 19:32:57,165	***					   FalsePositive: 732
+2025-11-14 19:32:57,173	***					   TrueNegative: 1288
+2025-11-14 19:32:57,181	***					   FalseNegative: 75
+2025-11-14 19:32:57,187	***	
+2025-11-14 19:32:57,187	***			TS-TR GradientBoosting
+2025-11-14 19:32:57,187	***				 Binary metrics
+2025-11-14 19:32:57,188	***					   Accuracy: 0.8062930186823992
+2025-11-14 19:32:57,191	***					   Precision: 0.7359550561797753
+2025-11-14 19:32:57,206	***					   Recall: 0.95947265625
+2025-11-14 19:32:57,230	***					   F1Score: 0.8329800763035186
+2025-11-14 19:32:57,246	***					   Specificity: 0.650990099009901
+2025-11-14 19:32:57,261	***					   FalsePositiveRate: 0.349009900990099
+2025-11-14 19:32:57,277	***					   TrueNegativeRate: 0.650990099009901
+2025-11-14 19:32:57,283	***					   MeanSquareError: 0.19370698131760078
+2025-11-14 19:32:57,284	***					   MeanAbsoluteError: 0.19370698131760078
+2025-11-14 19:32:57,291	***					   TruePositive: 1965
+2025-11-14 19:32:57,299	***					   FalsePositive: 705
+2025-11-14 19:32:57,307	***					   TrueNegative: 1315
+2025-11-14 19:32:57,315	***					   FalseNegative: 83
+2025-11-14 19:32:57,316	***	
+2025-11-14 19:32:57,316	***			TS-TR StochasticGradientDescent
+2025-11-14 19:32:57,316	***				 Binary metrics
+2025-11-14 19:32:57,317	***					   Accuracy: 0.799410029498525
+2025-11-14 19:32:57,321	***					   Precision: 0.7378378378378379
+2025-11-14 19:32:57,355	***					   Recall: 0.93310546875
+2025-11-14 19:32:57,403	***					   F1Score: 0.8240620957309186
+2025-11-14 19:32:57,419	***					   Specificity: 0.6638613861386139
+2025-11-14 19:32:57,435	***					   FalsePositiveRate: 0.33613861386138616
+2025-11-14 19:32:57,452	***					   TrueNegativeRate: 0.6638613861386139
+2025-11-14 19:32:57,458	***					   MeanSquareError: 0.20058997050147492
+2025-11-14 19:32:57,459	***					   MeanAbsoluteError: 0.20058997050147492
+2025-11-14 19:32:57,468	***					   TruePositive: 1911
+2025-11-14 19:32:57,476	***					   FalsePositive: 679
+2025-11-14 19:32:57,484	***					   TrueNegative: 1341
+2025-11-14 19:32:57,492	***					   FalseNegative: 137
+2025-11-14 19:32:57,493	***	x_real_eva size:2212992 shape: 16272, 136
+2025-11-14 19:32:57,494	***	x_synt size:553248 shape: 4068, 136
+2025-11-14 19:32:57,494	***				 Distance metrics
+2025-11-14 19:32:58,332	***					   EuclideanDistance: 3.9266219400202305
+2025-11-14 19:32:58,334	***					   HellingerDistance: 179.4254719932485
+2025-11-14 19:32:58,341	***					   ManhattanDistance: [2.000e+00 0.000e+00 2.000e+00 4.000e+00 2.000e+00 5.700e+01 1.000e+00
+ 5.100e+01 2.000e+00 1.000e+00 1.800e+01 0.000e+00 1.600e+01 3.300e+01
+ 2.630e+02 2.000e+00 1.392e+03 1.100e+01 1.758e+03 3.130e+02 8.000e+00
+ 1.627e+03 2.350e+02 2.033e+03 2.173e+03 3.750e+03 1.335e+03 1.250e+02
+ 8.530e+02 2.277e+03 2.357e+03 1.310e+02 1.030e+02 3.100e+01 2.520e+02
+ 5.420e+02 2.439e+03 3.970e+02 4.420e+02 4.490e+02 1.290e+03 4.400e+02
+ 2.250e+02 5.440e+02 5.210e+02 5.260e+02 1.164e+03 4.400e+01 3.200e+01
+ 4.000e+01 6.000e+00 0.000e+00 0.000e+00 6.000e+00 0.000e+00 0.000e+00
+ 1.100e+02 0.000e+00 9.180e+02 1.059e+03 2.880e+02 4.400e+01 9.000e+02
+ 2.220e+02 1.000e+00 0.000e+00 4.380e+02 1.940e+02 3.400e+01 5.000e+00
+ 1.932e+03 1.940e+02 3.290e+02 2.222e+03 2.000e+00 5.100e+01 1.400e+01
+ 7.000e+00 8.300e+01 1.050e+02 1.200e+01 1.080e+02 4.700e+01 1.223e+03
+ 2.213e+03 2.202e+03 3.140e+02 3.150e+02 1.773e+03 1.278e+03 6.410e+02
+ 1.490e+03 1.300e+01 1.000e+00 1.000e+00 2.000e+00 2.000e+00 3.000e+00
+ 3.000e+00 1.100e+01 6.000e+00 7.900e+01 8.000e+00 0.000e+00 1.351e+03
+ 8.300e+01 2.000e+00 4.000e+00 1.000e+01 2.100e+01 0.000e+00 1.000e+00
+ 2.356e+03 2.730e+02 1.029e+03 3.070e+03 3.300e+01 0.000e+00 7.400e+01
+ 2.000e+00 8.590e+02 2.600e+01 4.200e+01 2.000e+00 2.300e+01 1.500e+01
+ 2.000e+00 3.100e+01 1.100e+01 9.000e+00 1.793e+03 1.931e+03 4.000e+00
+ 8.600e+01 8.000e+00 1.400e+01]
+2025-11-14 19:32:58,358	***					   HammingDistance: 3.4811310553633263
+2025-11-14 19:32:58,390	***					   JaccardDistance: 0.6721805206110002
+2025-11-14 19:32:58,391	***	Fold 5 experiment completed in 11.73 seconds.
+2025-11-14 19:32:58,391	***	------
+
+
+2025-11-14 19:32:58,391	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:58,404	***	Retrieved EvaluationResults path: outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults
+2025-11-14 19:32:58,408	***	All experiments completed in 59.61 seconds.

@@ -1,0 +1,33 @@
+2025-11-14 19:31:52,512	---	Campaign Command:
+	/home/gatopreto/PycharmProjects/Test_MalDataGen/run_adversarial_models.py
+
+2025-11-14 19:31:52,512	---	Campaign Settings:
+2025-11-14 19:31:52,512	---		campaign  : ['adversarial']
+2025-11-14 19:31:52,512	---		dataset   : -1
+2025-11-14 19:31:52,512	---		dryrun    : False
+2025-11-14 19:31:52,512	---		pipenv    : False
+2025-11-14 19:31:52,512	---		verbosity : 20
+2025-11-14 19:31:52,512	---	
+2025-11-14 19:31:52,512	---	datasets : ['Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv']
+2025-11-14 19:31:52,512	---	
+
+
+
+2025-11-14 19:31:52,512	---	##########################################
+2025-11-14 19:31:52,512	---	 EVALUATION 
+2025-11-14 19:31:52,512	---	##########################################
+2025-11-14 19:31:52,512	---		Dataset Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv 1/1 
+2025-11-14 19:31:52,512	---			Campaign adversarial 1/1 
+2025-11-14 19:31:52,513	---				combination 1/1 
+2025-11-14 19:31:52,513	---				{'classifier': 'RandomForest SupportVectorMachine KNN DecisionTree NaiveBayes GradientBoosting StochasticGradientDescent', 'model_type': 'adversarial', 'number_samples_per_class': '0:2000,1:2000', 'number_k_folds': 5, 'adversarial_number_epochs': 10, 'save_data': 'True', 'adversarial_batch_size': 64, 'adversarial_dense_layer_sizes_g': '256', 'adversarial_dense_layer_sizes_d': '64', 'adversarial_dropout_decay_rate_g': 0.2, 'adversarial_dropout_decay_rate_d': 0.4, 'adversarial_initializer_deviation': 0.5, 'adversarial_initializer_mean': 0, 'adversarial_latent_dimension': 32, 'adversarial_latent_mean_distribution': 0.5, 'adversarial_latent_stander_deviation': 0.125, 'adversarial_training_algorithm': 'Adam', 'adversarial_activation_function': 'leakyrelu', 'adversarial_loss_generator': 'binary_crossentropy', 'adversarial_loss_discriminator': 'binary_crossentropy', 'adversarial_smoothing_rate': 0.15}
+2025-11-14 19:31:52,513	---						Begin Experiment: 2025-11-14_19:31:52
+2025-11-14 19:31:52,513	---	Command line  : python3 main.py   --data_load_path_file_input Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv --verbosity 20 --output_dir outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1 --classifier RandomForest SupportVectorMachine KNN DecisionTree NaiveBayes GradientBoosting StochasticGradientDescent --model_type adversarial --number_samples_per_class 0:2000,1:2000 --number_k_folds 5 --adversarial_number_epochs 10 --save_data True --adversarial_batch_size 64 --adversarial_dense_layer_sizes_g 256 --adversarial_dense_layer_sizes_d 64 --adversarial_dropout_decay_rate_g 0.2 --adversarial_dropout_decay_rate_d 0.4 --adversarial_initializer_deviation 0.5 --adversarial_initializer_mean 0 --adversarial_latent_dimension 32 --adversarial_latent_mean_distribution 0.5 --adversarial_latent_stander_deviation 0.125 --adversarial_training_algorithm Adam --adversarial_activation_function leakyrelu --adversarial_loss_generator binary_crossentropy --adversarial_loss_discriminator binary_crossentropy --adversarial_smoothing_rate 0.15
+2025-11-14 19:32:59,407	---						End                : 2025-11-14_19:32:59
+2025-11-14 19:32:59,407	---						Experiment duration: 0:01:06.893947
+2025-11-14 19:32:59,407	---						Begin Plot: 2025-11-14_19:32:59
+2025-11-14 19:32:59,407	---	Command line  : python3 plots.py   --results outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/EvaluationResults/Results.json --f_plot   --title adversarial reduced_balanced_androcrawl --folds 5 --dataset Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv --output_dir outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1 --model adversarial --training outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_0_fold.json outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_1_fold.json outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_2_fold.json outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_3_fold.json outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1/Monitor/monitor_model_4_fold.json
+2025-11-14 19:34:23,426	---						End Plot                : 2025-11-14_19:34:23
+2025-11-14 19:34:23,427	---						Plot duration: 0:01:24.019315
+2025-11-14 19:34:23,427	---			 Campaign duration: 0:02:30.914384
+2025-11-14 19:34:23,427	---		 Dataset duration: 0:02:30.914272
+2025-11-14 19:34:23,427	---	Evaluation duration: 0:02:30.914371

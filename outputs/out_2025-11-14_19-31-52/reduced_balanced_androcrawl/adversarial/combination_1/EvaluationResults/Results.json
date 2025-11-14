@@ -1,0 +1,3237 @@
+{
+    "Arguments": {
+        "adam_optimizer_amsgrad": false,
+        "adam_optimizer_beta_1": 0.9,
+        "adam_optimizer_beta_2": 0.999,
+        "adam_optimizer_epsilon": 1e-07,
+        "adam_optimizer_learning_rate": 0.001,
+        "adversarial_activation_function": "leakyrelu",
+        "adversarial_batch_size": 64,
+        "adversarial_dense_layer_sizes_d": [
+            64
+        ],
+        "adversarial_dense_layer_sizes_g": [
+            256
+        ],
+        "adversarial_dropout_decay_rate_d": 0.4,
+        "adversarial_dropout_decay_rate_g": 0.2,
+        "adversarial_file_name_discriminator": "discriminator_model",
+        "adversarial_file_name_generator": "generator_model",
+        "adversarial_initializer_deviation": 0.5,
+        "adversarial_initializer_mean": 0.0,
+        "adversarial_last_layer_activation": "Sigmoid",
+        "adversarial_latent_dimension": 32,
+        "adversarial_latent_mean_distribution": 0.5,
+        "adversarial_latent_stander_deviation": 0.125,
+        "adversarial_loss_discriminator": "binary_crossentropy",
+        "adversarial_loss_generator": "binary_crossentropy",
+        "adversarial_number_epochs": 10,
+        "adversarial_path_output_models": "models_saved/",
+        "adversarial_smoothing_rate": 0.15,
+        "adversarial_training_algorithm": "Adam",
+        "classifier": [
+            "RandomForest",
+            "SupportVectorMachine",
+            "KNN",
+            "DecisionTree",
+            "NaiveBayes",
+            "GradientBoosting",
+            "StochasticGradientDescent"
+        ],
+        "data_load_end_column": -1,
+        "data_load_exclude_columns": -1,
+        "data_load_label_column": -1,
+        "data_load_max_columns": -1,
+        "data_load_max_samples": -1,
+        "data_load_path_file_input": "Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv",
+        "data_load_path_file_output": "OutputDir",
+        "data_load_start_column": 0,
+        "decision_tree_criterion": "gini",
+        "decision_tree_max_depth": null,
+        "decision_tree_max_features": null,
+        "decision_tree_max_leaf_nodes": null,
+        "denoising_diffusion_autoencoder_activation_output_encoder": "sigmoid",
+        "denoising_diffusion_autoencoder_batch_size_create_embedding": 128,
+        "denoising_diffusion_autoencoder_batch_size_training": 64,
+        "denoising_diffusion_autoencoder_decoder_filters": [
+            160,
+            320
+        ],
+        "denoising_diffusion_autoencoder_dropout_decay_rate_decoder": 0.4,
+        "denoising_diffusion_autoencoder_dropout_decay_rate_encoder": 0.2,
+        "denoising_diffusion_autoencoder_encoder_filters": [
+            320,
+            160
+        ],
+        "denoising_diffusion_autoencoder_epochs": 1000,
+        "denoising_diffusion_autoencoder_file_name_decoder": "decoder_model",
+        "denoising_diffusion_autoencoder_file_name_encoder": "encoder_model",
+        "denoising_diffusion_autoencoder_initializer_deviation": 0.125,
+        "denoising_diffusion_autoencoder_initializer_mean": 0.0,
+        "denoising_diffusion_autoencoder_intermediary_activation_alpha": 0.05,
+        "denoising_diffusion_autoencoder_intermediary_activation_function": "swish",
+        "denoising_diffusion_autoencoder_last_layer_activation": "sigmoid",
+        "denoising_diffusion_autoencoder_latent_dimension": 64,
+        "denoising_diffusion_autoencoder_loss": "mse",
+        "denoising_diffusion_autoencoder_mean_distribution": 0.5,
+        "denoising_diffusion_autoencoder_path_output_models": "models_saved/",
+        "denoising_diffusion_autoencoder_stander_deviation": 0.125,
+        "denoising_diffusion_ema": 0.999,
+        "denoising_diffusion_gaussian_beta_end": 0.02,
+        "denoising_diffusion_gaussian_beta_start": 0.0001,
+        "denoising_diffusion_gaussian_clip_max": 1.0,
+        "denoising_diffusion_gaussian_clip_min": -1.0,
+        "denoising_diffusion_gaussian_time_steps": 1000,
+        "denoising_diffusion_latent_dimension": 64,
+        "denoising_diffusion_margin": 0.5,
+        "denoising_diffusion_time_steps": 1000,
+        "denoising_diffusion_unet_attention_mode": [
+            false,
+            true,
+            true
+        ],
+        "denoising_diffusion_unet_batch_size": 128,
+        "denoising_diffusion_unet_channels_per_level": [
+            1,
+            2,
+            4
+        ],
+        "denoising_diffusion_unet_epochs": 1000,
+        "denoising_diffusion_unet_group_normalization": 1,
+        "denoising_diffusion_unet_intermediary_activation": "swish",
+        "denoising_diffusion_unet_intermediary_activation_alpha": 0.05,
+        "denoising_diffusion_unet_last_layer_activation": "linear",
+        "denoising_diffusion_unet_num_embedding_channels": 1,
+        "denoising_diffusion_unet_num_residual_blocks": 2,
+        "early_stop_baseline": null,
+        "early_stop_min_delta": 0.0001,
+        "early_stop_mode": "auto",
+        "early_stop_monitor": "val_loss",
+        "early_stop_patience": 50,
+        "early_stop_restore_best_weights": null,
+        "early_stop_start_from_epoch": 100,
+        "evaluation": [
+            "TrAs",
+            "TsAr"
+        ],
+        "gaussian_process_kernel": null,
+        "gaussian_process_max_iterations": 20,
+        "gaussian_process_optimizer": "fmin_l_bfgs_b",
+        "gradient_boosting_criterion": "friedman_mse",
+        "gradient_boosting_learning_rate": 0.1,
+        "gradient_boosting_loss": "log_loss",
+        "gradient_boosting_number_estimators": 100,
+        "gradient_boosting_subsample": 1.0,
+        "k_means_init": "k-means++",
+        "k_means_max_iterations": 300,
+        "k_means_number_clusters": 2,
+        "k_means_random_state": null,
+        "k_means_tolerance": 0.0001,
+        "knn_algorithm": "auto",
+        "knn_leaf_size": 30,
+        "knn_metric": "minkowski",
+        "knn_number_neighbors": 5,
+        "knn_weights": "uniform",
+        "latent_diffusion_autoencoder_activation_output_encoder": "sigmoid",
+        "latent_diffusion_autoencoder_batch_size_create_embedding": 128,
+        "latent_diffusion_autoencoder_batch_size_training": 64,
+        "latent_diffusion_autoencoder_decoder_filters": [
+            160,
+            320
+        ],
+        "latent_diffusion_autoencoder_dropout_decay_rate_decoder": 0.4,
+        "latent_diffusion_autoencoder_dropout_decay_rate_encoder": 0.2,
+        "latent_diffusion_autoencoder_encoder_filters": [
+            320,
+            160
+        ],
+        "latent_diffusion_autoencoder_epochs": 1000,
+        "latent_diffusion_autoencoder_file_name_decoder": "decoder_model",
+        "latent_diffusion_autoencoder_file_name_encoder": "encoder_model",
+        "latent_diffusion_autoencoder_initializer_deviation": 0.125,
+        "latent_diffusion_autoencoder_initializer_mean": 0.0,
+        "latent_diffusion_autoencoder_intermediary_activation_alpha": 0.05,
+        "latent_diffusion_autoencoder_intermediary_activation_function": "swish",
+        "latent_diffusion_autoencoder_last_layer_activation": "sigmoid",
+        "latent_diffusion_autoencoder_latent_dimension": 64,
+        "latent_diffusion_autoencoder_loss": "mse",
+        "latent_diffusion_autoencoder_mean_distribution": 0.5,
+        "latent_diffusion_autoencoder_path_output_models": "models_saved/",
+        "latent_diffusion_autoencoder_stander_deviation": 0.125,
+        "latent_diffusion_ema": 0.999,
+        "latent_diffusion_gaussian_beta_end": 0.02,
+        "latent_diffusion_gaussian_beta_start": 0.0001,
+        "latent_diffusion_gaussian_clip_max": 1.0,
+        "latent_diffusion_gaussian_clip_min": -1.0,
+        "latent_diffusion_gaussian_time_steps": 1000,
+        "latent_diffusion_latent_dimension": 64,
+        "latent_diffusion_margin": 0.5,
+        "latent_diffusion_time_steps": 1000,
+        "latent_diffusion_unet_attention_mode": [
+            false,
+            true,
+            true
+        ],
+        "latent_diffusion_unet_batch_size": 128,
+        "latent_diffusion_unet_channels_per_level": [
+            1,
+            2,
+            4
+        ],
+        "latent_diffusion_unet_epochs": 1000,
+        "latent_diffusion_unet_group_normalization": 1,
+        "latent_diffusion_unet_intermediary_activation": "swish",
+        "latent_diffusion_unet_intermediary_activation_alpha": 0.05,
+        "latent_diffusion_unet_last_layer_activation": "linear",
+        "latent_diffusion_unet_num_embedding_channels": 1,
+        "latent_diffusion_unet_num_residual_blocks": 2,
+        "linear_regression_copy_X": true,
+        "linear_regression_fit_intercept": true,
+        "linear_regression_normalize": false,
+        "linear_regression_number_jobs": null,
+        "model_type": "adversarial",
+        "naive_bayes_priors": null,
+        "naive_bayes_variation_smoothing": 1e-09,
+        "number_k_folds": 5,
+        "number_samples_per_class": {
+            "classes": {
+                "0": 2000,
+                "1": 2000
+            },
+            "number_classes": 2
+        },
+        "output_dir": "outputs/out_2025-11-14_19-31-52/reduced_balanced_androcrawl/adversarial/combination_1",
+        "path_confusion_matrix": "confusion_matrix",
+        "path_curve_loss": "training_curve",
+        "perceptron_dropout_decay_rate": 0.2,
+        "perceptron_last_layer_activation": "sigmoid",
+        "perceptron_layer_activation": "relu",
+        "perceptron_layers_settings": [
+            512,
+            256,
+            256
+        ],
+        "perceptron_number_epochs": 1,
+        "perceptron_training_algorithm": "Adam",
+        "perceptron_training_loss": "binary_crossentropy",
+        "perceptron_training_metric": [
+            "accuracy"
+        ],
+        "quadratic_discriminant_analysis_priors": null,
+        "quadratic_discriminant_analysis_regularization": 0.0,
+        "quadratic_discriminant_analysis_threshold": 0.0001,
+        "random_forest_max_depth": null,
+        "random_forest_max_leaf_nodes": null,
+        "random_forest_number_estimators": 100,
+        "random_noise_level": 0.1,
+        "random_noise_type_noise": "uniform",
+        "save_data": true,
+        "save_models": false,
+        "smote_k_neighbors": 2,
+        "smote_random_state": null,
+        "smote_sampling_strategy": "auto",
+        "spectral_affinity": "rbf",
+        "spectral_assign_labels": "kmeans",
+        "spectral_eigen_solver": null,
+        "spectral_number_clusters": 8,
+        "spectral_random_state": null,
+        "stochastic_gradient_descent_alpha": 0.0001,
+        "stochastic_gradient_descent_loss": "hinge",
+        "stochastic_gradient_descent_max_iterations": 1000,
+        "stochastic_gradient_descent_penalty": "l2",
+        "stochastic_gradient_descent_tolerance": 0.001,
+        "support_vector_machine_gamma": "scale",
+        "support_vector_machine_kernel": "rbf",
+        "support_vector_machine_kernel_degree": 3,
+        "support_vector_machine_regularization": 1.0,
+        "use_early_stop": false,
+        "use_gpu": false,
+        "verbosity": 20
+    },
+    "TS-TR": {
+        "RandomForest": {
+            "1-Fold": {
+                "Accuracy": 0.69960668633235,
+                "Precision": 0.6269691241335854,
+                "Recall": 0.9812623274161736,
+                "F1Score": 0.7650903498654364,
+                "Specificity": 0.4196078431372549,
+                "FalsePositiveRate": 0.5803921568627451,
+                "TrueNegativeRate": 0.4196078431372549,
+                "MeanSquareError": 0.30039331366764993,
+                "MeanAbsoluteError": 0.30039331366764993,
+                "TruePositive": 1990,
+                "FalsePositive": 1184,
+                "TrueNegative": 856,
+                "FalseNegative": 38
+            },
+            "2-Fold": {
+                "Accuracy": 0.8335791543756146,
+                "Precision": 0.9992706053975201,
+                "Recall": 0.6695992179863147,
+                "F1Score": 0.8018729880011706,
+                "Specificity": 0.9995054401582592,
+                "FalsePositiveRate": 0.0004945598417408506,
+                "TrueNegativeRate": 0.9995054401582592,
+                "MeanSquareError": 0.16642084562438544,
+                "MeanAbsoluteError": 0.16642084562438544,
+                "TruePositive": 1370,
+                "FalsePositive": 1,
+                "TrueNegative": 2021,
+                "FalseNegative": 676
+            },
+            "3-Fold": {
+                "Accuracy": 0.8918387413962635,
+                "Precision": 0.8717948717948718,
+                "Recall": 0.9152542372881356,
+                "F1Score": 0.8929961089494164,
+                "Specificity": 0.8690591658583899,
+                "FalsePositiveRate": 0.1309408341416101,
+                "TrueNegativeRate": 0.8690591658583899,
+                "MeanSquareError": 0.10816125860373647,
+                "MeanAbsoluteError": 0.10816125860373647,
+                "TruePositive": 1836,
+                "FalsePositive": 270,
+                "TrueNegative": 1792,
+                "FalseNegative": 170
+            },
+            "4-Fold": {
+                "Accuracy": 0.8780727630285152,
+                "Precision": 0.9256607929515418,
+                "Recall": 0.8232125367286973,
+                "F1Score": 0.8714359771902539,
+                "Specificity": 0.9333662388943732,
+                "FalsePositiveRate": 0.06663376110562685,
+                "TrueNegativeRate": 0.9333662388943732,
+                "MeanSquareError": 0.12192723697148476,
+                "MeanAbsoluteError": 0.12192723697148476,
+                "TruePositive": 1681,
+                "FalsePositive": 135,
+                "TrueNegative": 1891,
+                "FalseNegative": 361
+            },
+            "5-Fold": {
+                "Accuracy": 0.8183382497541789,
+                "Precision": 0.7529957479706223,
+                "Recall": 0.951171875,
+                "F1Score": 0.8405609492988134,
+                "Specificity": 0.6836633663366337,
+                "FalsePositiveRate": 0.31633663366336634,
+                "TrueNegativeRate": 0.6836633663366337,
+                "MeanSquareError": 0.18166175024582104,
+                "MeanAbsoluteError": 0.18166175024582104,
+                "TruePositive": 1948,
+                "FalsePositive": 639,
+                "TrueNegative": 1381,
+                "FalseNegative": 100
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8242871189773844,
+                    "std": 0.06800449757015704
+                },
+                "Precision": {
+                    "mean": 0.8353382284496282,
+                    "std": 0.13157434737736362
+                },
+                "Recall": {
+                    "mean": 0.8681000388838644,
+                    "std": 0.11255897625285713
+                },
+                "F1Score": {
+                    "mean": 0.8343912746610181,
+                    "std": 0.04627085176955646
+                },
+                "Specificity": {
+                    "mean": 0.7810404108769821,
+                    "std": 0.20918566774751832
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.21895958912301788,
+                    "std": 0.20918566774751834
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.7810404108769821,
+                    "std": 0.20918566774751832
+                },
+                "MeanSquareError": {
+                    "mean": 0.17571288102261554,
+                    "std": 0.06800449757015703
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.17571288102261554,
+                    "std": 0.06800449757015703
+                },
+                "TruePositive": {
+                    "mean": 1765.0,
+                    "std": 224.60454136103303
+                },
+                "FalsePositive": {
+                    "mean": 445.8,
+                    "std": 426.05511380571414
+                },
+                "TrueNegative": {
+                    "mean": 1588.2,
+                    "std": 424.16666535690894
+                },
+                "FalseNegative": {
+                    "mean": 269.0,
+                    "std": 230.58013791304748
+                }
+            }
+        },
+        "SupportVectorMachine": {
+            "1-Fold": {
+                "Accuracy": 0.5742379547689282,
+                "Precision": 0.53948772678762,
+                "Recall": 0.9970414201183432,
+                "F1Score": 0.7001385041551246,
+                "Specificity": 0.153921568627451,
+                "FalsePositiveRate": 0.846078431372549,
+                "TrueNegativeRate": 0.153921568627451,
+                "MeanSquareError": 0.4257620452310718,
+                "MeanAbsoluteError": 0.4257620452310718,
+                "TruePositive": 2022,
+                "FalsePositive": 1726,
+                "TrueNegative": 314,
+                "FalseNegative": 6
+            },
+            "2-Fold": {
+                "Accuracy": 0.8394788593903638,
+                "Precision": 0.997855611150822,
+                "Recall": 0.6823069403714564,
+                "F1Score": 0.8104499274310595,
+                "Specificity": 0.9985163204747775,
+                "FalsePositiveRate": 0.001483679525222552,
+                "TrueNegativeRate": 0.9985163204747775,
+                "MeanSquareError": 0.16052114060963618,
+                "MeanAbsoluteError": 0.16052114060963618,
+                "TruePositive": 1396,
+                "FalsePositive": 3,
+                "TrueNegative": 2019,
+                "FalseNegative": 650
+            },
+            "3-Fold": {
+                "Accuracy": 0.9068338249754179,
+                "Precision": 0.9144167091186959,
+                "Recall": 0.8948155533399801,
+                "F1Score": 0.9045099521289999,
+                "Specificity": 0.918525703200776,
+                "FalsePositiveRate": 0.08147429679922405,
+                "TrueNegativeRate": 0.918525703200776,
+                "MeanSquareError": 0.0931661750245821,
+                "MeanAbsoluteError": 0.0931661750245821,
+                "TruePositive": 1795,
+                "FalsePositive": 168,
+                "TrueNegative": 1894,
+                "FalseNegative": 211
+            },
+            "4-Fold": {
+                "Accuracy": 0.7856440511307768,
+                "Precision": 0.9372197309417041,
+                "Recall": 0.614103819784525,
+                "F1Score": 0.7420118343195266,
+                "Specificity": 0.9585389930898321,
+                "FalsePositiveRate": 0.04146100691016782,
+                "TrueNegativeRate": 0.9585389930898321,
+                "MeanSquareError": 0.2143559488692232,
+                "MeanAbsoluteError": 0.2143559488692232,
+                "TruePositive": 1254,
+                "FalsePositive": 84,
+                "TrueNegative": 1942,
+                "FalseNegative": 788
+            },
+            "5-Fold": {
+                "Accuracy": 0.738692232055064,
+                "Precision": 0.664111962679107,
+                "Recall": 0.97314453125,
+                "F1Score": 0.7894632600514954,
+                "Specificity": 0.500990099009901,
+                "FalsePositiveRate": 0.499009900990099,
+                "TrueNegativeRate": 0.500990099009901,
+                "MeanSquareError": 0.2613077679449361,
+                "MeanAbsoluteError": 0.2613077679449361,
+                "TruePositive": 1993,
+                "FalsePositive": 1008,
+                "TrueNegative": 1012,
+                "FalseNegative": 55
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.7689773844641101,
+                    "std": 0.1123327822760983
+                },
+                "Precision": {
+                    "mean": 0.8106183481355899,
+                    "std": 0.17710772842803582
+                },
+                "Recall": {
+                    "mean": 0.832282452972861,
+                    "std": 0.15555873575785426
+                },
+                "F1Score": {
+                    "mean": 0.7893146956172411,
+                    "std": 0.06914712001040066
+                },
+                "Specificity": {
+                    "mean": 0.7060985368805475,
+                    "std": 0.3290375421252334
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.2939014631194525,
+                    "std": 0.3290375421252334
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.7060985368805475,
+                    "std": 0.3290375421252334
+                },
+                "MeanSquareError": {
+                    "mean": 0.23102261553588987,
+                    "std": 0.11233278227609834
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.23102261553588987,
+                    "std": 0.11233278227609834
+                },
+                "TruePositive": {
+                    "mean": 1692.0,
+                    "std": 312.91212824050143
+                },
+                "FalsePositive": {
+                    "mean": 597.8,
+                    "std": 669.8663747345436
+                },
+                "TrueNegative": {
+                    "mean": 1436.2,
+                    "std": 669.9774324557507
+                },
+                "FalseNegative": {
+                    "mean": 342.0,
+                    "std": 318.1842233675328
+                }
+            }
+        },
+        "KNN": {
+            "1-Fold": {
+                "Accuracy": 0.7354965585054081,
+                "Precision": 0.6850699844479005,
+                "Recall": 0.868836291913215,
+                "F1Score": 0.7660869565217392,
+                "Specificity": 0.6029411764705882,
+                "FalsePositiveRate": 0.39705882352941174,
+                "TrueNegativeRate": 0.6029411764705882,
+                "MeanSquareError": 0.26450344149459193,
+                "MeanAbsoluteError": 0.26450344149459193,
+                "TruePositive": 1762,
+                "FalsePositive": 810,
+                "TrueNegative": 1230,
+                "FalseNegative": 266
+            },
+            "2-Fold": {
+                "Accuracy": 0.8743854473942969,
+                "Precision": 0.9449275362318841,
+                "Recall": 0.7966764418377321,
+                "F1Score": 0.8644921771413417,
+                "Specificity": 0.9530168150346192,
+                "FalsePositiveRate": 0.046983184965380814,
+                "TrueNegativeRate": 0.9530168150346192,
+                "MeanSquareError": 0.12561455260570306,
+                "MeanAbsoluteError": 0.12561455260570306,
+                "TruePositive": 1630,
+                "FalsePositive": 95,
+                "TrueNegative": 1927,
+                "FalseNegative": 416
+            },
+            "3-Fold": {
+                "Accuracy": 0.8815142576204523,
+                "Precision": 0.8611374407582938,
+                "Recall": 0.9057826520438684,
+                "F1Score": 0.8828960155490768,
+                "Specificity": 0.8579049466537343,
+                "FalsePositiveRate": 0.14209505334626577,
+                "TrueNegativeRate": 0.8579049466537343,
+                "MeanSquareError": 0.11848574237954769,
+                "MeanAbsoluteError": 0.11848574237954769,
+                "TruePositive": 1817,
+                "FalsePositive": 293,
+                "TrueNegative": 1769,
+                "FalseNegative": 189
+            },
+            "4-Fold": {
+                "Accuracy": 0.86086529006883,
+                "Precision": 0.8765306122448979,
+                "Recall": 0.8413320274240941,
+                "F1Score": 0.8585707146426786,
+                "Specificity": 0.8805528134254689,
+                "FalsePositiveRate": 0.1194471865745311,
+                "TrueNegativeRate": 0.8805528134254689,
+                "MeanSquareError": 0.1391347099311701,
+                "MeanAbsoluteError": 0.1391347099311701,
+                "TruePositive": 1718,
+                "FalsePositive": 242,
+                "TrueNegative": 1784,
+                "FalseNegative": 324
+            },
+            "5-Fold": {
+                "Accuracy": 0.8040806293018682,
+                "Precision": 0.7660569970225436,
+                "Recall": 0.87939453125,
+                "F1Score": 0.8188224596499205,
+                "Specificity": 0.7277227722772277,
+                "FalsePositiveRate": 0.2722772277227723,
+                "TrueNegativeRate": 0.7277227722772277,
+                "MeanSquareError": 0.19591937069813176,
+                "MeanAbsoluteError": 0.19591937069813176,
+                "TruePositive": 1801,
+                "FalsePositive": 550,
+                "TrueNegative": 1470,
+                "FalseNegative": 247
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.831268436578171,
+                    "std": 0.05508379504819173
+                },
+                "Precision": {
+                    "mean": 0.826744514141104,
+                    "std": 0.09097626368895545
+                },
+                "Recall": {
+                    "mean": 0.858404388893782,
+                    "std": 0.037137354428570094
+                },
+                "F1Score": {
+                    "mean": 0.8381736647009514,
+                    "std": 0.04166474538941781
+                },
+                "Specificity": {
+                    "mean": 0.8044277047723277,
+                    "std": 0.12426909431664815
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.19557229522767236,
+                    "std": 0.12426909431664812
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.8044277047723277,
+                    "std": 0.12426909431664815
+                },
+                "MeanSquareError": {
+                    "mean": 0.16873156342182888,
+                    "std": 0.05508379504819173
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.16873156342182888,
+                    "std": 0.05508379504819173
+                },
+                "TruePositive": {
+                    "mean": 1745.6,
+                    "std": 67.17320894523351
+                },
+                "FalsePositive": {
+                    "mean": 398.0,
+                    "std": 252.9893278381521
+                },
+                "TrueNegative": {
+                    "mean": 1636.0,
+                    "std": 251.66088293574748
+                },
+                "FalseNegative": {
+                    "mean": 288.4,
+                    "std": 77.00025973982166
+                }
+            }
+        },
+        "DecisionTree": {
+            "1-Fold": {
+                "Accuracy": 0.6728121927236972,
+                "Precision": 0.6085331672376206,
+                "Recall": 0.9635108481262328,
+                "F1Score": 0.7459438824203092,
+                "Specificity": 0.38382352941176473,
+                "FalsePositiveRate": 0.6161764705882353,
+                "TrueNegativeRate": 0.38382352941176473,
+                "MeanSquareError": 0.32718780727630287,
+                "MeanAbsoluteError": 0.32718780727630287,
+                "TruePositive": 1954,
+                "FalsePositive": 1257,
+                "TrueNegative": 783,
+                "FalseNegative": 74
+            },
+            "2-Fold": {
+                "Accuracy": 0.7354965585054081,
+                "Precision": 0.9089376053962901,
+                "Recall": 0.5268817204301075,
+                "F1Score": 0.667079207920792,
+                "Specificity": 0.9465875370919882,
+                "FalsePositiveRate": 0.05341246290801187,
+                "TrueNegativeRate": 0.9465875370919882,
+                "MeanSquareError": 0.26450344149459193,
+                "MeanAbsoluteError": 0.26450344149459193,
+                "TruePositive": 1078,
+                "FalsePositive": 108,
+                "TrueNegative": 1914,
+                "FalseNegative": 968
+            },
+            "3-Fold": {
+                "Accuracy": 0.9269911504424779,
+                "Precision": 0.992507204610951,
+                "Recall": 0.8584247258225324,
+                "F1Score": 0.9206094627105053,
+                "Specificity": 0.9936954413191077,
+                "FalsePositiveRate": 0.006304558680892337,
+                "TrueNegativeRate": 0.9936954413191077,
+                "MeanSquareError": 0.07300884955752213,
+                "MeanAbsoluteError": 0.07300884955752213,
+                "TruePositive": 1722,
+                "FalsePositive": 13,
+                "TrueNegative": 2049,
+                "FalseNegative": 284
+            },
+            "4-Fold": {
+                "Accuracy": 0.7765486725663717,
+                "Precision": 0.8209631728045326,
+                "Recall": 0.7095984329089128,
+                "F1Score": 0.7612293144208038,
+                "Specificity": 0.8440276406712734,
+                "FalsePositiveRate": 0.15597235932872655,
+                "TrueNegativeRate": 0.8440276406712734,
+                "MeanSquareError": 0.2234513274336283,
+                "MeanAbsoluteError": 0.2234513274336283,
+                "TruePositive": 1449,
+                "FalsePositive": 316,
+                "TrueNegative": 1710,
+                "FalseNegative": 593
+            },
+            "5-Fold": {
+                "Accuracy": 0.7305801376597837,
+                "Precision": 0.6583499667332002,
+                "Recall": 0.96630859375,
+                "F1Score": 0.7831420656905421,
+                "Specificity": 0.4915841584158416,
+                "FalsePositiveRate": 0.5084158415841584,
+                "TrueNegativeRate": 0.4915841584158416,
+                "MeanSquareError": 0.2694198623402163,
+                "MeanAbsoluteError": 0.2694198623402163,
+                "TruePositive": 1979,
+                "FalsePositive": 1027,
+                "TrueNegative": 993,
+                "FalseNegative": 69
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.7684857423795478,
+                    "std": 0.0858691148830555
+                },
+                "Precision": {
+                    "mean": 0.797858223356519,
+                    "std": 0.14564836027035982
+                },
+                "Recall": {
+                    "mean": 0.8049448642075572,
+                    "std": 0.16760165509629493
+                },
+                "F1Score": {
+                    "mean": 0.7756007866325905,
+                    "std": 0.08239829034002
+                },
+                "Specificity": {
+                    "mean": 0.7319436613819951,
+                    "std": 0.24743044398071953
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.26805633861800493,
+                    "std": 0.24743044398071953
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.7319436613819951,
+                    "std": 0.24743044398071953
+                },
+                "MeanSquareError": {
+                    "mean": 0.2315142576204523,
+                    "std": 0.08586911488305547
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.2315142576204523,
+                    "std": 0.08586911488305547
+                },
+                "TruePositive": {
+                    "mean": 1636.4,
+                    "std": 338.37884094606153
+                },
+                "FalsePositive": {
+                    "mean": 544.2,
+                    "std": 503.1299633295556
+                },
+                "TrueNegative": {
+                    "mean": 1489.8,
+                    "std": 507.4474948208928
+                },
+                "FalseNegative": {
+                    "mean": 397.6,
+                    "std": 343.26001806210985
+                }
+            }
+        },
+        "NaiveBayes": {
+            "1-Fold": {
+                "Accuracy": 0.5678466076696165,
+                "Precision": 0.53586609989373,
+                "Recall": 0.9945759368836292,
+                "F1Score": 0.696477900552486,
+                "Specificity": 0.14362745098039215,
+                "FalsePositiveRate": 0.8563725490196078,
+                "TrueNegativeRate": 0.14362745098039215,
+                "MeanSquareError": 0.43215339233038347,
+                "MeanAbsoluteError": 0.43215339233038347,
+                "TruePositive": 2017,
+                "FalsePositive": 1747,
+                "TrueNegative": 293,
+                "FalseNegative": 11
+            },
+            "2-Fold": {
+                "Accuracy": 0.8139134709931171,
+                "Precision": 0.9992254066615027,
+                "Recall": 0.6304985337243402,
+                "F1Score": 0.773149535510938,
+                "Specificity": 0.9995054401582592,
+                "FalsePositiveRate": 0.0004945598417408506,
+                "TrueNegativeRate": 0.9995054401582592,
+                "MeanSquareError": 0.186086529006883,
+                "MeanAbsoluteError": 0.186086529006883,
+                "TruePositive": 1290,
+                "FalsePositive": 1,
+                "TrueNegative": 2021,
+                "FalseNegative": 756
+            },
+            "3-Fold": {
+                "Accuracy": 0.8992133726647001,
+                "Precision": 0.8796384395813511,
+                "Recall": 0.9217347956131605,
+                "F1Score": 0.9001947419668938,
+                "Specificity": 0.8773035887487876,
+                "FalsePositiveRate": 0.12269641125121242,
+                "TrueNegativeRate": 0.8773035887487876,
+                "MeanSquareError": 0.1007866273352999,
+                "MeanAbsoluteError": 0.1007866273352999,
+                "TruePositive": 1849,
+                "FalsePositive": 253,
+                "TrueNegative": 1809,
+                "FalseNegative": 157
+            },
+            "4-Fold": {
+                "Accuracy": 0.8746312684365781,
+                "Precision": 0.9118279569892473,
+                "Recall": 0.8305582761998042,
+                "F1Score": 0.8692977960020504,
+                "Specificity": 0.9190523198420533,
+                "FalsePositiveRate": 0.08094768015794669,
+                "TrueNegativeRate": 0.9190523198420533,
+                "MeanSquareError": 0.12536873156342182,
+                "MeanAbsoluteError": 0.12536873156342182,
+                "TruePositive": 1696,
+                "FalsePositive": 164,
+                "TrueNegative": 1862,
+                "FalseNegative": 346
+            },
+            "5-Fold": {
+                "Accuracy": 0.801622418879056,
+                "Precision": 0.7293900184842883,
+                "Recall": 0.96337890625,
+                "F1Score": 0.8302124973700821,
+                "Specificity": 0.6376237623762376,
+                "FalsePositiveRate": 0.36237623762376237,
+                "TrueNegativeRate": 0.6376237623762376,
+                "MeanSquareError": 0.19837758112094395,
+                "MeanAbsoluteError": 0.19837758112094395,
+                "TruePositive": 1973,
+                "FalsePositive": 732,
+                "TrueNegative": 1288,
+                "FalseNegative": 75
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.7914454277286136,
+                    "std": 0.11759135214702295
+                },
+                "Precision": {
+                    "mean": 0.8111895843220239,
+                    "std": 0.1628895259808207
+                },
+                "Recall": {
+                    "mean": 0.8681492897341869,
+                    "std": 0.13100744218715038
+                },
+                "F1Score": {
+                    "mean": 0.8138664942804901,
+                    "std": 0.072429745333028
+                },
+                "Specificity": {
+                    "mean": 0.715422512421146,
+                    "std": 0.3102824290776218
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.284577487578854,
+                    "std": 0.31028242907762177
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.715422512421146,
+                    "std": 0.3102824290776218
+                },
+                "MeanSquareError": {
+                    "mean": 0.20855457227138646,
+                    "std": 0.1175913521470229
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.20855457227138646,
+                    "std": 0.1175913521470229
+                },
+                "TruePositive": {
+                    "mean": 1765.0,
+                    "std": 262.37759050650646
+                },
+                "FalsePositive": {
+                    "mean": 579.4,
+                    "std": 632.4898734367215
+                },
+                "TrueNegative": {
+                    "mean": 1454.6,
+                    "std": 630.7857322419396
+                },
+                "FalseNegative": {
+                    "mean": 269.0,
+                    "std": 268.26926771436194
+                }
+            }
+        },
+        "GradientBoosting": {
+            "1-Fold": {
+                "Accuracy": 0.6696165191740413,
+                "Precision": 0.6041412911084044,
+                "Recall": 0.9783037475345168,
+                "F1Score": 0.746987951807229,
+                "Specificity": 0.3627450980392157,
+                "FalsePositiveRate": 0.6372549019607843,
+                "TrueNegativeRate": 0.3627450980392157,
+                "MeanSquareError": 0.3303834808259587,
+                "MeanAbsoluteError": 0.3303834808259587,
+                "TruePositive": 1984,
+                "FalsePositive": 1300,
+                "TrueNegative": 740,
+                "FalseNegative": 44
+            },
+            "2-Fold": {
+                "Accuracy": 0.7354965585054081,
+                "Precision": 0.9089376053962901,
+                "Recall": 0.5268817204301075,
+                "F1Score": 0.667079207920792,
+                "Specificity": 0.9465875370919882,
+                "FalsePositiveRate": 0.05341246290801187,
+                "TrueNegativeRate": 0.9465875370919882,
+                "MeanSquareError": 0.26450344149459193,
+                "MeanAbsoluteError": 0.26450344149459193,
+                "TruePositive": 1078,
+                "FalsePositive": 108,
+                "TrueNegative": 1914,
+                "FalseNegative": 968
+            },
+            "3-Fold": {
+                "Accuracy": 0.9269911504424779,
+                "Precision": 0.992507204610951,
+                "Recall": 0.8584247258225324,
+                "F1Score": 0.9206094627105053,
+                "Specificity": 0.9936954413191077,
+                "FalsePositiveRate": 0.006304558680892337,
+                "TrueNegativeRate": 0.9936954413191077,
+                "MeanSquareError": 0.07300884955752213,
+                "MeanAbsoluteError": 0.07300884955752213,
+                "TruePositive": 1722,
+                "FalsePositive": 13,
+                "TrueNegative": 2049,
+                "FalseNegative": 284
+            },
+            "4-Fold": {
+                "Accuracy": 0.8416912487708947,
+                "Precision": 0.8512562814070351,
+                "Recall": 0.8295788442703232,
+                "F1Score": 0.8402777777777777,
+                "Specificity": 0.8538993089832182,
+                "FalsePositiveRate": 0.14610069101678183,
+                "TrueNegativeRate": 0.8538993089832182,
+                "MeanSquareError": 0.1583087512291052,
+                "MeanAbsoluteError": 0.1583087512291052,
+                "TruePositive": 1694,
+                "FalsePositive": 296,
+                "TrueNegative": 1730,
+                "FalseNegative": 348
+            },
+            "5-Fold": {
+                "Accuracy": 0.8062930186823992,
+                "Precision": 0.7359550561797753,
+                "Recall": 0.95947265625,
+                "F1Score": 0.8329800763035186,
+                "Specificity": 0.650990099009901,
+                "FalsePositiveRate": 0.349009900990099,
+                "TrueNegativeRate": 0.650990099009901,
+                "MeanSquareError": 0.19370698131760078,
+                "MeanAbsoluteError": 0.19370698131760078,
+                "TruePositive": 1965,
+                "FalsePositive": 705,
+                "TrueNegative": 1315,
+                "FalseNegative": 83
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.7960176991150443,
+                    "std": 0.08830149153232408
+                },
+                "Precision": {
+                    "mean": 0.8185594877404914,
+                    "std": 0.13586298085346785
+                },
+                "Recall": {
+                    "mean": 0.8305323388614958,
+                    "std": 0.16213857477203958
+                },
+                "F1Score": {
+                    "mean": 0.8015868953039644,
+                    "std": 0.08685879385306558
+                },
+                "Specificity": {
+                    "mean": 0.7615834968886861,
+                    "std": 0.2314854755066389
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.23841650311131382,
+                    "std": 0.2314854755066389
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.7615834968886861,
+                    "std": 0.2314854755066389
+                },
+                "MeanSquareError": {
+                    "mean": 0.20398230088495578,
+                    "std": 0.08830149153232407
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.20398230088495578,
+                    "std": 0.08830149153232407
+                },
+                "TruePositive": {
+                    "mean": 1688.6,
+                    "std": 327.9131592357952
+                },
+                "FalsePositive": {
+                    "mean": 484.4,
+                    "std": 471.8595553763853
+                },
+                "TrueNegative": {
+                    "mean": 1549.6,
+                    "std": 474.38827978777044
+                },
+                "FalseNegative": {
+                    "mean": 345.4,
+                    "std": 331.99493972047225
+                }
+            }
+        },
+        "StochasticGradientDescent": {
+            "1-Fold": {
+                "Accuracy": 0.7074729596853491,
+                "Precision": 0.6503948312993539,
+                "Recall": 0.893491124260355,
+                "F1Score": 0.7528043207312006,
+                "Specificity": 0.5225490196078432,
+                "FalsePositiveRate": 0.4774509803921569,
+                "TrueNegativeRate": 0.5225490196078432,
+                "MeanSquareError": 0.29252704031465093,
+                "MeanAbsoluteError": 0.29252704031465093,
+                "TruePositive": 1812,
+                "FalsePositive": 974,
+                "TrueNegative": 1066,
+                "FalseNegative": 216
+            },
+            "2-Fold": {
+                "Accuracy": 0.8461160275319567,
+                "Precision": 0.9903314917127072,
+                "Recall": 0.7008797653958945,
+                "F1Score": 0.8208357183743561,
+                "Specificity": 0.9930761622156281,
+                "FalsePositiveRate": 0.006923837784371909,
+                "TrueNegativeRate": 0.9930761622156281,
+                "MeanSquareError": 0.15388397246804325,
+                "MeanAbsoluteError": 0.15388397246804325,
+                "TruePositive": 1434,
+                "FalsePositive": 14,
+                "TrueNegative": 2008,
+                "FalseNegative": 612
+            },
+            "3-Fold": {
+                "Accuracy": 0.9269911504424779,
+                "Precision": 0.992507204610951,
+                "Recall": 0.8584247258225324,
+                "F1Score": 0.9206094627105053,
+                "Specificity": 0.9936954413191077,
+                "FalsePositiveRate": 0.006304558680892337,
+                "TrueNegativeRate": 0.9936954413191077,
+                "MeanSquareError": 0.07300884955752213,
+                "MeanAbsoluteError": 0.07300884955752213,
+                "TruePositive": 1722,
+                "FalsePositive": 13,
+                "TrueNegative": 2049,
+                "FalseNegative": 284
+            },
+            "4-Fold": {
+                "Accuracy": 0.8790560471976401,
+                "Precision": 0.9484953703703703,
+                "Recall": 0.8026444662095984,
+                "F1Score": 0.8694960212201592,
+                "Specificity": 0.956071076011846,
+                "FalsePositiveRate": 0.043928923988154,
+                "TrueNegativeRate": 0.956071076011846,
+                "MeanSquareError": 0.12094395280235988,
+                "MeanAbsoluteError": 0.12094395280235988,
+                "TruePositive": 1639,
+                "FalsePositive": 89,
+                "TrueNegative": 1937,
+                "FalseNegative": 403
+            },
+            "5-Fold": {
+                "Accuracy": 0.799410029498525,
+                "Precision": 0.7378378378378379,
+                "Recall": 0.93310546875,
+                "F1Score": 0.8240620957309186,
+                "Specificity": 0.6638613861386139,
+                "FalsePositiveRate": 0.33613861386138616,
+                "TrueNegativeRate": 0.6638613861386139,
+                "MeanSquareError": 0.20058997050147492,
+                "MeanAbsoluteError": 0.20058997050147492,
+                "TruePositive": 1911,
+                "FalsePositive": 679,
+                "TrueNegative": 1341,
+                "FalseNegative": 137
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8318092428711898,
+                    "std": 0.07484084510337614
+                },
+                "Precision": {
+                    "mean": 0.863913347166244,
+                    "std": 0.14223729241151903
+                },
+                "Recall": {
+                    "mean": 0.8377091100876761,
+                    "std": 0.08073788937734837
+                },
+                "F1Score": {
+                    "mean": 0.837561523753428,
+                    "std": 0.05578986087119355
+                },
+                "Specificity": {
+                    "mean": 0.825850617058608,
+                    "std": 0.1956149308536184
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.17414938294139226,
+                    "std": 0.1956149308536184
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.825850617058608,
+                    "std": 0.1956149308536184
+                },
+                "MeanSquareError": {
+                    "mean": 0.16819075712881024,
+                    "std": 0.07484084510337614
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.16819075712881024,
+                    "std": 0.07484084510337614
+                },
+                "TruePositive": {
+                    "mean": 1703.6,
+                    "std": 162.45688658841152
+                },
+                "FalsePositive": {
+                    "mean": 353.8,
+                    "std": 398.0278382224038
+                },
+                "TrueNegative": {
+                    "mean": 1680.2,
+                    "std": 400.42747158505495
+                },
+                "FalseNegative": {
+                    "mean": 330.4,
+                    "std": 165.65820233239285
+                }
+            }
+        }
+    },
+    "TR-TS": {
+        "RandomForest": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2046,
+                "FalsePositive": 0,
+                "TrueNegative": 2022,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0.9980334316617503,
+                "Precision": 1.0,
+                "Recall": 0.996011964107677,
+                "F1Score": 0.9980019980019981,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0019665683382497543,
+                "MeanAbsoluteError": 0.0019665683382497543,
+                "TruePositive": 1998,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 8
+            },
+            "4-Fold": {
+                "Accuracy": 0.9850049164208456,
+                "Precision": 1.0,
+                "Recall": 0.9701273261508325,
+                "F1Score": 0.984837186179468,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.014995083579154375,
+                "MeanAbsoluteError": 0.014995083579154375,
+                "TruePositive": 1981,
+                "FalsePositive": 0,
+                "TrueNegative": 2026,
+                "FalseNegative": 61
+            },
+            "5-Fold": {
+                "Accuracy": 0.6290560471976401,
+                "Precision": 1.0,
+                "Recall": 0.26318359375,
+                "F1Score": 0.4166988790104368,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.37094395280235987,
+                "MeanAbsoluteError": 0.37094395280235987,
+                "TruePositive": 539,
+                "FalsePositive": 0,
+                "TrueNegative": 2020,
+                "FalseNegative": 1509
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8227138643067846,
+                    "std": 0.2141044210901844
+                },
+                "Precision": {
+                    "mean": 0.8,
+                    "std": 0.4000000000000001
+                },
+                "Recall": {
+                    "mean": 0.645864576801702,
+                    "std": 0.4281932292255808
+                },
+                "F1Score": {
+                    "mean": 0.6799076126383805,
+                    "std": 0.40698364056760716
+                },
+                "Specificity": {
+                    "mean": 1.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 1.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.17728613569321533,
+                    "std": 0.21410442109018435
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.17728613569321533,
+                    "std": 0.21410442109018435
+                },
+                "TruePositive": {
+                    "mean": 1312.8,
+                    "std": 868.9974453357156
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 2034.0,
+                    "std": 15.646085772486357
+                },
+                "FalseNegative": {
+                    "mean": 721.2,
+                    "std": 870.9767849948701
+                }
+            }
+        },
+        "SupportVectorMachine": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2046,
+                "FalsePositive": 0,
+                "TrueNegative": 2022,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2006,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0.9850049164208456,
+                "Precision": 1.0,
+                "Recall": 0.9701273261508325,
+                "F1Score": 0.984837186179468,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.014995083579154375,
+                "MeanAbsoluteError": 0.014995083579154375,
+                "TruePositive": 1981,
+                "FalsePositive": 0,
+                "TrueNegative": 2026,
+                "FalseNegative": 61
+            },
+            "5-Fold": {
+                "Accuracy": 0.8679941002949852,
+                "Precision": 0.8392456219128873,
+                "Recall": 0.91259765625,
+                "F1Score": 0.8743859649122807,
+                "Specificity": 0.8227722772277227,
+                "FalsePositiveRate": 0.17722772277227722,
+                "TrueNegativeRate": 0.8227722772277227,
+                "MeanSquareError": 0.13200589970501475,
+                "MeanAbsoluteError": 0.13200589970501475,
+                "TruePositive": 1869,
+                "FalsePositive": 358,
+                "TrueNegative": 1662,
+                "FalseNegative": 179
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8708947885939036,
+                    "std": 0.19122598211601824
+                },
+                "Precision": {
+                    "mean": 0.7678491243825775,
+                    "std": 0.3889400531764489
+                },
+                "Recall": {
+                    "mean": 0.7765449964801665,
+                    "std": 0.3895820461329418
+                },
+                "F1Score": {
+                    "mean": 0.7718446302183498,
+                    "std": 0.3887761394254969
+                },
+                "Specificity": {
+                    "mean": 0.9645544554455446,
+                    "std": 0.07089108910891091
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.03544554455445544,
+                    "std": 0.07089108910891088
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.9645544554455446,
+                    "std": 0.07089108910891091
+                },
+                "MeanSquareError": {
+                    "mean": 0.12910521140609638,
+                    "std": 0.19122598211601818
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.12910521140609638,
+                    "std": 0.19122598211601818
+                },
+                "TruePositive": {
+                    "mean": 1580.4,
+                    "std": 792.3828872458062
+                },
+                "FalsePositive": {
+                    "mean": 71.6,
+                    "std": 143.2
+                },
+                "TrueNegative": {
+                    "mean": 1962.4,
+                    "std": 150.85038945922548
+                },
+                "FalseNegative": {
+                    "mean": 453.6,
+                    "std": 789.909007417943
+                }
+            }
+        },
+        "KNN": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 0.9923795476892822,
+                "Precision": 0.9850746268656716,
+                "Recall": 1.0,
+                "F1Score": 0.9924812030075187,
+                "Specificity": 0.9846686449060337,
+                "FalsePositiveRate": 0.01533135509396637,
+                "TrueNegativeRate": 0.9846686449060337,
+                "MeanSquareError": 0.007620452310717798,
+                "MeanAbsoluteError": 0.007620452310717798,
+                "TruePositive": 2046,
+                "FalsePositive": 31,
+                "TrueNegative": 1991,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0.9793510324483776,
+                "Precision": 1.0,
+                "Recall": 0.9581256231306082,
+                "F1Score": 0.9786150712830957,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.02064896755162242,
+                "MeanAbsoluteError": 0.02064896755162242,
+                "TruePositive": 1922,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 84
+            },
+            "4-Fold": {
+                "Accuracy": 0.9800884955752213,
+                "Precision": 0.9979685119349924,
+                "Recall": 0.9622918707149853,
+                "F1Score": 0.9798055347793567,
+                "Specificity": 0.998025666337611,
+                "FalsePositiveRate": 0.0019743336623889436,
+                "TrueNegativeRate": 0.998025666337611,
+                "MeanSquareError": 0.01991150442477876,
+                "MeanAbsoluteError": 0.01991150442477876,
+                "TruePositive": 1965,
+                "FalsePositive": 4,
+                "TrueNegative": 2022,
+                "FalseNegative": 77
+            },
+            "5-Fold": {
+                "Accuracy": 0.8456243854473943,
+                "Precision": 1.0,
+                "Recall": 0.693359375,
+                "F1Score": 0.8189158016147635,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.1543756145526057,
+                "MeanAbsoluteError": 0.1543756145526057,
+                "TruePositive": 1420,
+                "FalsePositive": 0,
+                "TrueNegative": 2020,
+                "FalseNegative": 628
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8597836774827925,
+                    "std": 0.1870491449773772
+                },
+                "Precision": {
+                    "mean": 0.7966086277601327,
+                    "std": 0.3983432294388537
+                },
+                "Recall": {
+                    "mean": 0.7227553737691188,
+                    "std": 0.37759261790539833
+                },
+                "F1Score": {
+                    "mean": 0.753963522136947,
+                    "std": 0.38237243849904495
+                },
+                "Specificity": {
+                    "mean": 0.9965388622487289,
+                    "std": 0.005984163596716939
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.003461137751271063,
+                    "std": 0.005984163596716958
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.9965388622487289,
+                    "std": 0.005984163596716939
+                },
+                "MeanSquareError": {
+                    "mean": 0.14021632251720745,
+                    "std": 0.18704914497737715
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.14021632251720745,
+                    "std": 0.18704914497737715
+                },
+                "TruePositive": {
+                    "mean": 1470.6,
+                    "std": 767.3986187112927
+                },
+                "FalsePositive": {
+                    "mean": 7.0,
+                    "std": 12.09958676980334
+                },
+                "TrueNegative": {
+                    "mean": 2027.0,
+                    "std": 23.51169921549695
+                },
+                "FalseNegative": {
+                    "mean": 563.4,
+                    "std": 765.9053727452236
+                }
+            }
+        },
+        "DecisionTree": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 0.9997541789577188,
+                "Precision": 0.9995114802149487,
+                "Recall": 1.0,
+                "F1Score": 0.9997556804300024,
+                "Specificity": 0.9995054401582592,
+                "FalsePositiveRate": 0.0004945598417408506,
+                "TrueNegativeRate": 0.9995054401582592,
+                "MeanSquareError": 0.0002458210422812193,
+                "MeanAbsoluteError": 0.0002458210422812193,
+                "TruePositive": 2046,
+                "FalsePositive": 1,
+                "TrueNegative": 2021,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0.9677974434611603,
+                "Precision": 1.0,
+                "Recall": 0.9346959122632104,
+                "F1Score": 0.9662458129348106,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.03220255653883972,
+                "MeanAbsoluteError": 0.03220255653883972,
+                "TruePositive": 1875,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 131
+            },
+            "4-Fold": {
+                "Accuracy": 0.984267453294002,
+                "Precision": 0.9984879032258065,
+                "Recall": 0.9701273261508325,
+                "F1Score": 0.9841033283656234,
+                "Specificity": 0.9985192497532083,
+                "FalsePositiveRate": 0.0014807502467917078,
+                "TrueNegativeRate": 0.9985192497532083,
+                "MeanSquareError": 0.015732546705998034,
+                "MeanAbsoluteError": 0.015732546705998034,
+                "TruePositive": 1981,
+                "FalsePositive": 3,
+                "TrueNegative": 2023,
+                "FalseNegative": 61
+            },
+            "5-Fold": {
+                "Accuracy": 0.8751229105211407,
+                "Precision": 0.8551660516605166,
+                "Recall": 0.9052734375,
+                "F1Score": 0.8795066413662239,
+                "Specificity": 0.8445544554455445,
+                "FalsePositiveRate": 0.15544554455445544,
+                "TrueNegativeRate": 0.8445544554455445,
+                "MeanSquareError": 0.1248770894788594,
+                "MeanAbsoluteError": 0.1248770894788594,
+                "TruePositive": 1854,
+                "FalsePositive": 314,
+                "TrueNegative": 1706,
+                "FalseNegative": 194
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8656833824975418,
+                    "std": 0.18719046238815037
+                },
+                "Precision": {
+                    "mean": 0.7706330870202545,
+                    "std": 0.38934136534166214
+                },
+                "Recall": {
+                    "mean": 0.7620193351828085,
+                    "std": 0.3823496143654227
+                },
+                "F1Score": {
+                    "mean": 0.765922292619332,
+                    "std": 0.38521393874506543
+                },
+                "Specificity": {
+                    "mean": 0.9685158290714024,
+                    "std": 0.06198304516116626
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0314841709285976,
+                    "std": 0.06198304516116626
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.9685158290714024,
+                    "std": 0.06198304516116626
+                },
+                "MeanSquareError": {
+                    "mean": 0.1343166175024582,
+                    "std": 0.18719046238815032
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.1343166175024582,
+                    "std": 0.18719046238815032
+                },
+                "TruePositive": {
+                    "mean": 1551.2,
+                    "std": 778.7568041436299
+                },
+                "FalsePositive": {
+                    "mean": 63.6,
+                    "std": 125.20479224055285
+                },
+                "TrueNegative": {
+                    "mean": 1970.4,
+                    "std": 133.01819424424616
+                },
+                "FalseNegative": {
+                    "mean": 482.8,
+                    "std": 775.3480250829301
+                }
+            }
+        },
+        "NaiveBayes": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 0.9992625368731564,
+                "Precision": 0.9985358711566618,
+                "Recall": 1.0,
+                "F1Score": 0.9992673992673992,
+                "Specificity": 0.9985163204747775,
+                "FalsePositiveRate": 0.001483679525222552,
+                "TrueNegativeRate": 0.9985163204747775,
+                "MeanSquareError": 0.0007374631268436578,
+                "MeanAbsoluteError": 0.0007374631268436578,
+                "TruePositive": 2046,
+                "FalsePositive": 3,
+                "TrueNegative": 2019,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2006,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0.9859882005899705,
+                "Precision": 1.0,
+                "Recall": 0.9720861900097943,
+                "F1Score": 0.9858455425875342,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.014011799410029498,
+                "MeanAbsoluteError": 0.014011799410029498,
+                "TruePositive": 1985,
+                "FalsePositive": 0,
+                "TrueNegative": 2026,
+                "FalseNegative": 57
+            },
+            "5-Fold": {
+                "Accuracy": 0.523598820058997,
+                "Precision": 0.5137982940291018,
+                "Recall": 1.0,
+                "F1Score": 0.6788200198873052,
+                "Specificity": 0.040594059405940595,
+                "FalsePositiveRate": 0.9594059405940594,
+                "TrueNegativeRate": 0.040594059405940595,
+                "MeanSquareError": 0.47640117994100295,
+                "MeanAbsoluteError": 0.47640117994100295,
+                "TruePositive": 2048,
+                "FalsePositive": 1938,
+                "TrueNegative": 82,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8020648967551622,
+                    "std": 0.23655472191220103
+                },
+                "Precision": {
+                    "mean": 0.7024668330371527,
+                    "std": 0.39843802914570636
+                },
+                "Recall": {
+                    "mean": 0.794417238001959,
+                    "std": 0.39735571485369464
+                },
+                "F1Score": {
+                    "mean": 0.7327865923484478,
+                    "std": 0.38635280220282925
+                },
+                "Specificity": {
+                    "mean": 0.8078220759761436,
+                    "std": 0.38361443865983713
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.1921779240238564,
+                    "std": 0.38361443865983713
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.8078220759761436,
+                    "std": 0.38361443865983713
+                },
+                "MeanSquareError": {
+                    "mean": 0.19793510324483773,
+                    "std": 0.23655472191220103
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.19793510324483773,
+                    "std": 0.23655472191220103
+                },
+                "TruePositive": {
+                    "mean": 1617.0,
+                    "std": 808.8554877108766
+                },
+                "FalsePositive": {
+                    "mean": 388.2,
+                    "std": 774.9008710796497
+                },
+                "TrueNegative": {
+                    "mean": 1645.8,
+                    "std": 782.0379530432011
+                },
+                "FalseNegative": {
+                    "mean": 417.0,
+                    "std": 805.8024571816594
+                }
+            }
+        },
+        "GradientBoosting": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2046,
+                "FalsePositive": 0,
+                "TrueNegative": 2022,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2006,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0.9850049164208456,
+                "Precision": 1.0,
+                "Recall": 0.9701273261508325,
+                "F1Score": 0.984837186179468,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.014995083579154375,
+                "MeanAbsoluteError": 0.014995083579154375,
+                "TruePositive": 1981,
+                "FalsePositive": 0,
+                "TrueNegative": 2026,
+                "FalseNegative": 61
+            },
+            "5-Fold": {
+                "Accuracy": 0.6536381514257621,
+                "Precision": 0.75177304964539,
+                "Recall": 0.4658203125,
+                "F1Score": 0.5752185709978896,
+                "Specificity": 0.844059405940594,
+                "FalsePositiveRate": 0.15594059405940594,
+                "TrueNegativeRate": 0.844059405940594,
+                "MeanSquareError": 0.34636184857423796,
+                "MeanAbsoluteError": 0.34636184857423796,
+                "TruePositive": 954,
+                "FalsePositive": 315,
+                "TrueNegative": 1705,
+                "FalseNegative": 1094
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.828023598820059,
+                    "std": 0.21016147078808506
+                },
+                "Precision": {
+                    "mean": 0.750354609929078,
+                    "std": 0.38729898398111917
+                },
+                "Recall": {
+                    "mean": 0.6871895277301665,
+                    "std": 0.3992463794130424
+                },
+                "F1Score": {
+                    "mean": 0.7120111514354714,
+                    "std": 0.3914029353135759
+                },
+                "Specificity": {
+                    "mean": 0.9688118811881188,
+                    "std": 0.06237623762376239
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.031188118811881188,
+                    "std": 0.062376237623762376
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.9688118811881188,
+                    "std": 0.06237623762376239
+                },
+                "MeanSquareError": {
+                    "mean": 0.171976401179941,
+                    "std": 0.21016147078808503
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.171976401179941,
+                    "std": 0.21016147078808503
+                },
+                "TruePositive": {
+                    "mean": 1397.4,
+                    "std": 810.0611334954912
+                },
+                "FalsePositive": {
+                    "mean": 63.0,
+                    "std": 126.0
+                },
+                "TrueNegative": {
+                    "mean": 1971.0,
+                    "std": 133.7340644712483
+                },
+                "FalseNegative": {
+                    "mean": 636.6,
+                    "std": 810.8074000648983
+                }
+            }
+        },
+        "StochasticGradientDescent": {
+            "1-Fold": {
+                "Accuracy": 0.5014749262536873,
+                "Precision": 0.0,
+                "Recall": 0.0,
+                "F1Score": 0.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.49852507374631266,
+                "MeanAbsoluteError": 0.49852507374631266,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 2040,
+                "FalseNegative": 2028
+            },
+            "2-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2046,
+                "FalsePositive": 0,
+                "TrueNegative": 2022,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 1.0,
+                "Precision": 1.0,
+                "Recall": 1.0,
+                "F1Score": 1.0,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.0,
+                "MeanAbsoluteError": 0.0,
+                "TruePositive": 2006,
+                "FalsePositive": 0,
+                "TrueNegative": 2062,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0.9850049164208456,
+                "Precision": 1.0,
+                "Recall": 0.9701273261508325,
+                "F1Score": 0.984837186179468,
+                "Specificity": 1.0,
+                "FalsePositiveRate": 0.0,
+                "TrueNegativeRate": 1.0,
+                "MeanSquareError": 0.014995083579154375,
+                "MeanAbsoluteError": 0.014995083579154375,
+                "TruePositive": 1981,
+                "FalsePositive": 0,
+                "TrueNegative": 2026,
+                "FalseNegative": 61
+            },
+            "5-Fold": {
+                "Accuracy": 0.76007866273353,
+                "Precision": 0.7177091795288384,
+                "Recall": 0.86279296875,
+                "F1Score": 0.7835920177383593,
+                "Specificity": 0.655940594059406,
+                "FalsePositiveRate": 0.34405940594059403,
+                "TrueNegativeRate": 0.655940594059406,
+                "MeanSquareError": 0.23992133726647,
+                "MeanAbsoluteError": 0.23992133726647,
+                "TruePositive": 1767,
+                "FalsePositive": 695,
+                "TrueNegative": 1325,
+                "FalseNegative": 281
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.8493117010816127,
+                    "std": 0.19635658003054401
+                },
+                "Precision": {
+                    "mean": 0.7435418359057676,
+                    "std": 0.3875136533515589
+                },
+                "Recall": {
+                    "mean": 0.7665840589801665,
+                    "std": 0.38660138087090823
+                },
+                "F1Score": {
+                    "mean": 0.7536858407835655,
+                    "std": 0.3856705849703903
+                },
+                "Specificity": {
+                    "mean": 0.9311881188118812,
+                    "std": 0.1376237623762376
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0688118811881188,
+                    "std": 0.1376237623762376
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.9311881188118812,
+                    "std": 0.1376237623762376
+                },
+                "MeanSquareError": {
+                    "mean": 0.15068829891838742,
+                    "std": 0.19635658003054401
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.15068829891838742,
+                    "std": 0.19635658003054401
+                },
+                "TruePositive": {
+                    "mean": 1560.0,
+                    "std": 785.9773533633141
+                },
+                "FalsePositive": {
+                    "mean": 139.0,
+                    "std": 278.0
+                },
+                "TrueNegative": {
+                    "mean": 1895.0,
+                    "std": 285.3433020065479
+                },
+                "FalseNegative": {
+                    "mean": 474.0,
+                    "std": 783.8476892866369
+                }
+            }
+        }
+    },
+    "TR-TR": {
+        "RandomForest": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "SupportVectorMachine": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "KNN": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "DecisionTree": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "NaiveBayes": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "GradientBoosting": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        },
+        "StochasticGradientDescent": {
+            "1-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "2-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "3-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "4-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "5-Fold": {
+                "Accuracy": 0,
+                "Precision": 0,
+                "Recall": 0,
+                "F1Score": 0,
+                "Specificity": 0,
+                "FalsePositiveRate": 0,
+                "TrueNegativeRate": 0,
+                "MeanSquareError": 0,
+                "MeanAbsoluteError": 0,
+                "TruePositive": 0,
+                "FalsePositive": 0,
+                "TrueNegative": 0,
+                "FalseNegative": 0
+            },
+            "Summary": {
+                "Accuracy": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Precision": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Recall": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "F1Score": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "Specificity": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositiveRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegativeRate": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanSquareError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "MeanAbsoluteError": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TruePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalsePositive": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "TrueNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "FalseNegative": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        }
+    },
+    "DistanceMetrics": {
+        "R-S": {
+            "1-Fold": {
+                "EuclideanDistance": 3.751755981269632,
+                "HellingerDistance": 172.08573444652524,
+                "ManhattanDistance": 435.4926452636719,
+                "HammingDistance": 3.2021518166090015,
+                "JaccardDistance": 0.6467975539365876
+            },
+            "2-Fold": {
+                "EuclideanDistance": 4.276688646688875,
+                "HellingerDistance": 194.46079296351746,
+                "ManhattanDistance": 556.1029663085938,
+                "HammingDistance": 4.088992214532842,
+                "JaccardDistance": 0.6557921601655171
+            },
+            "3-Fold": {
+                "EuclideanDistance": 3.504964594042835,
+                "HellingerDistance": 161.61992451427517,
+                "ManhattanDistance": 384.1323547363281,
+                "HammingDistance": 2.8245025951557032,
+                "JaccardDistance": 0.6285522464766348
+            },
+            "4-Fold": {
+                "EuclideanDistance": 3.5362030080488998,
+                "HellingerDistance": 162.28678319567493,
+                "ManhattanDistance": 387.308837890625,
+                "HammingDistance": 2.847858996539798,
+                "JaccardDistance": 0.6253512418370359
+            },
+            "5-Fold": {
+                "EuclideanDistance": 3.9266219400202305,
+                "HellingerDistance": 179.4254719932485,
+                "ManhattanDistance": 473.433837890625,
+                "HammingDistance": 3.4811310553633263,
+                "JaccardDistance": 0.6721805206110002
+            },
+            "Summary": {
+                "EuclideanDistance": {
+                    "mean": 3.7992468340140944,
+                    "std": 0.28362812778550733
+                },
+                "HellingerDistance": {
+                    "mean": 173.97574142264827,
+                    "std": 12.183652836478574
+                },
+                "ManhattanDistance": {
+                    "mean": 447.29412841796875,
+                    "std": 63.63893046449628
+                },
+                "HammingDistance": {
+                    "mean": 3.2889273356401345,
+                    "std": 0.46793326240969835
+                },
+                "JaccardDistance": {
+                    "mean": 0.6457347446053551,
+                    "std": 0.017391869750056493
+                }
+            }
+        },
+        "R-R": {
+            "1-Fold": {
+                "EuclideanDistance": 0,
+                "HellingerDistance": 0,
+                "ManhattanDistance": 0,
+                "HammingDistance": 0,
+                "JaccardDistance": 0
+            },
+            "2-Fold": {
+                "EuclideanDistance": 0,
+                "HellingerDistance": 0,
+                "ManhattanDistance": 0,
+                "HammingDistance": 0,
+                "JaccardDistance": 0
+            },
+            "3-Fold": {
+                "EuclideanDistance": 0,
+                "HellingerDistance": 0,
+                "ManhattanDistance": 0,
+                "HammingDistance": 0,
+                "JaccardDistance": 0
+            },
+            "4-Fold": {
+                "EuclideanDistance": 0,
+                "HellingerDistance": 0,
+                "ManhattanDistance": 0,
+                "HammingDistance": 0,
+                "JaccardDistance": 0
+            },
+            "5-Fold": {
+                "EuclideanDistance": 0,
+                "HellingerDistance": 0,
+                "ManhattanDistance": 0,
+                "HammingDistance": 0,
+                "JaccardDistance": 0
+            },
+            "Summary": {
+                "EuclideanDistance": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "HellingerDistance": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "ManhattanDistance": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "HammingDistance": {
+                    "mean": 0.0,
+                    "std": 0.0
+                },
+                "JaccardDistance": {
+                    "mean": 0.0,
+                    "std": 0.0
+                }
+            }
+        }
+    },
+    "EfficiencyMetrics": {
+        "1-Fold": {
+            "Process_CPU_%": 11.89375,
+            "Process_Memory_MB": 145.09115250000002,
+            "System_CPU_%": 11.6,
+            "System_Memory_MB": 6774.554624,
+            "System_Memory_%": 40.0,
+            "Time_training_ms": 7210.748799,
+            "Time_generating_ms": 567.238549
+        },
+        "2-Fold": {
+            "Process_CPU_%": 11.90625,
+            "Process_Memory_MB": 82.00735199999997,
+            "System_CPU_%": 13.8,
+            "System_Memory_MB": 6831.136768,
+            "System_Memory_%": 40.3,
+            "Time_training_ms": 7115.991991,
+            "Time_generating_ms": 537.720377
+        },
+        "3-Fold": {
+            "Process_CPU_%": 12.05,
+            "Process_Memory_MB": 93.63915374999999,
+            "System_CPU_%": 13.6,
+            "System_Memory_MB": 6870.368256,
+            "System_Memory_%": 40.5,
+            "Time_training_ms": 6790.760171,
+            "Time_generating_ms": 544.557564
+        },
+        "4-Fold": {
+            "Process_CPU_%": 11.975,
+            "Process_Memory_MB": 94.27382824999995,
+            "System_CPU_%": 13.2,
+            "System_Memory_MB": 6922.121216,
+            "System_Memory_%": 40.8,
+            "Time_training_ms": 6826.628265,
+            "Time_generating_ms": 531.655938
+        },
+        "5-Fold": {
+            "Process_CPU_%": 12.0625,
+            "Process_Memory_MB": 93.48509725000008,
+            "System_CPU_%": 13.6,
+            "System_Memory_MB": 6982.111232,
+            "System_Memory_%": 41.0,
+            "Time_training_ms": 6768.757894,
+            "Time_generating_ms": 532.764131
+        },
+        "Summary": {
+            "Process_CPU_%": {
+                "mean": 11.977500000000001,
+                "std": 0.07011151831190077
+            },
+            "Process_Memory_MB": {
+                "mean": 101.69931675000001,
+                "std": 22.172967300361965
+            },
+            "System_CPU_%": {
+                "mean": 13.16,
+                "std": 0.8039900496896714
+            },
+            "System_Memory_MB": {
+                "mean": 6876.058419200001,
+                "std": 71.7249377770528
+            },
+            "System_Memory_%": {
+                "mean": 40.519999999999996,
+                "std": 0.35440090293338694
+            },
+            "Time_training_ms": {
+                "mean": 6942.577424,
+                "std": 183.68147059944948
+            },
+            "Time_generating_ms": {
+                "mean": 542.7873118,
+                "std": 13.046396113521435
+            }
+        }
+    },
+    "SDVMetrics": {
+        "1-Fold": {
+            "diagnostic": 0,
+            "quality": 0
+        },
+        "2-Fold": {
+            "diagnostic": 0,
+            "quality": 0
+        },
+        "3-Fold": {
+            "diagnostic": 0,
+            "quality": 0
+        },
+        "4-Fold": {
+            "diagnostic": 0,
+            "quality": 0
+        },
+        "5-Fold": {
+            "diagnostic": 0,
+            "quality": 0
+        },
+        "Summary": {
+            "diagnostic": {
+                "mean": 0,
+                "std": 0
+            },
+            "quality": {
+                "mean": 0,
+                "std": 0
+            }
+        }
+    }
+}

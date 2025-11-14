@@ -1,0 +1,223 @@
+2025-11-14 19:51:02,321	***	Base directory already exists: outputs/out_2025-11-14_19-50-59/reduced_balanced_androcrawl/wasserstein/combination_1
+2025-11-14 19:51:02,321	***	Failed to create directories: [Errno 17] File exists: 'outputs/out_2025-11-14_19-50-59/reduced_balanced_androcrawl/wasserstein/combination_1/ModelsSaved'
+2025-11-14 19:51:02,321	***	Retrieved DataGenerated path: outputs/out_2025-11-14_19-50-59/reduced_balanced_androcrawl/wasserstein/combination_1/DataGenerated
+2025-11-14 19:51:02,347	***	All GPUs disabled. Running on CPU.
+2025-11-14 19:51:02,347	***	Command:
+	main.py --data_load_path_file_input Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv --verbosity 20 --output_dir outputs/out_2025-11-14_19-50-59/reduced_balanced_androcrawl/wasserstein/combination_1 --classifier RandomForest SupportVectorMachine KNN DecisionTree NaiveBayes GradientBoosting StochasticGradientDescent --model_type wasserstein --number_samples_per_class 0:2000,1:2000 --number_k_folds 5 --wasserstein_number_epochs 300 --save_data True --wasserstein_latent_dimension 32 --wasserstein_training_algorithm Adam --wasserstein_activation_function elu --wasserstein_dropout_decay_rate_g 0.0 --wasserstein_dropout_decay_rate_d 0.0 --wasserstein_dense_layer_sizes_generator 256 --wasserstein_dense_layer_sizes_discriminator 64 --wasserstein_batch_size 64 --wasserstein_number_classes 2 --wasserstein_momentum 0.8 --wasserstein_last_activation_layer linear --wasserstein_initializer_mean 0.0 --wasserstein_initializer_deviation 0.125 --wasserstein_optimizer_generator_learning_rate 0.001 --wasserstein_optimizer_discriminator_learning_rate 0.001 --wasserstein_optimizer_generator_beta 0.5 --wasserstein_optimizer_discriminator_beta 0.5 --wasserstein_discriminator_steps 3 --wasserstein_smoothing_rate 0.1 --wasserstein_latent_mean_distribution 0.5 --wasserstein_latent_stander_deviation 0.125
+
+2025-11-14 19:51:02,347	***	Settings:
+2025-11-14 19:51:02,347	***		adam_optimizer_amsgrad                                           : False
+2025-11-14 19:51:02,347	***		adam_optimizer_beta_1                                            : 0.9
+2025-11-14 19:51:02,347	***		adam_optimizer_beta_2                                            : 0.999
+2025-11-14 19:51:02,347	***		adam_optimizer_epsilon                                           : 1e-07
+2025-11-14 19:51:02,347	***		adam_optimizer_learning_rate                                     : 0.001
+2025-11-14 19:51:02,347	***		classifier                                                       : ['RandomForest', 'SupportVectorMachine', 'KNN', 'DecisionTree', 'NaiveBayes', 'GradientBoosting', 'StochasticGradientDescent']
+2025-11-14 19:51:02,347	***		data_load_end_column                                             : -1
+2025-11-14 19:51:02,347	***		data_load_exclude_columns                                        : -1
+2025-11-14 19:51:02,347	***		data_load_label_column                                           : -1
+2025-11-14 19:51:02,347	***		data_load_max_columns                                            : -1
+2025-11-14 19:51:02,347	***		data_load_max_samples                                            : -1
+2025-11-14 19:51:02,347	***		data_load_path_file_input                                        : Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:51:02,347	***		data_load_path_file_output                                       : OutputDir
+2025-11-14 19:51:02,347	***		data_load_start_column                                           : 0
+2025-11-14 19:51:02,347	***		decision_tree_criterion                                          : gini
+2025-11-14 19:51:02,347	***		decision_tree_max_depth                                          : None
+2025-11-14 19:51:02,347	***		decision_tree_max_features                                       : None
+2025-11-14 19:51:02,347	***		decision_tree_max_leaf_nodes                                     : None
+2025-11-14 19:51:02,347	***		denoising_diffusion_autoencoder_activation_output_encoder        : sigmoid
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_batch_size_create_embedding      : 128
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_batch_size_training              : 64
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_decoder_filters                  : [160, 320]
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_dropout_decay_rate_decoder       : 0.4
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_dropout_decay_rate_encoder       : 0.2
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_encoder_filters                  : [320, 160]
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_epochs                           : 1000
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_file_name_decoder                : decoder_model
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_file_name_encoder                : encoder_model
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_initializer_deviation            : 0.125
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_initializer_mean                 : 0.0
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_intermediary_activation_alpha    : 0.05
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_intermediary_activation_function : swish
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_last_layer_activation            : sigmoid
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_latent_dimension                 : 64
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_loss                             : mse
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_mean_distribution                : 0.5
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_path_output_models               : models_saved/
+2025-11-14 19:51:02,348	***		denoising_diffusion_autoencoder_stander_deviation                : 0.125
+2025-11-14 19:51:02,348	***		denoising_diffusion_ema                                          : 0.999
+2025-11-14 19:51:02,348	***		denoising_diffusion_gaussian_beta_end                            : 0.02
+2025-11-14 19:51:02,348	***		denoising_diffusion_gaussian_beta_start                          : 0.0001
+2025-11-14 19:51:02,348	***		denoising_diffusion_gaussian_clip_max                            : 1.0
+2025-11-14 19:51:02,348	***		denoising_diffusion_gaussian_clip_min                            : -1.0
+2025-11-14 19:51:02,348	***		denoising_diffusion_gaussian_time_steps                          : 1000
+2025-11-14 19:51:02,348	***		denoising_diffusion_latent_dimension                             : 64
+2025-11-14 19:51:02,348	***		denoising_diffusion_margin                                       : 0.5
+2025-11-14 19:51:02,348	***		denoising_diffusion_time_steps                                   : 1000
+2025-11-14 19:51:02,348	***		denoising_diffusion_unet_attention_mode                          : [False, True, True]
+2025-11-14 19:51:02,348	***		denoising_diffusion_unet_batch_size                              : 128
+2025-11-14 19:51:02,348	***		denoising_diffusion_unet_channels_per_level                      : [1, 2, 4]
+2025-11-14 19:51:02,348	***		denoising_diffusion_unet_epochs                                  : 1000
+2025-11-14 19:51:02,348	***		denoising_diffusion_unet_group_normalization                     : 1
+2025-11-14 19:51:02,349	***		denoising_diffusion_unet_intermediary_activation                 : swish
+2025-11-14 19:51:02,349	***		denoising_diffusion_unet_intermediary_activation_alpha           : 0.05
+2025-11-14 19:51:02,349	***		denoising_diffusion_unet_last_layer_activation                   : linear
+2025-11-14 19:51:02,349	***		denoising_diffusion_unet_num_embedding_channels                  : 1
+2025-11-14 19:51:02,349	***		denoising_diffusion_unet_num_residual_blocks                     : 2
+2025-11-14 19:51:02,349	***		early_stop_baseline                                              : None
+2025-11-14 19:51:02,349	***		early_stop_min_delta                                             : 0.0001
+2025-11-14 19:51:02,349	***		early_stop_mode                                                  : auto
+2025-11-14 19:51:02,349	***		early_stop_monitor                                               : val_loss
+2025-11-14 19:51:02,349	***		early_stop_patience                                              : 50
+2025-11-14 19:51:02,349	***		early_stop_restore_best_weights                                  : None
+2025-11-14 19:51:02,349	***		early_stop_start_from_epoch                                      : 100
+2025-11-14 19:51:02,349	***		evaluation                                                       : ['TrAs', 'TsAr']
+2025-11-14 19:51:02,349	***		gaussian_process_kernel                                          : None
+2025-11-14 19:51:02,349	***		gaussian_process_max_iterations                                  : 20
+2025-11-14 19:51:02,349	***		gaussian_process_optimizer                                       : fmin_l_bfgs_b
+2025-11-14 19:51:02,349	***		gradient_boosting_criterion                                      : friedman_mse
+2025-11-14 19:51:02,349	***		gradient_boosting_learning_rate                                  : 0.1
+2025-11-14 19:51:02,349	***		gradient_boosting_loss                                           : log_loss
+2025-11-14 19:51:02,349	***		gradient_boosting_number_estimators                              : 100
+2025-11-14 19:51:02,349	***		gradient_boosting_subsample                                      : 1.0
+2025-11-14 19:51:02,349	***		k_means_init                                                     : k-means++
+2025-11-14 19:51:02,349	***		k_means_max_iterations                                           : 300
+2025-11-14 19:51:02,349	***		k_means_number_clusters                                          : 2
+2025-11-14 19:51:02,349	***		k_means_random_state                                             : None
+2025-11-14 19:51:02,349	***		k_means_tolerance                                                : 0.0001
+2025-11-14 19:51:02,349	***		knn_algorithm                                                    : auto
+2025-11-14 19:51:02,349	***		knn_leaf_size                                                    : 30
+2025-11-14 19:51:02,349	***		knn_metric                                                       : minkowski
+2025-11-14 19:51:02,349	***		knn_number_neighbors                                             : 5
+2025-11-14 19:51:02,349	***		knn_weights                                                      : uniform
+2025-11-14 19:51:02,349	***		latent_diffusion_autoencoder_activation_output_encoder           : sigmoid
+2025-11-14 19:51:02,349	***		latent_diffusion_autoencoder_batch_size_create_embedding         : 128
+2025-11-14 19:51:02,349	***		latent_diffusion_autoencoder_batch_size_training                 : 64
+2025-11-14 19:51:02,349	***		latent_diffusion_autoencoder_decoder_filters                     : [160, 320]
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_dropout_decay_rate_decoder          : 0.4
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_dropout_decay_rate_encoder          : 0.2
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_encoder_filters                     : [320, 160]
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_epochs                              : 1000
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_file_name_decoder                   : decoder_model
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_file_name_encoder                   : encoder_model
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_initializer_deviation               : 0.125
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_initializer_mean                    : 0.0
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_intermediary_activation_alpha       : 0.05
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_intermediary_activation_function    : swish
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_last_layer_activation               : sigmoid
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_latent_dimension                    : 64
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_loss                                : mse
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_mean_distribution                   : 0.5
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_path_output_models                  : models_saved/
+2025-11-14 19:51:02,350	***		latent_diffusion_autoencoder_stander_deviation                   : 0.125
+2025-11-14 19:51:02,350	***		latent_diffusion_ema                                             : 0.999
+2025-11-14 19:51:02,350	***		latent_diffusion_gaussian_beta_end                               : 0.02
+2025-11-14 19:51:02,350	***		latent_diffusion_gaussian_beta_start                             : 0.0001
+2025-11-14 19:51:02,350	***		latent_diffusion_gaussian_clip_max                               : 1.0
+2025-11-14 19:51:02,350	***		latent_diffusion_gaussian_clip_min                               : -1.0
+2025-11-14 19:51:02,350	***		latent_diffusion_gaussian_time_steps                             : 1000
+2025-11-14 19:51:02,350	***		latent_diffusion_latent_dimension                                : 64
+2025-11-14 19:51:02,350	***		latent_diffusion_margin                                          : 0.5
+2025-11-14 19:51:02,350	***		latent_diffusion_time_steps                                      : 1000
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_attention_mode                             : [False, True, True]
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_batch_size                                 : 128
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_channels_per_level                         : [1, 2, 4]
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_epochs                                     : 1000
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_group_normalization                        : 1
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_intermediary_activation                    : swish
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_intermediary_activation_alpha              : 0.05
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_last_layer_activation                      : linear
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_num_embedding_channels                     : 1
+2025-11-14 19:51:02,350	***		latent_diffusion_unet_num_residual_blocks                        : 2
+2025-11-14 19:51:02,350	***		linear_regression_copy_X                                         : True
+2025-11-14 19:51:02,351	***		linear_regression_fit_intercept                                  : True
+2025-11-14 19:51:02,351	***		linear_regression_normalize                                      : False
+2025-11-14 19:51:02,351	***		linear_regression_number_jobs                                    : None
+2025-11-14 19:51:02,351	***		model_type                                                       : wasserstein
+2025-11-14 19:51:02,351	***		naive_bayes_priors                                               : None
+2025-11-14 19:51:02,351	***		naive_bayes_variation_smoothing                                  : 1e-09
+2025-11-14 19:51:02,351	***		number_k_folds                                                   : 5
+2025-11-14 19:51:02,351	***		number_samples_per_class                                         : {'classes': {0: 2000, 1: 2000}, 'number_classes': 2}
+2025-11-14 19:51:02,351	***		output_dir                                                       : outputs/out_2025-11-14_19-50-59/reduced_balanced_androcrawl/wasserstein/combination_1
+2025-11-14 19:51:02,351	***		path_confusion_matrix                                            : confusion_matrix
+2025-11-14 19:51:02,351	***		path_curve_loss                                                  : training_curve
+2025-11-14 19:51:02,351	***		perceptron_dropout_decay_rate                                    : 0.2
+2025-11-14 19:51:02,351	***		perceptron_last_layer_activation                                 : sigmoid
+2025-11-14 19:51:02,351	***		perceptron_layer_activation                                      : relu
+2025-11-14 19:51:02,351	***		perceptron_layers_settings                                       : [512, 256, 256]
+2025-11-14 19:51:02,351	***		perceptron_number_epochs                                         : 1
+2025-11-14 19:51:02,351	***		perceptron_training_algorithm                                    : Adam
+2025-11-14 19:51:02,351	***		perceptron_training_loss                                         : binary_crossentropy
+2025-11-14 19:51:02,351	***		perceptron_training_metric                                       : ['accuracy']
+2025-11-14 19:51:02,351	***		quadratic_discriminant_analysis_priors                           : None
+2025-11-14 19:51:02,351	***		quadratic_discriminant_analysis_regularization                   : 0.0
+2025-11-14 19:51:02,351	***		quadratic_discriminant_analysis_threshold                        : 0.0001
+2025-11-14 19:51:02,351	***		random_forest_max_depth                                          : None
+2025-11-14 19:51:02,351	***		random_forest_max_leaf_nodes                                     : None
+2025-11-14 19:51:02,351	***		random_forest_number_estimators                                  : 100
+2025-11-14 19:51:02,351	***		random_noise_level                                               : 0.1
+2025-11-14 19:51:02,351	***		random_noise_type_noise                                          : uniform
+2025-11-14 19:51:02,351	***		save_data                                                        : True
+2025-11-14 19:51:02,351	***		save_models                                                      : False
+2025-11-14 19:51:02,351	***		smote_k_neighbors                                                : 2
+2025-11-14 19:51:02,351	***		smote_random_state                                               : None
+2025-11-14 19:51:02,351	***		smote_sampling_strategy                                          : auto
+2025-11-14 19:51:02,351	***		spectral_affinity                                                : rbf
+2025-11-14 19:51:02,352	***		spectral_assign_labels                                           : kmeans
+2025-11-14 19:51:02,352	***		spectral_eigen_solver                                            : None
+2025-11-14 19:51:02,352	***		spectral_number_clusters                                         : 8
+2025-11-14 19:51:02,352	***		spectral_random_state                                            : None
+2025-11-14 19:51:02,352	***		stochastic_gradient_descent_alpha                                : 0.0001
+2025-11-14 19:51:02,352	***		stochastic_gradient_descent_loss                                 : hinge
+2025-11-14 19:51:02,352	***		stochastic_gradient_descent_max_iterations                       : 1000
+2025-11-14 19:51:02,352	***		stochastic_gradient_descent_penalty                              : l2
+2025-11-14 19:51:02,352	***		stochastic_gradient_descent_tolerance                            : 0.001
+2025-11-14 19:51:02,352	***		support_vector_machine_gamma                                     : scale
+2025-11-14 19:51:02,352	***		support_vector_machine_kernel                                    : rbf
+2025-11-14 19:51:02,352	***		support_vector_machine_kernel_degree                             : 3
+2025-11-14 19:51:02,352	***		support_vector_machine_regularization                            : 1.0
+2025-11-14 19:51:02,352	***		use_early_stop                                                   : False
+2025-11-14 19:51:02,352	***		use_gpu                                                          : False
+2025-11-14 19:51:02,352	***		verbosity                                                        : 20
+2025-11-14 19:51:02,352	***		wasserstein_activation_function                                  : elu
+2025-11-14 19:51:02,352	***		wasserstein_batch_size                                           : 64
+2025-11-14 19:51:02,352	***		wasserstein_dense_layer_sizes_discriminator                      : [64]
+2025-11-14 19:51:02,352	***		wasserstein_dense_layer_sizes_generator                          : [256]
+2025-11-14 19:51:02,352	***		wasserstein_discriminator_steps                                  : 3
+2025-11-14 19:51:02,352	***		wasserstein_dropout_decay_rate_d                                 : 0.0
+2025-11-14 19:51:02,352	***		wasserstein_dropout_decay_rate_g                                 : 0.0
+2025-11-14 19:51:02,352	***		wasserstein_file_name_discriminator                              : discriminator_model
+2025-11-14 19:51:02,352	***		wasserstein_file_name_generator                                  : generator_model
+2025-11-14 19:51:02,352	***		wasserstein_initializer_deviation                                : 0.125
+2025-11-14 19:51:02,352	***		wasserstein_initializer_mean                                     : 0.0
+2025-11-14 19:51:02,352	***		wasserstein_last_activation_layer                                : linear
+2025-11-14 19:51:02,352	***		wasserstein_latent_dimension                                     : 32
+2025-11-14 19:51:02,353	***		wasserstein_latent_mean_distribution                             : 0.5
+2025-11-14 19:51:02,353	***		wasserstein_latent_stander_deviation                             : 0.125
+2025-11-14 19:51:02,353	***		wasserstein_loss_function                                        : binary_crossentropy
+2025-11-14 19:51:02,353	***		wasserstein_momentum                                             : 0.8
+2025-11-14 19:51:02,353	***		wasserstein_number_classes                                       : 2
+2025-11-14 19:51:02,353	***		wasserstein_number_epochs                                        : 300
+2025-11-14 19:51:02,353	***		wasserstein_optimizer_discriminator_beta                         : 0.5
+2025-11-14 19:51:02,353	***		wasserstein_optimizer_discriminator_learning_rate                : 0.001
+2025-11-14 19:51:02,353	***		wasserstein_optimizer_generator_beta                             : 0.5
+2025-11-14 19:51:02,353	***		wasserstein_optimizer_generator_learning_rate                    : 0.001
+2025-11-14 19:51:02,353	***		wasserstein_path_output_models                                   : models_saved/
+2025-11-14 19:51:02,353	***		wasserstein_smoothing_rate                                       : 0.1
+2025-11-14 19:51:02,353	***		wasserstein_training_algorithm                                   : Adam
+2025-11-14 19:51:02,353	***	
+2025-11-14 19:51:02,353	***	Attempting to load CSV from path: Datasets/SBSeg_2025/reduced_balanced_androcrawl.csv
+2025-11-14 19:51:02,419	***	CSV loaded successfully with shape: (20340, 137)
+2025-11-14 19:51:02,419	***	CSV file is not empty, proceeding with processing.
+2025-11-14 19:51:02,419	***	Replacing infinite values and removing missing data.
+2025-11-14 19:51:02,425	***	Data after cleaning has shape: (20340, 137)
+2025-11-14 19:51:02,425	***	Original CSV header stored.
+2025-11-14 19:51:02,425	***	Label column automatically set to: class
+2025-11-14 19:51:02,425	***	Separating the label column: class
+2025-11-14 19:51:02,429	***	Labels separated, remaining data shape: (20340, 136)
+2025-11-14 19:51:02,433	***	Data loaded and header updated. Final data shape: (20340, 136)
+2025-11-14 19:51:02,440	***	Data normalized between 0 and 1.
+2025-11-14 19:51:02,440	***	StratifiedKFold initialization started. Number of splits: 5, Shuffle: True, Random state: 42.
+2025-11-14 19:51:02,446	***	Data loaded for stratification. Total samples: 20340
+2025-11-14 19:51:02,449	***	Processing fold 1 of 5.
+2025-11-14 19:51:02,449	***	Training   indices (size 16272): [    0     1     2 ... 20336 20338 20339]
+2025-11-14 19:51:02,449	***	Evaluating indices (size 4068): [    3     5     7 ... 20331 20333 20337]

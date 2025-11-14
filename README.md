@@ -21,9 +21,10 @@ MalDataGen is an advanced Python framework for generating and evaluating synthet
 generative models, including diffusion and adversarial architectures. Designed for researchers and practitioners, 
 it provides reproducible pipelines, fine-grained control over model configuration, and integrated evaluation metrics 
 for realistic data synthesis.
----
 
-## Citation
+***
+
+# Citation
 
 If you use **MalDataGen** in your research, whether for generating synthetic data, reproducing results, or as part of your malware detection pipeline, please cite our paper:
 
